@@ -4,13 +4,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(55, 76, 103, .5);
+  background: rgba(55, 76, 103, 0.5);
   backdrop-filter: saturate(180%) blur(20px);
-
   color: white;
   padding: 15px;
-  text-align: center;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,18 +18,17 @@
     font-size: 1.8rem;
     font-weight: 300;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
   .logo {
     height: 50px;
     margin-right: 20px;
-    margin-left: 10px;
+    cursor: pointer;
   }
 
   .nav {
-    margin-top: 10px;
+    display: flex;
 
     .link {
       color: white;
@@ -43,6 +39,65 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .menuIcon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      padding: 10px;
+    }
+
+    .line {
+      width: 30px;
+      height: 4px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    .menuToggle {
+      display: none;
+    }
+
+    .menuNav {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .menuLink {
+      display: block;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: #f1c40f;
+      }
+    }
+
+    .showMenu {
+      display: flex;
     }
   }
 }
