@@ -1,0 +1,20 @@
+.team {
+  padding: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+
+    .member {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  }
+}

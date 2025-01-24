@@ -1,0 +1,70 @@
+
+.hero {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:  url('../img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  // darken the background image
+  .bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .title {
+    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #332a04;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: #f39c12;
+    }
+  }
+}
