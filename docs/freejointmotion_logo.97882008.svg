@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="450px" viewBox="0 0 390 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(36.000000, 4.000000)" stroke="#FFFFFF">
+            <line x1="183" y1="204" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="297.5" y1="105.5" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="325.5" y1="152.5" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="156.5" y1="190.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="127.5" y1="39.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="183.5" y1="39.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="133.5" y1="198.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="49.5" y1="73.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="9.5" y1="109.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="156.5" y1="246.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="127.5" y1="398.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="183.5" y1="398.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="176.5" y1="241.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="301.5" y1="326.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="265.5" y1="365.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
+            <circle id="Oval" stroke-width="13" cx="156" cy="219" r="25"></circle>
+        </g>
+    </g>
+</svg>
