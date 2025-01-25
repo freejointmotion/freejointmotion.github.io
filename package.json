@@ -21,7 +21,7 @@
     "dev": "npm run start",
     "clean": "rm -rf docs/* && rm -rf .parcel-cache",
     "build:parcel": "parcel build src/*.html --no-cache --no-source-maps --public-url ./ --dist-dir docs",
-    "build": "npm run clean && npm run build:parcel",
+    "build": "npm run clean && npm run build:parcel && node prerender.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {
@@ -44,6 +44,7 @@
     "@parcel/transformer-sass": "^2.12.0",
     "buffer": "^6.0.3",
     "parcel": "^2.12.0",
+    "parcel-plugin-prerender": "^1.4.1",
     "process": "^0.11.10",
     "svgo": "^3.3.2"
   }
