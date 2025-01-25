@@ -36455,7 +36455,11 @@ var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
     const navigate = (0, _reactRouter.useNavigate)();
-    const [menuOpen, setMenuOpen] = (0, _reactDefault.default).useState(false);
+    const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
+    const handleNavClick = (path)=>{
+        setMenuOpen(false); // Close the menu
+        navigate(path); // Navigate to the path
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
@@ -36468,17 +36472,17 @@ const Header = ()=>{
                                 className: _headerModuleScss.logo,
                                 src: (0, _freejointmotionLogoSvgDefault.default),
                                 alt: "Free Joint Motion",
-                                onClick: ()=>navigate('/')
+                                onClick: ()=>handleNavClick('/')
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 14,
+                                lineNumber: 19,
                                 columnNumber: 11
                             }, undefined),
                             "Free Joint Motion"
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 13,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -36487,61 +36491,67 @@ const Header = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/",
+                                onClick: ()=>handleNavClick('/'),
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 19,
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/about",
+                                onClick: ()=>handleNavClick('/about'),
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 20,
+                                lineNumber: 25,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/sectors",
+                                onClick: ()=>handleNavClick('/sectors'),
                                 children: "Sectors"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 21,
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/knowledge",
+                                onClick: ()=>handleNavClick('/knowledge'),
                                 children: "Knowledge"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 22,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/technologies",
+                                onClick: ()=>handleNavClick('/technologies'),
                                 children: "Technologies"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 23,
+                                lineNumber: 28,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
                                 to: "/projects",
+                                onClick: ()=>handleNavClick('/projects'),
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 24,
+                                lineNumber: 29,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 18,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36555,7 +36565,7 @@ const Header = ()=>{
                                 onChange: ()=>setMenuOpen(!menuOpen)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 28,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36567,27 +36577,27 @@ const Header = ()=>{
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 36,
+                                        lineNumber: 41,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 37,
+                                        lineNumber: 42,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 38,
+                                        lineNumber: 43,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 35,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -36600,7 +36610,7 @@ const Header = ()=>{
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 42,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36610,7 +36620,7 @@ const Header = ()=>{
                                         children: "About"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 43,
+                                        lineNumber: 48,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36620,7 +36630,7 @@ const Header = ()=>{
                                         children: "Sectors"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 44,
+                                        lineNumber: 49,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36630,7 +36640,7 @@ const Header = ()=>{
                                         children: "Knowledge"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 45,
+                                        lineNumber: 50,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36640,7 +36650,7 @@ const Header = ()=>{
                                         children: "Technologies"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 46,
+                                        lineNumber: 51,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36650,70 +36660,75 @@ const Header = ()=>{
                                         children: "Projects"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 47,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
                                         to: "/services",
+                                        onClick: ()=>handleNavClick('/services'),
                                         children: "Services"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 48,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
                                         to: "/news",
+                                        onClick: ()=>handleNavClick('/news'),
                                         children: "News"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 49,
+                                        lineNumber: 54,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
                                         to: "/publications",
+                                        onClick: ()=>handleNavClick('/publications'),
                                         children: "Publications"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 50,
+                                        lineNumber: 55,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
                                         to: "/impact",
+                                        onClick: ()=>handleNavClick('/impact'),
                                         children: "Impact"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 51,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
                                         to: "/contact",
+                                        onClick: ()=>handleNavClick('/contact'),
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 52,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 41,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 27,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 12,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
@@ -36724,57 +36739,62 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
                             to: "/services",
+                            onClick: ()=>handleNavClick('/services'),
                             children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 60,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
                             to: "/news",
+                            onClick: ()=>handleNavClick('/news'),
                             children: "News"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
                             to: "/publications",
+                            onClick: ()=>handleNavClick('/publications'),
                             children: "Publications"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 62,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
                             to: "/impact",
+                            onClick: ()=>handleNavClick('/impact'),
                             children: "Impact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 63,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
                             to: "/contact",
+                            onClick: ()=>handleNavClick('/contact'),
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 64,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 59,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 58,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
