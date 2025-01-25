@@ -4,6 +4,8 @@ import * as styles from "./About.module.scss";
 const About = () => {
   return (
     <section className={styles.about}>
+      <div className={styles.bg}></div>
+      
       <div className={styles.container}>
         <h2 className={styles.title}>About Us</h2>
         <p className={styles.description}>

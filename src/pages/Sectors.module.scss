@@ -1,0 +1,82 @@
+.sectors {
+  background: #374c67;
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .sectors {
+    padding-top: 100px;
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background-image: url('../img/sectors.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color :white;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+    padding: 0 20px;
+  }
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+
+  @media (max-width: 768px) {
+    padding: 40px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: #007acc;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

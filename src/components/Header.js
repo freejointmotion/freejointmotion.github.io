@@ -8,40 +8,63 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   return (
-    <header className={styles.header}>
-      <h1 className={styles.h1}>
-        <img className={styles.logo} src={logo} alt="Free Joint Motion" onClick={() => navigate('/')} />
-        Free Joint Motion
-      </h1>
-      <nav className={styles.nav}>
-        <NavLink className={styles.link} to="/">Home</NavLink>
-        <NavLink className={styles.link} to="/about">About</NavLink>
-        <NavLink className={styles.link} to="/products">Products</NavLink>
-        <NavLink className={styles.link} to="/contact">Contact</NavLink>
-      </nav>
+    <>
+      <header className={styles.header}>
+        <h1 className={styles.h1}>
+          <img className={styles.logo} src={logo} alt="Free Joint Motion" onClick={() => navigate('/')} />
+          Free Joint Motion
+        </h1>
 
-      <div className={styles.menu}>
-        <input
-          type="checkbox"
-          id="menu-toggle"
-          className={styles.menuToggle}
-          checked={menuOpen}
-          onChange={() => setMenuOpen(!menuOpen)}
-        />
-        <label htmlFor="menu-toggle" className={styles.menuIcon} aria-label="Menu">
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-        </label>
-
-        <nav className={`${styles.menuNav} ${menuOpen ? styles.showMenu : ""}`}>
-          <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/')}>Home</NavLink>
-          <NavLink className={styles.menuLink} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
-          <NavLink className={styles.menuLink} to="/products" onClick={() => handleNavClick('/products')}>Products</NavLink>
-          <NavLink className={styles.menuLink} to="/contact" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
+        <nav className={styles.nav}>
+          <NavLink className={styles.link} to="/">Home</NavLink>
+          <NavLink className={styles.link} to="/about">About</NavLink>
+          <NavLink className={styles.link} to="/sectors">Sectors</NavLink>
+          <NavLink className={styles.link} to="/knowledge">Knowledge</NavLink>
+          <NavLink className={styles.link} to="/technologies">Technologies</NavLink>
+          <NavLink className={styles.link} to="/projects">Projects</NavLink>
         </nav>
-      </div>
-    </header>
+
+        <div className={styles.menu}>
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            className={styles.menuToggle}
+            checked={menuOpen}
+            onChange={() => setMenuOpen(!menuOpen)}
+          />
+          <label htmlFor="menu-toggle" className={styles.menuIcon} aria-label="Menu">
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+          </label>
+
+          <nav className={`${styles.menuNav} ${menuOpen ? styles.showMenu : ""}`}>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/')}>Home</NavLink>
+            <NavLink className={styles.menuLink} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
+            <NavLink className={styles.menuLink} to="/sectors" onClick={() => handleNavClick('/sectors')}>Sectors</NavLink>
+            <NavLink className={styles.menuLink} to="/knowledge" onClick={() => handleNavClick('/knowledge')}>Knowledge</NavLink>
+            <NavLink className={styles.menuLink} to="/technologies" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
+            <NavLink className={styles.menuLink} to="/projects" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
+            <NavLink className={styles.menuLink} to="/services">Services</NavLink>
+            <NavLink className={styles.menuLink} to="/news">News</NavLink>
+            <NavLink className={styles.menuLink} to="/publications">Publications</NavLink>
+            <NavLink className={styles.menuLink} to="/impact">Impact</NavLink>
+            <NavLink className={styles.menuLink} to="/contact">Contact</NavLink>
+          </nav>
+        </div>
+
+      </header>
+
+      <header className={styles.subHeader}>
+        <nav className={styles.subNav}>
+          <NavLink className={styles.subLink} to="/services">Services</NavLink>
+          <NavLink className={styles.subLink} to="/news">News</NavLink>
+          <NavLink className={styles.subLink} to="/publications">Publications</NavLink>
+          <NavLink className={styles.subLink} to="/impact">Impact</NavLink>
+          <NavLink className={styles.subLink} to="/contact">Contact</NavLink>
+        </nav>
+      </header>
+    </>
   );
 };
 
