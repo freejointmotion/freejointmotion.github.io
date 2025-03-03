@@ -335,7 +335,7 @@
 
 @media (width >= 768px) {
   .towGPG_about {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -434,7 +434,7 @@
 
 @media (width >= 768px) {
   .fER2tq_sectors {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 }
 
@@ -465,8 +465,12 @@
 
 .fER2tq_description {
   color: #fff;
+  max-width: 620px;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .fER2tq_grid {
@@ -483,11 +487,11 @@
 }
 
 .fER2tq_card {
-  background: #fff;
+  background: #2b3f58;
+  border: 2px solid #007acc;
   border-radius: 8px;
   padding: 30px;
   transition: transform .3s;
-  box-shadow: 0 4px 8px #0000001a;
 }
 
 @media (width <= 768px) {
@@ -503,12 +507,9 @@
 }
 
 .fER2tq_card p {
-  color: #666;
+  color: #fff;
   font-size: 1rem;
-}
-
-.fER2tq_card:hover {
-  transform: translateY(-5px);
+  line-height: 1.4;
 }
 
 .uRY_ra_knowledge {
@@ -521,14 +522,14 @@
 
 @media (width >= 768px) {
   .uRY_ra_bg {
-    padding-top: 128px;
+    padding-top: 130px;
   }
 }
 
 .uRY_ra_bg {
   color: #fff;
   background-color: #96a1ae;
-  background-image: url("knowledge.364a1c53.png");
+  background-image: url("3d-grid.a51733fb.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -549,6 +550,16 @@
     background-size: cover;
     min-height: 250px;
   }
+}
+
+.uRY_ra_bg:before {
+  content: "";
+  background-color: #234861e6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .uRY_ra_flex {
@@ -606,24 +617,33 @@
 }
 
 .uRY_ra_title {
+  z-index: 1;
   color: #fff;
-  background-color: #007acce0;
   margin-top: 0;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-family: Montserrat, sans-serif;
   font-size: 2.8rem;
   font-weight: 300;
+  position: relative;
 }
 
 .uRY_ra_intro {
+  z-index: 1;
   color: #fff;
-  background-color: #007acce0;
   max-width: 900px;
   margin: 0 auto;
   padding: 8px 20px;
   font-size: 1.4rem;
   line-height: 1.6;
+  position: relative;
+}
+
+@media screen and (width <= 768px) {
+  .uRY_ra_intro, .uRY_ra_title {
+    background-color: #0000;
+    padding: 20px;
+  }
 }
 
 .uRY_ra_flex .uRY_ra_image {

@@ -29,8 +29,8 @@ const Header = () => {
           <NavLink className={styles.link} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
           <NavLink className={styles.link} to="/sectors" onClick={() => handleNavClick('/sectors')}>Sectors</NavLink>
           <NavLink className={styles.link} to="/knowledge" onClick={() => handleNavClick('/knowledge')}>Knowledge</NavLink>
-          <NavLink className={styles.link} to="/technologies" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
-          <NavLink className={styles.link} to="/projects" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
+          <NavLink className={styles.link} to="/" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
+          <NavLink className={styles.link} to="/" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
         </nav>
 
         <div className={styles.menu}>
@@ -52,24 +52,24 @@ const Header = () => {
             <NavLink className={styles.menuLink} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
             <NavLink className={styles.menuLink} to="/sectors" onClick={() => handleNavClick('/sectors')}>Sectors</NavLink>
             <NavLink className={styles.menuLink} to="/knowledge" onClick={() => handleNavClick('/knowledge')}>Knowledge</NavLink>
-            <NavLink className={styles.menuLink} to="/technologies" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
-            <NavLink className={styles.menuLink} to="/projects" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
-            <NavLink className={styles.menuLink} to="/services" onClick={() => handleNavClick('/services')}>Services</NavLink>
-            <NavLink className={styles.menuLink} to="/news" onClick={() => handleNavClick('/news')}>News</NavLink>
-            <NavLink className={styles.menuLink} to="/publications" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
-            <NavLink className={styles.menuLink} to="/impact" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
-            <NavLink className={styles.menuLink} to="/contact" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/services')}>Services</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/news')}>News</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
+            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
           </nav>
         </div>
       </header>
 
       <header className={styles.subHeader}>
         <nav className={styles.subNav}>
-          <NavLink className={styles.subLink} to="/services" onClick={() => handleNavClick('/services')}>Services</NavLink>
-          <NavLink className={styles.subLink} to="/news" onClick={() => handleNavClick('/news')}>News</NavLink>
-          <NavLink className={styles.subLink} to="/publications" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
-          <NavLink className={styles.subLink} to="/impact" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
-          <NavLink className={styles.subLink} to="/contact" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
+          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/services')}>Services</NavLink>
+          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/news')}>News</NavLink>
+          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
+          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
+          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
         </nav>
       </header>
     </>

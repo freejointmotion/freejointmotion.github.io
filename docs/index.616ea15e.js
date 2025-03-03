@@ -36534,7 +36534,7 @@ const Header = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
-                                to: "/technologies",
+                                to: "/",
                                 onClick: ()=>handleNavClick('/technologies'),
                                 children: "Technologies"
                             }, void 0, false, {
@@ -36544,7 +36544,7 @@ const Header = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                 className: _headerModuleScss.link,
-                                to: "/projects",
+                                to: "/",
                                 onClick: ()=>handleNavClick('/projects'),
                                 children: "Projects"
                             }, void 0, false, {
@@ -36649,7 +36649,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/technologies",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/technologies'),
                                         children: "Technologies"
                                     }, void 0, false, {
@@ -36659,7 +36659,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/projects",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/projects'),
                                         children: "Projects"
                                     }, void 0, false, {
@@ -36669,7 +36669,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/services",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/services'),
                                         children: "Services"
                                     }, void 0, false, {
@@ -36679,7 +36679,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/news",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/news'),
                                         children: "News"
                                     }, void 0, false, {
@@ -36689,7 +36689,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/publications",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/publications'),
                                         children: "Publications"
                                     }, void 0, false, {
@@ -36699,7 +36699,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/impact",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/impact'),
                                         children: "Impact"
                                     }, void 0, false, {
@@ -36709,7 +36709,7 @@ const Header = ()=>{
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                         className: _headerModuleScss.menuLink,
-                                        to: "/contact",
+                                        to: "/",
                                         onClick: ()=>handleNavClick('/contact'),
                                         children: "Contact"
                                     }, void 0, false, {
@@ -36742,7 +36742,7 @@ const Header = ()=>{
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
-                            to: "/services",
+                            to: "/",
                             onClick: ()=>handleNavClick('/services'),
                             children: "Services"
                         }, void 0, false, {
@@ -36752,7 +36752,7 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
-                            to: "/news",
+                            to: "/",
                             onClick: ()=>handleNavClick('/news'),
                             children: "News"
                         }, void 0, false, {
@@ -36762,7 +36762,7 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
-                            to: "/publications",
+                            to: "/",
                             onClick: ()=>handleNavClick('/publications'),
                             children: "Publications"
                         }, void 0, false, {
@@ -36772,7 +36772,7 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
-                            to: "/impact",
+                            to: "/",
                             onClick: ()=>handleNavClick('/impact'),
                             children: "Impact"
                         }, void 0, false, {
@@ -36782,7 +36782,7 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                             className: _headerModuleScss.subLink,
-                            to: "/contact",
+                            to: "/",
                             onClick: ()=>handleNavClick('/contact'),
                             children: "Contact"
                         }, void 0, false, {
@@ -37571,6 +37571,12 @@ var _s = $RefreshSig$();
 const HeroSection = ()=>{
     _s();
     const navigate = (0, _reactRouter.useNavigate)();
+    const videoRef = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        if (videoRef.current) videoRef.current.play().catch((error)=>{
+            console.log("Autoplay failed, user interaction required:", error);
+        });
+    }, []);
     const ctaClick = (path)=>{
         navigate('/about');
     };
@@ -37578,9 +37584,11 @@ const HeroSection = ()=>{
         className: _heroSectionModuleScss.hero,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                ref: videoRef,
                 autoPlay: true,
                 muted: true,
                 loop: true,
+                playsInline: true,
                 className: _heroSectionModuleScss.bgVideo,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
@@ -37588,21 +37596,21 @@ const HeroSection = ()=>{
                         type: "video/mp4"
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 17,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     "Your browser does not support the video tag."
                 ]
             }, void 0, true, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 16,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: _heroSectionModuleScss.bg
             }, void 0, false, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 20,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37613,7 +37621,7 @@ const HeroSection = ()=>{
                         children: "Movement without limits. Performance without External Biases."
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 22,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37621,7 +37629,7 @@ const HeroSection = ()=>{
                         children: "Innovating biomechanical medical devices for rehabilitation and performance."
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 23,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37630,23 +37638,23 @@ const HeroSection = ()=>{
                         children: "Learn More"
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 24,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 21,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/HeroSection.js",
-        lineNumber: 15,
+        lineNumber: 25,
         columnNumber: 5
     }, undefined);
 };
-_s(HeroSection, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+_s(HeroSection, "1tqGQv/lOn/iXljKoHJyvtED4/c=", false, function() {
     return [
         (0, _reactRouter.useNavigate)
     ];
@@ -37881,142 +37889,133 @@ var _sectorsModuleScss = require("./Sectors.module.scss");
 const Sectors = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: _sectorsModuleScss.sectors,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: _sectorsModuleScss.bg
-            }, void 0, false, {
-                fileName: "src/pages/Sectors.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: _sectorsModuleScss.container,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: _sectorsModuleScss.title,
-                        children: "Our Sectors"
-                    }, void 0, false, {
-                        fileName: "src/pages/Sectors.js",
-                        lineNumber: 10,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: _sectorsModuleScss.description,
-                        children: "At Free Joint Motion, we are committed to providing cutting-edge biomechanical solutions in the following key sectors:"
-                    }, void 0, false, {
-                        fileName: "src/pages/Sectors.js",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: _sectorsModuleScss.grid,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: _sectorsModuleScss.card,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Mobility"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 17,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: "Enhancing movement capabilities for individuals with various needs, ensuring better quality of life."
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 18,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Sectors.js",
-                                lineNumber: 16,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: _sectorsModuleScss.card,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Physical Activity & Sports"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 22,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: "Optimizing athletic performance and injury prevention through advanced biomechanical solutions."
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 23,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Sectors.js",
-                                lineNumber: 21,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: _sectorsModuleScss.card,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Rehabilitation"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 27,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: "Innovative devices aiding recovery, rehabilitation, and functional training for individuals post-injury."
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 28,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Sectors.js",
-                                lineNumber: 26,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: _sectorsModuleScss.card,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Personal Autonomy"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 32,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: "Supporting individuals in regaining independence with tailored biomechanical solutions."
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Sectors.js",
-                                        lineNumber: 33,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Sectors.js",
-                                lineNumber: 31,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/Sectors.js",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/Sectors.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: _sectorsModuleScss.container,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: _sectorsModuleScss.title,
+                    children: "Our Sectors"
+                }, void 0, false, {
+                    fileName: "src/pages/Sectors.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: _sectorsModuleScss.description,
+                    children: "At Free Joint Motion, we are committed to providing cutting-edge biomechanical solutions in the following key sectors:"
+                }, void 0, false, {
+                    fileName: "src/pages/Sectors.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: _sectorsModuleScss.grid,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _sectorsModuleScss.card,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: "Mobility"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 17,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: "Enhancing movement capabilities for individuals with various needs, ensuring better quality of life."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Sectors.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _sectorsModuleScss.card,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: "Physical Activity & Sports"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: "Optimizing athletic performance and injury prevention through advanced biomechanical solutions."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Sectors.js",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _sectorsModuleScss.card,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: "Rehabilitation"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 27,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: "Innovative devices aiding recovery, rehabilitation, and functional training for individuals post-injury."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Sectors.js",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _sectorsModuleScss.card,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: "Personal Autonomy"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: "Supporting individuals in regaining independence with tailored biomechanical solutions."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Sectors.js",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Sectors.js",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/Sectors.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/Sectors.js",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/pages/Sectors.js",
         lineNumber: 6,
         columnNumber: 5

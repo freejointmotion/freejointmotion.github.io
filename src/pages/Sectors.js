@@ -4,7 +4,7 @@ import * as styles from "./Sectors.module.scss";
 const Sectors = () => {
   return (
     <section className={styles.sectors}>
-      <div className={styles.bg}></div>
+      {/* <div className={styles.bg}></div> */}
 
       <div className={styles.container}>
         <h2 className={styles.title}>Our Sectors</h2>

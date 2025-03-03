@@ -8,7 +8,7 @@
 
 @media (min-width: 768px) {
   .sectors {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 }
 
@@ -39,8 +39,12 @@
 
 .description {
   font-size: 1.2rem;
+  line-height: 1.6;
   color :white;
   margin-bottom: 40px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
@@ -55,9 +59,10 @@
 }
 
 .card {
-  background: white;
+  background: #2b3f58;
+  border: 2px solid #007acc;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s ease;
 
@@ -73,10 +78,12 @@
 
   p {
     font-size: 1rem;
-    color: #666;
+    // color: #666;
+    color: white;
+    line-height: 1.4;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-  }
+  // &:hover {
+  //   transform: translateY(-5px);
+  // }
 }
