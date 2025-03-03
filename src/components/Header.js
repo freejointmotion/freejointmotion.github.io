@@ -3,11 +3,16 @@ import { NavLink, useNavigate } from 'react-router';
 import * as styles from './Header.module.scss';
 import logo from '../img/freejointmotion_logo.svg';
 
+const implementedPages = ['/', '/about', '/sectors', '/knowledge'];
+
 const Header = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavClick = (path) => {
+    if (!implementedPages.includes(path)) {
+      return;
+    }
     setMenuOpen(false);  // Close the menu
     navigate(path);      // Navigate to the path
   };
@@ -17,7 +22,6 @@ const Header = () => {
       <header className={styles.header}>
         <h1 className={styles.h1}>
           <img className={styles.logo} src={logo} alt="Free Joint Motion" onClick={() => handleNavClick('/')} />
-          Free Joint Motion
         </h1>
 
         <nav className={styles.nav}>

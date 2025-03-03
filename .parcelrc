@@ -1,6 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "*.html": ["@parcel/transformer-html"]
+    "*.html": ["@parcel/transformer-html"],
+    "data-url:*.{mp4,webm,ogg}": ["@parcel/transformer-inline-string"]
   }
 }

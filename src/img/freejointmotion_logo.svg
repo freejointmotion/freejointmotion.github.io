@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="390px" height="450px" viewBox="0 0 390 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="241px" height="291px" viewBox="0 0 241 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(36.000000, 4.000000)" stroke="#FFFFFF">
-            <line x1="183" y1="204" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="297.5" y1="105.5" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="325.5" y1="152.5" x2="347" y2="109" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="156.5" y1="190.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="127.5" y1="39.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="183.5" y1="39.5" x2="156.5" y2="0.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="133.5" y1="198.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="49.5" y1="73.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="9.5" y1="109.5" x2="0.5" y2="64.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="156.5" y1="246.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="127.5" y1="398.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="183.5" y1="398.5" x2="156.5" y2="439.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="176.5" y1="241.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="301.5" y1="326.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <line x1="265.5" y1="365.5" x2="311.5" y2="375.5" id="Line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></line>
-            <circle id="Oval" stroke-width="13" cx="156" cy="219" r="25"></circle>
+        <g id="Group-3">
+            <path d="M35,110 L0,110 L0,16 C0,7.163444 7.163444,1.77635684e-15 16,0 L159,0 C167.284271,-1.77635684e-15 174,6.71572875 174,15 L174,18 C174,26.2842712 167.284271,33 159,33 L35,33 L35,110 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <path d="M226,0 C234.284271,-1.77635684e-15 241,6.71572875 241,15 L241,17 C241,25.2842712 234.284271,32 226,32 L144,32 L144,56 C144,64.836556 136.836556,72 128,72 L125,72 C116.163444,72 109,64.836556 109,56 L109,0 L226,0 Z" id="Combined-Shape" fill="#F1C40F" transform="translate(175.000000, 36.000000) scale(-1, -1) translate(-175.000000, -36.000000) "></path>
+            <path d="M226,84 C234.284271,84 241,90.7157288 241,99 L241,101 C241,109.179407 234.453214,115.82973 226.313828,115.996782 L226,116 L226,116 L106,116 L106,238 L71,238 L71,100 C71,91.163444 78.163444,84 87,84 L226,84 Z" id="Combined-Shape" fill="#F1C40F" transform="translate(156.000000, 161.000000) scale(-1, -1) translate(-156.000000, -161.000000) "></path>
+            <path d="M114,122 C122.284271,122 129,128.715729 129,137 L129,140 C129,148.284271 122.284271,155 114,155 L36,155 L36,222 C36,230.836556 28.836556,238 20,238 L16,238 C7.163444,238 0,230.836556 0,222 L0,122 L114,122 Z" id="Combined-Shape-Copy" fill="#FFFFFF"></path>
         </g>
+        <text id="MOTION" font-family="GillSans-SemiBold, Gill Sans" font-size="56" font-weight="500" fill="#FFFFFF">
+            <tspan x="1" y="291">MOTION</tspan>
+        </text>
     </g>
 </svg>

@@ -244,7 +244,6 @@
 }
 
 .sbFlKq_hero .sbFlKq_bg {
-  background-image: url("hero.5ff266cc.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,6 +257,15 @@
 .sbFlKq_hero .sbFlKq_bg:before {
   content: "";
   background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sbFlKq_hero .sbFlKq_bgVideo {
+  object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -332,7 +340,7 @@
 }
 
 .towGPG_bg {
-  background-image: url("about.2ad54223.png");
+  background-image: url("about.d4c395b6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

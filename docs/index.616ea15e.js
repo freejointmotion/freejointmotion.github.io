@@ -36452,11 +36452,18 @@ var _headerModuleScss = require("./Header.module.scss");
 var _freejointmotionLogoSvg = require("../img/freejointmotion_logo.svg");
 var _freejointmotionLogoSvgDefault = parcelHelpers.interopDefault(_freejointmotionLogoSvg);
 var _s = $RefreshSig$();
+const implementedPages = [
+    '/',
+    '/about',
+    '/sectors',
+    '/knowledge'
+];
 const Header = ()=>{
     _s();
     const navigate = (0, _reactRouter.useNavigate)();
     const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
     const handleNavClick = (path)=>{
+        if (!implementedPages.includes(path)) return;
         setMenuOpen(false); // Close the menu
         navigate(path); // Navigate to the path
     };
@@ -36467,22 +36474,19 @@ const Header = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         className: _headerModuleScss.h1,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: _headerModuleScss.logo,
-                                src: (0, _freejointmotionLogoSvgDefault.default),
-                                alt: "Free Joint Motion",
-                                onClick: ()=>handleNavClick('/')
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 19,
-                                columnNumber: 11
-                            }, undefined),
-                            "Free Joint Motion"
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: _headerModuleScss.logo,
+                            src: (0, _freejointmotionLogoSvgDefault.default),
+                            alt: "Free Joint Motion",
+                            onClick: ()=>handleNavClick('/')
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 18,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -36495,7 +36499,7 @@ const Header = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 24,
+                                lineNumber: 28,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36505,7 +36509,7 @@ const Header = ()=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 25,
+                                lineNumber: 29,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36515,7 +36519,7 @@ const Header = ()=>{
                                 children: "Sectors"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 26,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36525,7 +36529,7 @@ const Header = ()=>{
                                 children: "Knowledge"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 27,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36535,7 +36539,7 @@ const Header = ()=>{
                                 children: "Technologies"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 28,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36545,13 +36549,13 @@ const Header = ()=>{
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 29,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 23,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36565,7 +36569,7 @@ const Header = ()=>{
                                 onChange: ()=>setMenuOpen(!menuOpen)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 33,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36577,27 +36581,27 @@ const Header = ()=>{
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 41,
+                                        lineNumber: 45,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 42,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: _headerModuleScss.line
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 43,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 40,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -36610,7 +36614,7 @@ const Header = ()=>{
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 47,
+                                        lineNumber: 51,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36620,7 +36624,7 @@ const Header = ()=>{
                                         children: "About"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 48,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36630,7 +36634,7 @@ const Header = ()=>{
                                         children: "Sectors"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 49,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36640,7 +36644,7 @@ const Header = ()=>{
                                         children: "Knowledge"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 50,
+                                        lineNumber: 54,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36650,7 +36654,7 @@ const Header = ()=>{
                                         children: "Technologies"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 51,
+                                        lineNumber: 55,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36660,7 +36664,7 @@ const Header = ()=>{
                                         children: "Projects"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 52,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36670,7 +36674,7 @@ const Header = ()=>{
                                         children: "Services"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 53,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36680,7 +36684,7 @@ const Header = ()=>{
                                         children: "News"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 54,
+                                        lineNumber: 58,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36690,7 +36694,7 @@ const Header = ()=>{
                                         children: "Publications"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 55,
+                                        lineNumber: 59,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36700,7 +36704,7 @@ const Header = ()=>{
                                         children: "Impact"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 56,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36710,25 +36714,25 @@ const Header = ()=>{
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 57,
+                                        lineNumber: 61,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 46,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 32,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
@@ -36743,7 +36747,7 @@ const Header = ()=>{
                             children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 64,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36753,7 +36757,7 @@ const Header = ()=>{
                             children: "News"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 65,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36763,7 +36767,7 @@ const Header = ()=>{
                             children: "Publications"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 66,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36773,7 +36777,7 @@ const Header = ()=>{
                             children: "Impact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 67,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -36783,18 +36787,18 @@ const Header = ()=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 68,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 63,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 62,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
@@ -37559,16 +37563,46 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouter = require("react-router");
 var _heroSectionModuleScss = require("./HeroSection.module.scss");
+var _heroMp4 = require("url:../videos/hero.mp4");
+var _heroMp4Default = parcelHelpers.interopDefault(_heroMp4);
+var _s = $RefreshSig$();
 const HeroSection = ()=>{
+    _s();
+    const navigate = (0, _reactRouter.useNavigate)();
+    const ctaClick = (path)=>{
+        navigate('/about');
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: _heroSectionModuleScss.hero,
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                autoPlay: true,
+                muted: true,
+                loop: true,
+                className: _heroSectionModuleScss.bgVideo,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                        src: (0, _heroMp4Default.default),
+                        type: "video/mp4"
+                    }, void 0, false, {
+                        fileName: "src/components/HeroSection.js",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, undefined),
+                    "Your browser does not support the video tag."
+                ]
+            }, void 0, true, {
+                fileName: "src/components/HeroSection.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: _heroSectionModuleScss.bg
             }, void 0, false, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 7,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37576,10 +37610,10 @@ const HeroSection = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         className: _heroSectionModuleScss.title,
-                        children: "Enhance Your Agility"
+                        children: "Movement without limits. Performance without External Biases."
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 9,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37587,30 +37621,36 @@ const HeroSection = ()=>{
                         children: "Innovating biomechanical medical devices for rehabilitation and performance."
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 10,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: _heroSectionModuleScss.cta,
+                        onClick: ctaClick,
                         children: "Learn More"
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 11,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 8,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/HeroSection.js",
-        lineNumber: 6,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };
+_s(HeroSection, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+    return [
+        (0, _reactRouter.useNavigate)
+    ];
+});
 _c = HeroSection;
 exports.default = HeroSection;
 var _c;
@@ -37621,15 +37661,19 @@ $RefreshReg$(_c, "HeroSection");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./HeroSection.module.scss":"hrIAL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hrIAL":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./HeroSection.module.scss":"hrIAL","url:../videos/hero.mp4":"4s0XH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hrIAL":[function(require,module,exports,__globalThis) {
 module.exports["bg"] = `sbFlKq_bg`;
+module.exports["bgVideo"] = `sbFlKq_bgVideo`;
 module.exports["cta"] = `sbFlKq_cta`;
 module.exports["hero"] = `sbFlKq_hero`;
 module.exports["overlay"] = `sbFlKq_overlay`;
 module.exports["subtitle"] = `sbFlKq_subtitle`;
 module.exports["title"] = `sbFlKq_title`;
 
-},{}],"fWgHB":[function(require,module,exports,__globalThis) {
+},{}],"4s0XH":[function(require,module,exports,__globalThis) {
+module.exports = require("b8878b548ab55db4").getBundleURL('ej6rf') + "hero.c2e96e4a.mp4" + "?" + Date.now();
+
+},{"b8878b548ab55db4":"lgJ39"}],"fWgHB":[function(require,module,exports,__globalThis) {
 module.exports["home"] = `OpkwbW_home`;
 
 },{}],"dep5E":[function(require,module,exports,__globalThis) {
