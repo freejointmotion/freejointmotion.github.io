@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="241px" height="291px" viewBox="0 0 241 291"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><title>Artboard</title><desc>Created with Sketch.</desc><g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <path d="M35,110 L0,110 L0,16 C0,7.163444 7.163444,1.77635684e-15 16,0 L159,0 C167.284271,-1.77635684e-15 174,6.71572875 174,15 L174,18 C174,26.2842712 167.284271,33 159,33 L35,33 L35,110 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <path d="M226,0 C234.284271,-1.77635684e-15 241,6.71572875 241,15 L241,17 C241,25.2842712 234.284271,32 226,32 L144,32 L144,56 C144,64.836556 136.836556,72 128,72 L125,72 C116.163444,72 109,64.836556 109,56 L109,0 L226,0 Z" id="Combined-Shape" fill="#F1C40F" transform="translate(175.000000, 36.000000) scale(-1, -1) translate(-175.000000, -36.000000) "></path>
+            <path d="M226,84 C234.284271,84 241,90.7157288 241,99 L241,101 C241,109.179407 234.453214,115.82973 226.313828,115.996782 L226,116 L226,116 L106,116 L106,238 L71,238 L71,100 C71,91.163444 78.163444,84 87,84 L226,84 Z" id="Combined-Shape" fill="#F1C40F" transform="translate(156.000000, 161.000000) scale(-1, -1) translate(-156.000000, -161.000000) "></path>
+            <path d="M114,122 C122.284271,122 129,128.715729 129,137 L129,140 C129,148.284271 122.284271,155 114,155 L36,155 L36,222 C36,230.836556 28.836556,238 20,238 L16,238 C7.163444,238 0,230.836556 0,222 L0,122 L114,122 Z" id="Combined-Shape-Copy" fill="#FFFFFF"></path>
+        </g>
+        <text id="MOTION" font-family="GillSans-SemiBold, Gill Sans" font-size="56" font-weight="500" fill="#FFFFFF">
+            <tspan x="1" y="291">MOTION</tspan>
+        </text>
+    </g></svg>
