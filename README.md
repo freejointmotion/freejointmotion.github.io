@@ -2,6 +2,8 @@
 
 Static site (Parcel + React) deployed to GitHub Pages from the `docs/` folder.
 
+Custom domain: `public/CNAME` is copied to `docs/CNAME` on every `npm run build` (including after `clean`, which clears `docs/*`).
+
 ### Contact form (Formspree)
 
 Formspree works on GitHub Pages: submissions go from the visitor’s browser directly to Formspree’s servers. This site does not need a backend.

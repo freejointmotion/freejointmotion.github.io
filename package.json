@@ -20,7 +20,7 @@
     "start": "parcel src/index.html --open --dist-dir docs",
     "dev": "npm run start",
     "clean": "rm -rf docs/* && rm -rf .parcel-cache",
-    "build:parcel": "parcel build src/*.html --no-cache --no-source-maps --public-url ./ --dist-dir docs && cp src/config/formspree.config.json docs/formspree.json",
+    "build:parcel": "parcel build src/*.html --no-cache --no-source-maps --public-url ./ --dist-dir docs && cp src/config/formspree.config.json docs/formspree.json && cp public/CNAME docs/CNAME",
     "build": "npm run clean && npm run build:parcel && npm run prerender",
     "prerender": "npm run start & sleep 5 && node prerender.js && kill $(lsof -t -i:1234)",
     "test": "echo \"Error: no test specified\" && exit 1"
