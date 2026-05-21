@@ -2,6 +2,7 @@ import React from "react";
 import { HashRouter, Route, Routes } from 'react-router';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Sectors from "./pages/Sectors";
@@ -17,6 +18,7 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <HashRouter basename="/">
+      <ScrollToTop />
       <Header />
 
       <Routes>
