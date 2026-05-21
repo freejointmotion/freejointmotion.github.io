@@ -36839,8 +36839,6 @@ $RefreshReg$(_c, "Header");
 module.exports["active"] = `pHiQEG_active`;
 module.exports["contactBtn"] = `pHiQEG_contactBtn`;
 module.exports["contactBtnActive"] = `pHiQEG_contactBtnActive`;
-module.exports["fadeInLeft"] = `pHiQEG_fadeInLeft`;
-module.exports["fadeInLeft"];
 module.exports["h1"] = `pHiQEG_h1`;
 module.exports["header"] = `pHiQEG_header`;
 module.exports["line"] = `pHiQEG_line`;
