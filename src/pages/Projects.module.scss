@@ -1,0 +1,145 @@
+@use "../scss/research" as *;
+
+.project {
+  @include panel-flat-base;
+  @include panel-flat-lg;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.projectMark {
+  @include project-mark-image;
+  flex-shrink: 0;
+}
+
+.eyebrow {
+  @include data-index;
+}
+
+.projectTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  font-weight: 300;
+  color: #13364b;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.elevator {
+  @include statement;
+  margin-bottom: 40px;
+
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: #333;
+
+  strong {
+    color: #13364b;
+  }
+}
+
+.sectionLabel {
+  @include section-heading;
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+}
+
+.overview,
+.productBlock {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+
+  p {
+    @include cell-body;
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.productBlock {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 28px;
+}
+
+.featureGrid {
+  @include item-stack;
+  margin-bottom: 36px;
+}
+
+.featureCard {
+  @include stack-item;
+}
+
+.featureTitle {
+  @include cell-title;
+}
+
+.featureText {
+  @include cell-body;
+}
+
+.vision {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0 0 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(19, 54, 75, 0.1);
+  max-width: 68ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 3px;
+  }
+}
+
+.primaryBtn {
+  background: #f1c40f;
+  color: #332a04;
+
+  &:hover,
+  &:focus-visible {
+    background: #e6b80a;
+  }
+}
+
+.secondaryBtn {
+  background: #fff;
+  color: #13364b;
+  border: 1px solid #13364b;
+
+  &:hover,
+  &:focus-visible {
+    background: #13364b;
+    color: #fff;
+  }
+}

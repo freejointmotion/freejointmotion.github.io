@@ -1,0 +1,51 @@
+@use "../scss/research" as *;
+
+.list {
+  @include item-stack;
+}
+
+.item {
+  @include stack-item;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category {
+  @include data-index;
+  margin-bottom: 0;
+}
+
+.date {
+  font-size: 0.88rem;
+  color: #888;
+  letter-spacing: 0.02em;
+}
+
+.itemTitle {
+  @include cell-title;
+  font-size: 1.2rem;
+}
+
+.summary {
+  @include cell-body;
+  margin-bottom: 14px;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,64 @@
+@use "../scss/research" as *;
+
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #444;
+  margin: 0 0 40px;
+  max-width: 72ch;
+
+  strong {
+    color: #13364b;
+  }
+}
+
+.grid {
+  margin-bottom: 40px;
+  @include bordered-grid-base;
+  @include bordered-grid-cols-2;
+}
+
+.card {
+  @include grid-cell;
+  @include grid-cell-borders-2col;
+}
+
+.cardTitle {
+  @include cell-title;
+}
+
+.cardText {
+  @include cell-body;
+  margin-bottom: 12px;
+}
+
+.cardLink {
+  font-size: 0.9rem;
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.cta {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+
+  a {
+    color: #007acc;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}

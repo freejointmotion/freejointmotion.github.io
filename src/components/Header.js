@@ -1,36 +1,60 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from 'react-router';
-import * as styles from './Header.module.scss';
-import logo from '../img/freejointmotion_logo.svg';
-
-const implementedPages = ['/', '/about', '/sectors', '/knowledge'];
+import { NavLink } from "react-router";
+import * as styles from "./Header.module.scss";
+import logo from "../img/freejointmotion_logo.svg";
 
 const Header = () => {
-  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
 
-  const handleNavClick = (path) => {
-    if (!implementedPages.includes(path)) {
-      return;
-    }
-    setMenuOpen(false);  // Close the menu
-    navigate(path);      // Navigate to the path
-  };
+  const mainLinkClass = ({ isActive }) =>
+    isActive ? `${styles.link} ${styles.active}` : styles.link;
+
+  const subLinkClass = ({ isActive }) =>
+    isActive ? `${styles.subLink} ${styles.subActive}` : styles.subLink;
+
+  const menuLinkClass = ({ isActive }) =>
+    isActive ? `${styles.menuLink} ${styles.menuActive}` : styles.menuLink;
+
+  const contactBtnClass = ({ isActive }) =>
+    isActive ? `${styles.contactBtn} ${styles.contactBtnActive}` : styles.contactBtn;
+
+  const menuContactBtnClass = ({ isActive }) =>
+    isActive
+      ? `${styles.menuContactBtn} ${styles.menuContactBtnActive}`
+      : styles.menuContactBtn;
 
   return (
     <>
       <header className={styles.header}>
         <h1 className={styles.h1}>
-          <img className={styles.logo} src={logo} alt="Free Joint Motion" onClick={() => handleNavClick('/')} />
+          <NavLink to="/" onClick={closeMenu}>
+            <img className={styles.logo} src={logo} alt="Free Joint Motion" />
+          </NavLink>
         </h1>
 
-        <nav className={styles.nav}>
-          <NavLink className={styles.link} to="/" onClick={() => handleNavClick('/')}>Home</NavLink>
-          <NavLink className={styles.link} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
-          <NavLink className={styles.link} to="/sectors" onClick={() => handleNavClick('/sectors')}>Sectors</NavLink>
-          <NavLink className={styles.link} to="/knowledge" onClick={() => handleNavClick('/knowledge')}>Knowledge</NavLink>
-          <NavLink className={styles.link} to="/" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
-          <NavLink className={styles.link} to="/" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
+        <nav className={styles.nav} aria-label="Main">
+          <NavLink to="/" end className={mainLinkClass} onClick={closeMenu}>
+            Home
+          </NavLink>
+          <NavLink to="/about" className={mainLinkClass} onClick={closeMenu}>
+            About
+          </NavLink>
+          <NavLink to="/sectors" className={mainLinkClass} onClick={closeMenu}>
+            Sectors
+          </NavLink>
+          <NavLink to="/knowledge" className={mainLinkClass} onClick={closeMenu}>
+            Knowledge
+          </NavLink>
+          <NavLink to="/technologies" className={mainLinkClass} onClick={closeMenu}>
+            Technologies
+          </NavLink>
+          <NavLink to="/projects" className={mainLinkClass} onClick={closeMenu}>
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className={contactBtnClass} onClick={closeMenu}>
+            Contact
+          </NavLink>
         </nav>
 
         <div className={styles.menu}>
@@ -47,29 +71,63 @@ const Header = () => {
             <div className={styles.line}></div>
           </label>
 
-          <nav className={`${styles.menuNav} ${menuOpen ? styles.showMenu : ""}`}>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/')}>Home</NavLink>
-            <NavLink className={styles.menuLink} to="/about" onClick={() => handleNavClick('/about')}>About</NavLink>
-            <NavLink className={styles.menuLink} to="/sectors" onClick={() => handleNavClick('/sectors')}>Sectors</NavLink>
-            <NavLink className={styles.menuLink} to="/knowledge" onClick={() => handleNavClick('/knowledge')}>Knowledge</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/technologies')}>Technologies</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/projects')}>Projects</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/services')}>Services</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/news')}>News</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
-            <NavLink className={styles.menuLink} to="/" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
+          <nav
+            className={`${styles.menuNav} ${menuOpen ? styles.showMenu : ""}`}
+            aria-label="Mobile"
+          >
+            <NavLink to="/" end className={menuLinkClass} onClick={closeMenu}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={menuLinkClass} onClick={closeMenu}>
+              About
+            </NavLink>
+            <NavLink to="/sectors" className={menuLinkClass} onClick={closeMenu}>
+              Sectors
+            </NavLink>
+            <NavLink to="/knowledge" className={menuLinkClass} onClick={closeMenu}>
+              Knowledge
+            </NavLink>
+            <NavLink to="/technologies" className={menuLinkClass} onClick={closeMenu}>
+              Technologies
+            </NavLink>
+            <NavLink to="/projects" className={menuLinkClass} onClick={closeMenu}>
+              Projects
+            </NavLink>
+            <NavLink to="/services" className={menuLinkClass} onClick={closeMenu}>
+              Services
+            </NavLink>
+            <NavLink to="/news" className={menuLinkClass} onClick={closeMenu}>
+              News
+            </NavLink>
+            <NavLink to="/publications" className={menuLinkClass} onClick={closeMenu}>
+              Publications
+            </NavLink>
+            <NavLink to="/impact" className={menuLinkClass} onClick={closeMenu}>
+              Impact
+            </NavLink>
+            <div className={styles.menuCta}>
+              <NavLink to="/contact" className={menuContactBtnClass} onClick={closeMenu}>
+                Contact us
+              </NavLink>
+            </div>
           </nav>
         </div>
       </header>
 
       <header className={styles.subHeader}>
-        <nav className={styles.subNav}>
-          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/services')}>Services</NavLink>
-          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/news')}>News</NavLink>
-          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/publications')}>Publications</NavLink>
-          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/impact')}>Impact</NavLink>
-          <NavLink className={styles.subLink} to="/" onClick={() => handleNavClick('/contact')}>Contact</NavLink>
+        <nav className={styles.subNav} aria-label="Secondary">
+          <NavLink to="/services" className={subLinkClass} onClick={closeMenu}>
+            Services
+          </NavLink>
+          <NavLink to="/news" className={subLinkClass} onClick={closeMenu}>
+            News
+          </NavLink>
+          <NavLink to="/publications" className={subLinkClass} onClick={closeMenu}>
+            Publications
+          </NavLink>
+          <NavLink to="/impact" className={subLinkClass} onClick={closeMenu}>
+            Impact
+          </NavLink>
         </nav>
       </header>
     </>

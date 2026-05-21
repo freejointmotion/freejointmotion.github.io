@@ -1,0 +1,52 @@
+@use "../scss/research" as *;
+
+.grid {
+  margin-bottom: 40px;
+  @include bordered-grid-base;
+  @include bordered-grid-cols-2;
+}
+
+.card {
+  @include grid-cell;
+  @include grid-cell-borders-2col;
+}
+
+.cardTitle {
+  @include cell-title;
+}
+
+.cardText {
+  @include cell-body;
+}
+
+.quote {
+  @include statement;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: #444;
+    margin: 0;
+    font-style: italic;
+    max-width: 68ch;
+  }
+}
+
+.cta {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+
+  a {
+    color: #007acc;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}

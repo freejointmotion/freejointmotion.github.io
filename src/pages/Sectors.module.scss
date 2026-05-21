@@ -1,89 +1,214 @@
+@use "../scss/research" as *;
+
 .sectors {
-  background: #374c67;
-  color: white;
   min-height: 100vh;
-  padding-bottom: 40px;
-  padding-top: 80px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  padding: 110px 24px 52px;
+  background-color: #13364b;
+  background-image: linear-gradient(
+    135deg,
+    #13364b 0%,
+    #234861 45%,
+    #2a5570 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
-  .sectors {
-    padding-top: 130px;
+  .hero {
+    padding-top: 160px;
+    min-height: 440px;
   }
 }
 
-.bg {
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  background-image: url('../img/sectors.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 54, 75, 0.75) 0%,
+    rgba(19, 54, 75, 0.9) 100%
+  );
+  pointer-events: none;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding: 0 8px;
 }
 
-.title {
-  text-transform: uppercase;
+.eyebrow {
+  @include data-index;
+  color: #7ec8e8;
+}
+
+.heroTitle {
   font-family: Montserrat, sans-serif;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 300;
-  color: white;
-  margin-bottom: 20px;
+  color: #fff;
+  margin: 0 0 20px;
+  line-height: 1.15;
 }
 
-.description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color :white;
-  margin-bottom: 40px;
-  max-width: 620px;
+.heroLead {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.7;
+  color: #f0f4f8;
+  margin: 0;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+.body {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
 
-  @media (max-width: 768px) {
-    gap: 40px;
-    padding: 0 20px;
+@media (min-width: 768px) {
+  .body {
+    padding: 72px 40px 96px;
   }
 }
 
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #444;
+  margin: 0 0 40px;
+  max-width: 68ch;
+}
+
+.inlineLink {
+  color: #0066a8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover,
+  &:focus-visible {
+    color: #13364b;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+  }
+}
+
+.grid {
+  @include bordered-grid-base;
+  @include bordered-grid-cols-2;
+}
+
 .card {
-  background: #2b3f58;
-  border: 2px solid #007acc;
-  padding: 30px;
-  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  @include grid-cell;
+  @include grid-cell-borders-2col;
+}
 
-  @media (max-width: 768px) {
-    padding: 40px;
+.index {
+  @include data-index;
+}
+
+.cardTitle {
+  @include cell-title;
+  font-size: 1.2rem;
+}
+
+.cardSummary {
+  @include cell-body;
+  margin-bottom: 14px;
+}
+
+.cardFocus {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #5c6b7a;
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(19, 54, 75, 0.08);
+}
+
+.focusLabel {
+  font-weight: 600;
+  color: #13364b;
+}
+
+.footer {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(19, 54, 75, 0.12);
+  text-align: center;
+}
+
+.footerText {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 24px;
+}
+
+.footerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 3px;
   }
+}
 
-  h3 {
-    font-size: 1.8rem;
-    color: #007acc;
-    margin-bottom: 15px;
+.btnPrimary {
+  background: #f1c40f;
+  color: #332a04;
+
+  &:hover {
+    background: #e6b80a;
   }
+}
 
-  p {
-    font-size: 1rem;
-    // color: #666;
-    color: white;
-    line-height: 1.4;
+.btnSecondary {
+  background: #fff;
+  color: #13364b;
+  border: 1px solid #13364b;
+
+  &:hover {
+    background: #13364b;
+    color: #fff;
   }
+}
 
-  // &:hover {
-  //   transform: translateY(-5px);
-  // }
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 360px;
+    padding-top: 120px;
+  }
 }

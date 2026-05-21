@@ -11,7 +11,13 @@ const path = require('path');
     '/about',
     '/sectors',
     '/knowledge',
-    '/contact'
+    '/publications',
+    '/technologies',
+    '/projects',
+    '/services',
+    '/news',
+    '/impact',
+    '/contact',
   ];
 
   for (let route of routes) {

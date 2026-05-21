@@ -1,14 +1,338 @@
-.home {
-  text-align: center;
-  position: relative;
+@use "../scss/research" as *;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -100vh;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+// Vertical rhythm
+$section-pad: clamp(5rem, 12vw, 7.5rem);
+$inner-pad-x: clamp(1.5rem, 5vw, 3rem);
+$head-gap: clamp(2rem, 4vw, 3rem);
+
+.home {
+  background: #f4f4f4;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  padding: $section-pad $inner-pad-x;
+}
+
+.block + .block {
+  border-top: 1px solid rgba(19, 54, 75, 0.08);
+}
+
+.blockAccent {
+  background: #13364b;
+  border-top: none;
+}
+
+.blockCta {
+  background: #f4f4f4;
+  padding-bottom: clamp(6rem, 14vw, 9rem);
+}
+
+.inner,
+.innerNarrow,
+.innerWide {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.inner {
+  max-width: 52rem;
+}
+
+.innerNarrow {
+  max-width: 44rem;
+}
+
+.innerWide {
+  max-width: 72rem;
+}
+
+// Section headers
+.sectionHead {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto $head-gap;
+}
+
+.sectionHeadDark {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto $head-gap;
+
+  .eyebrow {
+    color: #7ec8e8;
+  }
+
+  .sectionTitle {
+    color: #fff;
+  }
+
+  .sectionLead {
+    color: #e8eef3;
+  }
+}
+
+.eyebrow {
+  @include data-index;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.65rem, 3.5vw, 2.35rem);
+  font-weight: 300;
+  color: #13364b;
+  margin: 0 0 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.sectionLead {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.75;
+  color: #4a5568;
+  margin: 0;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Featured (accent block)
+.projectMark {
+  @include project-mark-image;
+  margin: -0.75rem auto 1.25rem;
+}
+
+.featuredDetail {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #c5d4de;
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 3px;
+  }
+}
+
+.btnPrimary {
+  background: #f1c40f;
+  color: #332a04;
+
+  &:hover,
+  &:focus-visible {
+    background: #e6b80a;
+  }
+}
+
+.btnSecondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  &:hover,
+  &:focus-visible {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+// Pillars
+.pillarGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    gap: 0;
+    @include bordered-grid-base;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pillarCard {
+  background: #fff;
+  padding: 2rem 1.75rem;
+  border: 1px solid rgba(19, 54, 75, 0.1);
+
+  @media (min-width: 768px) {
+    border: none;
+    @include grid-cell;
+    @include grid-cell-borders-3col;
+    padding: 2.25rem 2rem;
+  }
+}
+
+.pillarIndex {
+  @include data-index;
+  margin-bottom: 0.75rem;
+}
+
+.pillarTitle {
+  @include cell-title;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.pillarText {
+  @include cell-body;
+  line-height: 1.7;
+}
+
+// Explore (sectors + knowledge)
+.exploreGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.explorePanel {
+  background: #fff;
+  border: 1px solid rgba(19, 54, 75, 0.12);
+  padding: clamp(2rem, 4vw, 2.75rem);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.exploreTitle {
+  @include cell-title;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+}
+
+.sectorList {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  flex: 1;
+}
+
+.sectorList li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.06);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sectorLink {
+  color: #13364b;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: #007acc;
+  }
+}
+
+.exploreText {
+  @include cell-body;
+  line-height: 1.75;
+  margin: 0 0 1.75rem;
+  flex: 1;
+}
+
+.textLink {
+  color: #007acc;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: auto;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+// CTA
+.ctaPanel {
+  background: #fff;
+  border: 1px solid rgba(19, 54, 75, 0.12);
+  padding: clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+
+  .sectionHead {
+    margin-bottom: 2rem;
+  }
+
+  .actions,
+  .btnPrimary {
+    margin-top: 0;
+  }
+}
+
+.ctaPanel .btnPrimary {
+  display: inline-block;
+}
+
+// First content block after hero — extra top space
+.block:first-of-type {
+  padding-top: clamp(5.5rem, 13vw, 8rem);
+}
+
+@media (max-width: 767px) {
+  .sectionHead,
+  .sectionHeadDark {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .sectionLead {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .featuredDetail {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .projectMark {
+    margin-left: 0;
   }
 }

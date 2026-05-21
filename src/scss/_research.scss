@@ -1,0 +1,147 @@
+// Editorial / research layout — sharp, minimal, no rounded “cards”
+// Use @use '../scss/research' as *; in page modules.
+// Place declarations before responsive mixins to avoid Sass mixed-decls warnings.
+
+@mixin section-heading {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 400;
+  color: #13364b;
+  margin: 0 0 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+@mixin data-index {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+@mixin cell-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #13364b;
+  margin: 0 0 10px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+@mixin cell-body {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #4a5568;
+  margin: 0;
+}
+
+// Declarations only — pair with bordered-grid-cols-* after other properties
+@mixin bordered-grid-base {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border: 1px solid rgba(19, 54, 75, 0.14);
+  background: #fff;
+}
+
+@mixin bordered-grid-cols-2 {
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@mixin bordered-grid-cols-3 {
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@mixin grid-cell {
+  padding: 28px 32px;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+}
+
+@mixin grid-cell-borders-2col {
+  @media (min-width: 700px) {
+    border-right: 1px solid rgba(19, 54, 75, 0.1);
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@mixin grid-cell-borders-3col {
+  @media (min-width: 900px) {
+    border-right: 1px solid rgba(19, 54, 75, 0.1);
+
+    &:nth-child(3n) {
+      border-right: none;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@mixin item-stack {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(19, 54, 75, 0.14);
+  background: #fff;
+}
+
+@mixin stack-item {
+  padding: 28px 32px;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@mixin statement {
+  margin: 0 0 48px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #007acc;
+  background: transparent;
+}
+
+@mixin panel-flat-base {
+  border: 1px solid rgba(19, 54, 75, 0.14);
+  background: #fff;
+  padding: 32px;
+}
+
+@mixin panel-flat-lg {
+  @media (min-width: 768px) {
+    padding: 48px 56px;
+  }
+}
+
+@mixin rule-divider {
+  border: none;
+  border-top: 1px solid rgba(19, 54, 75, 0.12);
+  margin: 48px 0;
+}
+
+@mixin project-mark-image {
+  display: block;
+  width: auto;
+  max-width: 156px;
+  max-height: 156px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.65;
+}

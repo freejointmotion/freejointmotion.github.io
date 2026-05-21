@@ -1,0 +1,69 @@
+.page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  padding: 100px 24px 48px;
+  background-color: #13364b;
+  background-image: linear-gradient(
+    135deg,
+    #13364b 0%,
+    #234861 50%,
+    #2a5570 100%
+  );
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 150px;
+    min-height: 400px;
+  }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 72, 97, 0.9);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 300;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.intro {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  margin: 0;
+  color: #f0f4f8;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.narrow {
+  max-width: 720px;
+}
