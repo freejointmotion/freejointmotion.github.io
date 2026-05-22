@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import PageShell from "../components/PageShell";
-import multiAxSysImage from "../img/Multi-Ax-Sys.png";
+import multiAxSysVideo720 from "url:../videos/x_web_720p.mp4";
+import multiAxSysVideo1080 from "url:../videos/x_web_1080p.mp4";
 import * as styles from "./Projects.module.scss";
 
 const features = [
@@ -35,16 +36,23 @@ const Projects = () => {
     >
       <article className={styles.project}>
         <p className={styles.eyebrow}>Flagship product</p>
-        <div className={styles.titleRow}>
-          <h3 className={styles.projectTitle}>Multi-Ax-Sys</h3>
-          <img
-            className={styles.projectMark}
-            src={multiAxSysImage}
-            alt=""
-            width={88}
-            height={66}
-            aria-hidden="true"
-          />
+        <h3 className={styles.projectTitle}>Multi-Ax-Sys</h3>
+
+        <div className={styles.projectVisual}>
+          <video
+            className={styles.projectVideo}
+            controls
+            playsInline
+            preload="metadata"
+            aria-label="Multi-Ax-Sys multi-axis foot motion concept"
+          >
+            <source
+              src={multiAxSysVideo1080}
+              type="video/mp4"
+              media="(min-width: 1024px)"
+            />
+            <source src={multiAxSysVideo720} type="video/mp4" />
+          </video>
         </div>
 
         <p className={styles.elevator}>

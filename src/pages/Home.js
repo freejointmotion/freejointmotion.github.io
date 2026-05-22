@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import HeroSection from "../components/HeroSection";
-import multiAxSysImage from "../img/Multi-Ax-Sys.png";
+import multiAxSysVideo720 from "url:../videos/x_web_720p.mp4";
+import multiAxSysVideo1080 from "url:../videos/x_web_1080p.mp4";
 import * as styles from "./Home.module.scss";
 
 const pillars = [
@@ -69,14 +70,22 @@ const Home = () => {
               title="Multi-Ax-Sys"
               lead="A semi-open exoskeleton that supports, guides, and resists specific human foot movements—minimizing negative external forces while enabling natural 3D motion."
             />
-            <img
+            <video
               className={styles.projectMark}
-              src={multiAxSysImage}
-              alt=""
-              width={88}
-              height={66}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
               aria-hidden="true"
-            />
+            >
+              <source
+                src={multiAxSysVideo1080}
+                type="video/mp4"
+                media="(min-width: 1024px)"
+              />
+              <source src={multiAxSysVideo720} type="video/mp4" />
+            </video>
             <p className={styles.featuredDetail}>
               Adjustable resistance and precise tracking enhance rehabilitation,
               training, and clinical research.

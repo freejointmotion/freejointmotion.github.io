@@ -103,8 +103,10 @@ $head-gap: clamp(2rem, 4vw, 3rem);
 
 // Featured (accent block)
 .projectMark {
-  @include project-mark-image;
+  @include project-mark-media;
   margin: -0.75rem auto 1.25rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .featuredDetail {

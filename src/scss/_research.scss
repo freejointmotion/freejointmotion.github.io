@@ -136,12 +136,16 @@
   margin: 48px 0;
 }
 
-@mixin project-mark-image {
+@mixin project-mark-media {
   display: block;
-  width: auto;
-  max-width: 156px;
-  max-height: 156px;
+  width: 100%;
+  max-width: 280px;
+  max-height: 280px;
   height: auto;
   object-fit: contain;
+}
+
+@mixin project-mark-image {
+  @include project-mark-media;
   opacity: 0.65;
 }

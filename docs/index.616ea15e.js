@@ -37586,8 +37586,10 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _heroSection = require("../components/HeroSection");
 var _heroSectionDefault = parcelHelpers.interopDefault(_heroSection);
-var _multiAxSysPng = require("../img/Multi-Ax-Sys.png");
-var _multiAxSysPngDefault = parcelHelpers.interopDefault(_multiAxSysPng);
+var _xWeb720PMp4 = require("url:../videos/x_web_720p.mp4");
+var _xWeb720PMp4Default = parcelHelpers.interopDefault(_xWeb720PMp4);
+var _xWeb1080PMp4 = require("url:../videos/x_web_1080p.mp4");
+var _xWeb1080PMp4Default = parcelHelpers.interopDefault(_xWeb1080PMp4);
 var _homeModuleScss = require("./Home.module.scss");
 const pillars = [
     {
@@ -37629,7 +37631,7 @@ const SectionHead = ({ eyebrow, title, lead, id, variant = "light" })=>/*#__PURE
                 children: eyebrow
             }, void 0, false, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37638,7 +37640,7 @@ const SectionHead = ({ eyebrow, title, lead, id, variant = "light" })=>/*#__PURE
                 children: title
             }, void 0, false, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 5
             }, undefined),
             lead && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37646,13 +37648,13 @@ const SectionHead = ({ eyebrow, title, lead, id, variant = "light" })=>/*#__PURE
                 children: lead
             }, void 0, false, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 14
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Home.js",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 3
     }, undefined);
 _c = SectionHead;
@@ -37662,7 +37664,7 @@ const Home = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroSectionDefault.default), {}, void 0, false, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -37680,17 +37682,17 @@ const Home = ()=>{
                                 lead: "Free Joint Motion LLC is an international company based in Weston, Florida, advancing biomechanical medical devices for sports medicine, injury prevention, and rehabilitation. Led by Professor Luis Commisso, we translate scientific knowledge into kinetic therapy innovations that respect human neurophysiology."
                             }, void 0, false, {
                                 fileName: "src/pages/Home.js",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -37707,19 +37709,39 @@ const Home = ()=>{
                                     lead: "A semi-open exoskeleton that supports, guides, and resists specific human foot movements\u2014minimizing negative external forces while enabling natural 3D motion."
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 65,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
                                     className: _homeModuleScss.projectMark,
-                                    src: (0, _multiAxSysPngDefault.default),
-                                    alt: "",
-                                    width: 88,
-                                    height: 66,
-                                    "aria-hidden": "true"
-                                }, void 0, false, {
+                                    autoPlay: true,
+                                    muted: true,
+                                    loop: true,
+                                    playsInline: true,
+                                    preload: "metadata",
+                                    "aria-hidden": "true",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                            src: (0, _xWeb1080PMp4Default.default),
+                                            type: "video/mp4",
+                                            media: "(min-width: 1024px)"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 82,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                            src: (0, _xWeb720PMp4Default.default),
+                                            type: "video/mp4"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 87,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 72,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37727,7 +37749,7 @@ const Home = ()=>{
                                     children: "Adjustable resistance and precise tracking enhance rehabilitation, training, and clinical research."
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 80,
+                                    lineNumber: 89,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37739,7 +37761,7 @@ const Home = ()=>{
                                             children: "View project"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 85,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -37748,24 +37770,24 @@ const Home = ()=>{
                                             children: "Our technology"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 88,
+                                            lineNumber: 97,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 84,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -37781,7 +37803,7 @@ const Home = ()=>{
                                     lead: "Three principles guide how we design systems, interpret movement, and partner with clinicians and researchers."
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 97,
+                                    lineNumber: 106,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -37796,7 +37818,7 @@ const Home = ()=>{
                                                         children: String(index + 1).padStart(2, "0")
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Home.js",
-                                                        lineNumber: 107,
+                                                        lineNumber: 116,
                                                         columnNumber: 21
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -37804,7 +37826,7 @@ const Home = ()=>{
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Home.js",
-                                                        lineNumber: 110,
+                                                        lineNumber: 119,
                                                         columnNumber: 21
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37812,34 +37834,34 @@ const Home = ()=>{
                                                         children: item.text
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Home.js",
-                                                        lineNumber: 111,
+                                                        lineNumber: 120,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/pages/Home.js",
-                                                lineNumber: 106,
+                                                lineNumber: 115,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, item.title, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 105,
+                                            lineNumber: 114,
                                             columnNumber: 17
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 103,
+                                    lineNumber: 112,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 96,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 95,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -37855,7 +37877,7 @@ const Home = ()=>{
                                     lead: "From clinical rehabilitation to competitive sport\u2014grounded in rigorous biomechanical and human-factors expertise."
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 121,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37869,7 +37891,7 @@ const Home = ()=>{
                                                     children: "Sectors we serve"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 129,
+                                                    lineNumber: 138,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -37881,17 +37903,17 @@ const Home = ()=>{
                                                                 children: sector.title
                                                             }, void 0, false, {
                                                                 fileName: "src/pages/Home.js",
-                                                                lineNumber: 133,
+                                                                lineNumber: 142,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, sector.title, false, {
                                                             fileName: "src/pages/Home.js",
-                                                            lineNumber: 132,
+                                                            lineNumber: 141,
                                                             columnNumber: 21
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 130,
+                                                    lineNumber: 139,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -37900,13 +37922,13 @@ const Home = ()=>{
                                                     children: "Explore all sectors"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 139,
+                                                    lineNumber: 148,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 128,
+                                            lineNumber: 137,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -37917,7 +37939,7 @@ const Home = ()=>{
                                                     children: "Knowledge areas"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 144,
+                                                    lineNumber: 153,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37925,7 +37947,7 @@ const Home = ()=>{
                                                     children: "Deep expertise in 3D anthropometry, human factors, digital health, user experience, and biomedical engineering\u2014applied to the relationship between the human body, products, and clinical environments."
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 145,
+                                                    lineNumber: 154,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -37934,30 +37956,30 @@ const Home = ()=>{
                                                     children: "View knowledge areas"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Home.js",
-                                                    lineNumber: 150,
+                                                    lineNumber: 159,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 143,
+                                            lineNumber: 152,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 127,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 120,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 119,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -37975,7 +37997,7 @@ const Home = ()=>{
                                         lead: "Collaborate on research, clinical validation, or device development for lower-limb kinetic therapy."
                                     }, void 0, false, {
                                         fileName: "src/pages/Home.js",
-                                        lineNumber: 161,
+                                        lineNumber: 170,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -37984,35 +38006,35 @@ const Home = ()=>{
                                         children: "Contact us"
                                     }, void 0, false, {
                                         fileName: "src/pages/Home.js",
-                                        lineNumber: 167,
+                                        lineNumber: 176,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/Home.js",
-                                lineNumber: 160,
+                                lineNumber: 169,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 159,
+                            lineNumber: 168,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 158,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Home.js",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -38027,7 +38049,7 @@ $RefreshReg$(_c1, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/HeroSection":"2i443","../img/Multi-Ax-Sys.png":"e3X2R","./Home.module.scss":"fWgHB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2i443":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/HeroSection":"2i443","url:../videos/x_web_720p.mp4":"h86pg","url:../videos/x_web_1080p.mp4":"fZZvo","./Home.module.scss":"fWgHB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2i443":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5e97 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38157,10 +38179,13 @@ module.exports["title"] = `sbFlKq_title`;
 },{}],"4s0XH":[function(require,module,exports,__globalThis) {
 module.exports = require("b8878b548ab55db4").getBundleURL('ej6rf') + "hero.c2e96e4a.mp4" + "?" + Date.now();
 
-},{"b8878b548ab55db4":"lgJ39"}],"e3X2R":[function(require,module,exports,__globalThis) {
-module.exports = require("38714babad0cd820").getBundleURL('ej6rf') + "Multi-Ax-Sys.f8c1529d.png" + "?" + Date.now();
+},{"b8878b548ab55db4":"lgJ39"}],"h86pg":[function(require,module,exports,__globalThis) {
+module.exports = require("953941b5c5424d25").getBundleURL('ej6rf') + "x_web_720p.c974cc3d.mp4" + "?" + Date.now();
 
-},{"38714babad0cd820":"lgJ39"}],"fWgHB":[function(require,module,exports,__globalThis) {
+},{"953941b5c5424d25":"lgJ39"}],"fZZvo":[function(require,module,exports,__globalThis) {
+module.exports = require("490c3b9e566bfa46").getBundleURL('ej6rf') + "x_web_1080p.042505ac.mp4" + "?" + Date.now();
+
+},{"490c3b9e566bfa46":"lgJ39"}],"fWgHB":[function(require,module,exports,__globalThis) {
 module.exports["actions"] = `OpkwbW_actions`;
 module.exports["block"] = `OpkwbW_block`;
 module.exports["blockAccent"] = `OpkwbW_blockAccent`;
@@ -39477,8 +39502,10 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _pageShell = require("../components/PageShell");
 var _pageShellDefault = parcelHelpers.interopDefault(_pageShell);
-var _multiAxSysPng = require("../img/Multi-Ax-Sys.png");
-var _multiAxSysPngDefault = parcelHelpers.interopDefault(_multiAxSysPng);
+var _xWeb720PMp4 = require("url:../videos/x_web_720p.mp4");
+var _xWeb720PMp4Default = parcelHelpers.interopDefault(_xWeb720PMp4);
+var _xWeb1080PMp4 = require("url:../videos/x_web_1080p.mp4");
+var _xWeb1080PMp4Default = parcelHelpers.interopDefault(_xWeb1080PMp4);
 var _projectsModuleScss = require("./Projects.module.scss");
 const features = [
     {
@@ -39510,36 +39537,52 @@ const Projects = ()=>{
                     children: "Flagship product"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 37,
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: _projectsModuleScss.projectTitle,
+                    children: "Multi-Ax-Sys"
+                }, void 0, false, {
+                    fileName: "src/pages/Projects.js",
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: _projectsModuleScss.titleRow,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                            className: _projectsModuleScss.projectTitle,
-                            children: "Multi-Ax-Sys"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: _projectsModuleScss.projectMark,
-                            src: (0, _multiAxSysPngDefault.default),
-                            alt: "",
-                            width: 88,
-                            height: 66,
-                            "aria-hidden": "true"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 40,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                    className: _projectsModuleScss.projectVisual,
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                        className: _projectsModuleScss.projectVideo,
+                        controls: true,
+                        playsInline: true,
+                        preload: "metadata",
+                        "aria-label": "Multi-Ax-Sys multi-axis foot motion concept",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                src: (0, _xWeb1080PMp4Default.default),
+                                type: "video/mp4",
+                                media: "(min-width: 1024px)"
+                            }, void 0, false, {
+                                fileName: "src/pages/Projects.js",
+                                lineNumber: 49,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                src: (0, _xWeb720PMp4Default.default),
+                                type: "video/mp4"
+                            }, void 0, false, {
+                                fileName: "src/pages/Projects.js",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/Projects.js",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 38,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39550,14 +39593,14 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 51,
+                            lineNumber: 59,
                             columnNumber: 27
                         }, undefined),
                         ": a revolutionary semi-open exoskeleton designed to support, guide, and resist specific human foot movements. Unlike other mechanisms, it minimizes negative external forces and allows for natural 3D motion. Ideal for orthopedists, sports medicine practitioners, and rehabilitation, it aids in neuroplasticity and improves lower leg and foot kinetic chain function. With adjustable resistance and precise motion tracking, it enhances training, rehabilitation, and research. The Multi-Ax-Sys empowers the foot, prevents injuries, and optimizes performance\u2014join us in revolutionizing lower limb motion."
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 50,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39568,34 +39611,34 @@ const Projects = ()=>{
                             children: "Overview"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 62,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "The Multi-Ax-Sys is a groundbreaking bio-functional exoskeleton designed to revolutionize lower-leg and foot rehabilitation. This unique mechanism allows for precise and customized support, guidance, and resistance for specific human foot movements. By incorporating multiple axes and sliding planes, it adapts instantaneously to dynamic changes in foot motion."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 63,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Unlike other existing mechanisms, it mitigates adverse effects caused by external counter-forces, ensuring the safety and effectiveness of rehabilitation and training. The Multi-Ax-Sys is not just a device, but a comprehensive solution for orthopedists, sports medicine practitioners, and researchers\u2014facilitating neuroplasticity and the reorganization of neurophysiology through movement education and re-education."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 70,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "By employing resistance modes such as isometric, isotonic, and natural isokinetic torque, the system optimizes endurance, corrects motion patterns, and enhances foot performance. It accommodates users' anatomical characteristics with precise control, and serves as a valuable tool for medical research and clinical trials with accurate 3D kinetic data for lower-leg and foot motion analysis."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 77,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 61,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39606,20 +39649,20 @@ const Projects = ()=>{
                             children: "Product description"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 87,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "The Multi-Ax-Sys is a state-of-the-art wearable device designed to follow lower limb movements. It incorporates sensors and actuators to optimize biomechanics and enhance performance while minimizing the risk of injuries."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 88,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 86,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -39627,7 +39670,7 @@ const Projects = ()=>{
                     children: "Key features & benefits"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 95,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -39641,7 +39684,7 @@ const Projects = ()=>{
                                         children: feature.title
                                     }, void 0, false, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 100,
+                                        lineNumber: 108,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39649,23 +39692,23 @@ const Projects = ()=>{
                                         children: feature.description
                                     }, void 0, false, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 101,
+                                        lineNumber: 109,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/Projects.js",
-                                lineNumber: 99,
+                                lineNumber: 107,
                                 columnNumber: 15
                             }, undefined)
                         }, feature.title, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 98,
+                            lineNumber: 106,
                             columnNumber: 13
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 96,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39673,7 +39716,7 @@ const Projects = ()=>{
                     children: "We envision a future where the Multi-Ax-Sys becomes a cornerstone of medical practice, transforming the lives of patients and athletes alike\u2014unlocking the full potential of lower-leg and foot rehabilitation and kinetic therapy."
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 107,
+                    lineNumber: 115,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39685,7 +39728,7 @@ const Projects = ()=>{
                             children: "Explore the technology"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 114,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -39694,24 +39737,24 @@ const Projects = ()=>{
                             children: "Partner with us"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 117,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 113,
+                    lineNumber: 121,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/Projects.js",
-            lineNumber: 36,
+            lineNumber: 37,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/Projects.js",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 };
@@ -39725,7 +39768,7 @@ $RefreshReg$(_c, "Projects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","../img/Multi-Ax-Sys.png":"e3X2R","./Projects.module.scss":"ieo5y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieo5y":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","url:../videos/x_web_720p.mp4":"h86pg","url:../videos/x_web_1080p.mp4":"fZZvo","./Projects.module.scss":"ieo5y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieo5y":[function(require,module,exports,__globalThis) {
 module.exports["actions"] = `eyAqFG_actions`;
 module.exports["elevator"] = `eyAqFG_elevator`;
 module.exports["eyebrow"] = `eyAqFG_eyebrow`;
@@ -39737,11 +39780,11 @@ module.exports["overview"] = `eyAqFG_overview`;
 module.exports["primaryBtn"] = `eyAqFG_primaryBtn`;
 module.exports["productBlock"] = `eyAqFG_productBlock`;
 module.exports["project"] = `eyAqFG_project`;
-module.exports["projectMark"] = `eyAqFG_projectMark`;
 module.exports["projectTitle"] = `eyAqFG_projectTitle`;
+module.exports["projectVideo"] = `eyAqFG_projectVideo`;
+module.exports["projectVisual"] = `eyAqFG_projectVisual`;
 module.exports["secondaryBtn"] = `eyAqFG_secondaryBtn`;
 module.exports["sectionLabel"] = `eyAqFG_sectionLabel`;
-module.exports["titleRow"] = `eyAqFG_titleRow`;
 module.exports["vision"] = `eyAqFG_vision`;
 
 },{}],"3Lyxx":[function(require,module,exports,__globalThis) {
@@ -39906,6 +39949,12 @@ var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4 = require("url:../videos/
 var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4Default = parcelHelpers.interopDefault(_fatigueFootRelatedAccidentFootballMatchWeb720PMp4);
 var _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4 = require("url:../videos/ignoring the basis of human Neurophysiological responses_web_720p.mp4");
 var _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4Default = parcelHelpers.interopDefault(_ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4);
+var _biomeccanicaDellaCavigliaCopertinaJpg = require("../img/Biomeccanica-della-caviglia-Copertina.jpg");
+var _biomeccanicaDellaCavigliaCopertinaJpgDefault = parcelHelpers.interopDefault(_biomeccanicaDellaCavigliaCopertinaJpg);
+var _tibiaDorsiCalfMachinePng = require("../img/Tibia Dorsi Calf Machine.png");
+var _tibiaDorsiCalfMachinePngDefault = parcelHelpers.interopDefault(_tibiaDorsiCalfMachinePng);
+var _tibiaDorsiCalfMachine2Png = require("../img/Tibia Dorsi Calf Machine 2.png");
+var _tibiaDorsiCalfMachine2PngDefault = parcelHelpers.interopDefault(_tibiaDorsiCalfMachine2Png);
 const observations = [
     {
         id: "fatigue-foot-failure",
@@ -39930,6 +39979,47 @@ const observations = [
             "From a human-factors and rehabilitation-science perspective, externally cued negative bias can reinforce maladaptive coordination if it is not calibrated to what the neuromuscular system can reliably process at that moment. Effective intervention should align cueing with measurable neurophysiological readiness, not with assumptions about compliance or effort alone."
         ],
         video: (0, _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4Default.default)
+    },
+    {
+        id: "foot-biomechanics-x-framework",
+        category: "Biomechanics \xb7 Conceptual Framework",
+        title: 'The "X" Framework: Constrained Ankle Machines vs. Natural Foot Function and Free Movement',
+        summary: "A visual contrast\u2014four paired endpoints on an X\u2014juxtaposing rigid, single-plane training devices with authentic foot biomechanics and unconstrained human movement.",
+        body: [
+            "Look closely: the whole composition reads like the letter X, with images arranged two-by-two at each extremity of its arms. Two arms depict limiting, mechanistic paths; the other two express (1) how the foot actually works as an integrated biomechanical system, and (2) what free, natural movement looks like when the lower limb is not forced into artificial constraints.",
+            "On the problematic side, commercial seated tibia dorsi / tibialis-trainer machines\u2014such as the Bells of Steel Tibialis Trainer Machine and similar products\u2014typify a flawed model of ankle\u2013foot training. They lock the foot on a platform, load dorsiflexion and plantarflexion in a single open-chain plane, and treat the foot\u2013ankle complex as a simple hinge. That design cannot reproduce the coupled motion of the talocrural and subtalar joints, the peroneal mortise widening during dorsiflexion, intrinsic foot control of the medial arch, or the windlass mechanism that stiffens the forefoot during push-off.",
+            "Such devices disconnect strengthening from gait: they generate force vectors and timing that differ from ground reaction during walking, offer no meaningful pronation\u2013supination or multi-axis resistance, and bypass the neurophysiological sequencing described in gait analysis\u2014from eccentric tibialis anterior activity at initial contact through triceps surae power generation in terminal stance. They are convenient for isolated muscle loading, but poor substitutes for educating the motor system that must control the foot in three dimensions under fatigue and variable surfaces.",
+            "The constructive side of the X aligns with evidence-based ankle and foot biomechanics: the foot evolved from a flexible grasping structure into a rigid lever that transmits triceps surae force to the ground; the talocrural and subtalar joints govern most clinically relevant motion; blocking subtalar function shifts stress proximally and distally; and authentic locomotion depends on six gait determinants that keep the center of gravity on a smooth sinusoidal path. Free movement is not a single-plane repetition\u2014it is coordinated, multi-axis, and context-dependent."
+        ],
+        heroImage: {
+            src: (0, _biomeccanicaDellaCavigliaCopertinaJpgDefault.default),
+            alt: "Ankle and foot biomechanics \u2014 evolution of the foot through walking (Formative Zone)",
+            caption: "Reference imagery from Formative Zone on ankle biomechanics, foot evolution, and the six determinants of gait."
+        },
+        images: [
+            {
+                src: (0, _tibiaDorsiCalfMachinePngDefault.default),
+                alt: "Seated tibia dorsi calf machine \u2014 single-plane open-chain ankle loading",
+                caption: "Typical seated dorsiflexion machine: foot fixed, motion reduced to one plane."
+            },
+            {
+                src: (0, _tibiaDorsiCalfMachine2PngDefault.default),
+                alt: "Tibia dorsi calf machine side view showing constrained foot placement",
+                caption: "The same class of device\u2014unable to train subtalar coupling or gait-specific force paths."
+            }
+        ],
+        references: [
+            {
+                label: "Biomeccanica della caviglia: dall\u2019evoluzione del piede al gesto di camminare (Formative Zone)",
+                url: "https://www.formativezone.it/biomeccanica-della-caviglia-dallevoluzione-del-piede-al-gesto-di-camminare/",
+                note: "Italian-language reference on ankle evolution, foot leverage, and the six determinants of gait."
+            },
+            {
+                label: "Example of a problematic commercial product (Bells of Steel Tibialis Trainer Machine)",
+                url: "https://bellsofsteel.us/products/tibialis-trainer-machine",
+                note: "Illustrative only\u2014representative of single-axis dorsiflexion trainers, not an endorsement."
+            }
+        ]
     }
 ];
 const Publications = ()=>{
@@ -39944,7 +40034,7 @@ const Publications = ()=>{
                         children: "Real-World Movement and Rehabilitation Insights"
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 39,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39952,13 +40042,13 @@ const Publications = ()=>{
                         children: "Documented field observations from biomechanics and rehabilitation practice\u2014 short-form analyses of movement failure, clinical cueing, and the neurophysiological basis of motor control under real-world conditions."
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 41,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 38,
+                lineNumber: 88,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39971,31 +40061,105 @@ const Publications = ()=>{
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: _publicationsModuleScss.media,
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                        className: _publicationsModuleScss.video,
-                                        controls: true,
-                                        playsInline: true,
-                                        preload: "metadata",
-                                        "aria-label": item.title,
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                                src: item.video,
-                                                type: "video/mp4"
-                                            }, void 0, false, {
-                                                fileName: "src/pages/Publications.js",
-                                                lineNumber: 64,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            "Your browser does not support the video tag."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/pages/Publications.js",
-                                        lineNumber: 57,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
+                                    children: [
+                                        item.video && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                            className: _publicationsModuleScss.video,
+                                            autoPlay: true,
+                                            muted: true,
+                                            loop: true,
+                                            playsInline: true,
+                                            preload: "auto",
+                                            "aria-label": item.title,
+                                            children: [
+                                                item.videoHd && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                                    src: item.videoHd,
+                                                    type: "video/mp4",
+                                                    media: "(min-width: 1024px)"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 118,
+                                                    columnNumber: 23
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                                    src: item.video,
+                                                    type: "video/mp4"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 124,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                "Your browser does not support the video tag."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/Publications.js",
+                                            lineNumber: 108,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        item.heroImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                            className: _publicationsModuleScss.heroFigure,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: _publicationsModuleScss.heroImage,
+                                                    src: item.heroImage.src,
+                                                    alt: item.heroImage.alt,
+                                                    loading: "lazy"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 131,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                item.heroImage.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                                    className: _publicationsModuleScss.caption,
+                                                    children: item.heroImage.caption
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 138,
+                                                    columnNumber: 23
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/Publications.js",
+                                            lineNumber: 130,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        item.images?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: `${_publicationsModuleScss.imageGrid} ${item.heroImage ? _publicationsModuleScss.imageGridBelow : ""}`,
+                                            children: item.images.map((image)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                                    className: _publicationsModuleScss.figure,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                            className: _publicationsModuleScss.image,
+                                                            src: image.src,
+                                                            alt: image.alt,
+                                                            loading: "lazy"
+                                                        }, void 0, false, {
+                                                            fileName: "src/pages/Publications.js",
+                                                            lineNumber: 153,
+                                                            columnNumber: 25
+                                                        }, undefined),
+                                                        image.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                                            className: _publicationsModuleScss.caption,
+                                                            children: image.caption
+                                                        }, void 0, false, {
+                                                            fileName: "src/pages/Publications.js",
+                                                            lineNumber: 160,
+                                                            columnNumber: 27
+                                                        }, undefined)
+                                                    ]
+                                                }, image.alt, true, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 152,
+                                                    columnNumber: 23
+                                                }, undefined))
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Publications.js",
+                                            lineNumber: 146,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 56,
+                                    lineNumber: 106,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40006,7 +40170,7 @@ const Publications = ()=>{
                                             children: item.category
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 70,
+                                            lineNumber: 171,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -40014,7 +40178,7 @@ const Publications = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 71,
+                                            lineNumber: 172,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40022,7 +40186,7 @@ const Publications = ()=>{
                                             children: item.summary
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 72,
+                                            lineNumber: 173,
                                             columnNumber: 17
                                         }, undefined),
                                         item.body.map((paragraph, pIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40030,35 +40194,87 @@ const Publications = ()=>{
                                                 children: paragraph
                                             }, pIndex, false, {
                                                 fileName: "src/pages/Publications.js",
-                                                lineNumber: 74,
+                                                lineNumber: 175,
                                                 columnNumber: 19
-                                            }, undefined))
+                                            }, undefined)),
+                                        item.references?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: _publicationsModuleScss.references,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                    className: _publicationsModuleScss.referencesTitle,
+                                                    children: "References"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 182,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                    className: _publicationsModuleScss.referenceList,
+                                                    children: item.references.map((ref)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            className: _publicationsModuleScss.referenceItem,
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    className: _publicationsModuleScss.referenceLink,
+                                                                    href: ref.url,
+                                                                    target: "_blank",
+                                                                    rel: "noopener noreferrer",
+                                                                    children: ref.label
+                                                                }, void 0, false, {
+                                                                    fileName: "src/pages/Publications.js",
+                                                                    lineNumber: 186,
+                                                                    columnNumber: 27
+                                                                }, undefined),
+                                                                ref.note && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                    className: _publicationsModuleScss.referenceNote,
+                                                                    children: ref.note
+                                                                }, void 0, false, {
+                                                                    fileName: "src/pages/Publications.js",
+                                                                    lineNumber: 195,
+                                                                    columnNumber: 29
+                                                                }, undefined)
+                                                            ]
+                                                        }, ref.url, true, {
+                                                            fileName: "src/pages/Publications.js",
+                                                            lineNumber: 185,
+                                                            columnNumber: 25
+                                                        }, undefined))
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Publications.js",
+                                                    lineNumber: 183,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/Publications.js",
+                                            lineNumber: 181,
+                                            columnNumber: 19
+                                        }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 69,
+                                    lineNumber: 170,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Publications.js",
-                            lineNumber: 55,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, undefined)
                     }, item.id, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 50,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 48,
+                lineNumber: 98,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Publications.js",
-        lineNumber: 37,
+        lineNumber: 87,
         columnNumber: 5
     }, undefined);
 };
@@ -40072,11 +40288,18 @@ $RefreshReg$(_c, "Publications");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","url:../videos/ignoring the basis of human Neurophysiological responses_web_720p.mp4":"19Peu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","url:../videos/ignoring the basis of human Neurophysiological responses_web_720p.mp4":"19Peu","../img/Biomeccanica-della-caviglia-Copertina.jpg":"Jh9lI","../img/Tibia Dorsi Calf Machine.png":"bhMlB","../img/Tibia Dorsi Calf Machine 2.png":"croFM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
 module.exports["body"] = `jhcZbW_body`;
+module.exports["caption"] = `jhcZbW_caption`;
 module.exports["category"] = `jhcZbW_category`;
 module.exports["content"] = `jhcZbW_content`;
+module.exports["figure"] = `jhcZbW_figure`;
 module.exports["hero"] = `jhcZbW_hero`;
+module.exports["heroFigure"] = `jhcZbW_heroFigure`;
+module.exports["heroImage"] = `jhcZbW_heroImage`;
+module.exports["image"] = `jhcZbW_image`;
+module.exports["imageGrid"] = `jhcZbW_imageGrid`;
+module.exports["imageGridBelow"] = `jhcZbW_imageGridBelow`;
 module.exports["intro"] = `jhcZbW_intro`;
 module.exports["list"] = `jhcZbW_list`;
 module.exports["media"] = `jhcZbW_media`;
@@ -40085,6 +40308,12 @@ module.exports["observationAlt"] = `jhcZbW_observationAlt`;
 module.exports["observationInner"] = `jhcZbW_observationInner`;
 module.exports["observationTitle"] = `jhcZbW_observationTitle`;
 module.exports["publications"] = `jhcZbW_publications`;
+module.exports["referenceItem"] = `jhcZbW_referenceItem`;
+module.exports["referenceLink"] = `jhcZbW_referenceLink`;
+module.exports["referenceList"] = `jhcZbW_referenceList`;
+module.exports["referenceNote"] = `jhcZbW_referenceNote`;
+module.exports["references"] = `jhcZbW_references`;
+module.exports["referencesTitle"] = `jhcZbW_referencesTitle`;
 module.exports["summary"] = `jhcZbW_summary`;
 module.exports["title"] = `jhcZbW_title`;
 module.exports["video"] = `jhcZbW_video`;
@@ -40095,7 +40324,16 @@ module.exports = require("a287120ecdd4414f").getBundleURL('ej6rf') + "fatigue-fo
 },{"a287120ecdd4414f":"lgJ39"}],"19Peu":[function(require,module,exports,__globalThis) {
 module.exports = require("c497b0856155b985").getBundleURL('ej6rf') + "ignoring the basis of human Neurophysiological responses_web_720p.baccdb2f.mp4" + "?" + Date.now();
 
-},{"c497b0856155b985":"lgJ39"}],"bQXlR":[function(require,module,exports,__globalThis) {
+},{"c497b0856155b985":"lgJ39"}],"Jh9lI":[function(require,module,exports,__globalThis) {
+module.exports = require("ecdef73ac2fb6357").getBundleURL('ej6rf') + "Biomeccanica-della-caviglia-Copertina.366e8b56.jpg" + "?" + Date.now();
+
+},{"ecdef73ac2fb6357":"lgJ39"}],"bhMlB":[function(require,module,exports,__globalThis) {
+module.exports = require("aa910f7e418e3da8").getBundleURL('ej6rf') + "Tibia Dorsi Calf Machine.86469361.png" + "?" + Date.now();
+
+},{"aa910f7e418e3da8":"lgJ39"}],"croFM":[function(require,module,exports,__globalThis) {
+module.exports = require("be191fc58ed5a93b").getBundleURL('ej6rf') + "Tibia Dorsi Calf Machine 2.20a81a84.png" + "?" + Date.now();
+
+},{"be191fc58ed5a93b":"lgJ39"}],"bQXlR":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e32c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

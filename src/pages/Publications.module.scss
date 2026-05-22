@@ -85,6 +85,23 @@
   .body {
     color: rgba(255, 255, 255, 0.92);
   }
+
+  .caption,
+  .referenceNote {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .references {
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .referencesTitle {
+    color: #f1c40f;
+  }
+
+  .referenceLink {
+    color: #7ec8e8;
+  }
 }
 
 .observationInner {
@@ -110,6 +127,100 @@
   border-radius: 12px;
   background: #0a1620;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.heroFigure {
+  margin: 0;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.imageGridBelow {
+  margin-top: 20px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.figure {
+  margin: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.caption {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+.references {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(19, 54, 75, 0.12);
+}
+
+.referencesTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #13364b;
+  margin: 0 0 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.referenceList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.referenceItem {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.referenceLink {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.referenceNote {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
 }
 
 .content {
