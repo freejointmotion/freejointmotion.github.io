@@ -145,6 +145,45 @@
   }
 }
 
+.patentMeta {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.patentMetaRow {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 8px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.08);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.patentMetaLabel {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.patentMetaValue {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #333;
+}
+
 .patentAbstract {
   margin: 20px 0 24px;
   padding: 20px 24px;

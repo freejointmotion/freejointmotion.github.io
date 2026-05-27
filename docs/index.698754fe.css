@@ -1782,6 +1782,47 @@
   font-style: normal;
 }
 
+.eyAqFG_patentMeta {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.eyAqFG_patentMetaRow {
+  border-bottom: 1px solid #13364b14;
+  grid-template-columns: 10rem 1fr;
+  gap: 8px 16px;
+  padding: 10px 0;
+  display: grid;
+}
+
+.eyAqFG_patentMetaRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media (width <= 600px) {
+  .eyAqFG_patentMetaRow {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.eyAqFG_patentMetaLabel {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin: 0;
+  font-size: .82rem;
+  font-weight: 600;
+}
+
+.eyAqFG_patentMetaValue {
+  color: #333;
+  margin: 0;
+  font-size: .98rem;
+  line-height: 1.5;
+}
+
 .eyAqFG_patentAbstract {
   background: #f8fafc;
   border: 1px solid #13364b1a;

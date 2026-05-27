@@ -29,7 +29,7 @@ const HeroSection = () => {
       </video>
       <div className={styles.bg}></div>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>Movement without limits. Performance without External Biases.</h1>
+        <h1 className={styles.title}>Movement without limits. Performance: Minimizing external biases.</h1>
         <p className={styles.subtitle}>Innovating biomechanical medical devices for rehabilitation and performance.</p>
         <button className={styles.cta} onClick={ctaClick}>Learn More</button>
       </div>

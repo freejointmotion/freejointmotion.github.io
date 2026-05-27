@@ -52,7 +52,7 @@ const Home = () => {
             <SectionHead
               id="home-intro"
               eyebrow="Who we are"
-              title="Movement without limits. Performance without external biases."
+              title="Movement without limits. Performance: Minimizing external biases."
               lead="Free Joint Motion LLC is an international company based in Weston, Florida, advancing biomechanical medical devices for sports medicine, injury prevention, and rehabilitation. Led by Professor Luis Commisso, we translate scientific knowledge into kinetic therapy innovations that respect human neurophysiology."
             />
           </div>
@@ -68,7 +68,7 @@ const Home = () => {
               variant="dark"
               eyebrow="Flagship innovation"
               title="Multi-Ax-Sys"
-              lead="A semi-open exoskeleton that supports, guides, and resists specific human foot movements—minimizing negative external forces while enabling natural 3D motion."
+              lead="A semi-open exoskeleton that supports, guides, and resists natural foot motion or gestures—minimizing negative external forces while enabling multi-planar motion."
             />
             <video
               className={styles.projectMark}
