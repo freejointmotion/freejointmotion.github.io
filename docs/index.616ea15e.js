@@ -39502,11 +39502,33 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _pageShell = require("../components/PageShell");
 var _pageShellDefault = parcelHelpers.interopDefault(_pageShell);
-var _xWeb720PMp4 = require("url:../videos/x_web_720p.mp4");
-var _xWeb720PMp4Default = parcelHelpers.interopDefault(_xWeb720PMp4);
-var _xWeb1080PMp4 = require("url:../videos/x_web_1080p.mp4");
-var _xWeb1080PMp4Default = parcelHelpers.interopDefault(_xWeb1080PMp4);
+var _multiAxSysWeb720PMp4 = require("url:../videos/multi-ax-sys_web_720p.mp4");
+var _multiAxSysWeb720PMp4Default = parcelHelpers.interopDefault(_multiAxSysWeb720PMp4);
+var _us20050239611A120051027D00001Jpg = require("../img/US20050239611A1-20051027-D00001.jpg");
+var _us20050239611A120051027D00001JpgDefault = parcelHelpers.interopDefault(_us20050239611A120051027D00001Jpg);
+var _us20050239611A120051027D00002Jpg = require("../img/US20050239611A1-20051027-D00002.jpg");
+var _us20050239611A120051027D00002JpgDefault = parcelHelpers.interopDefault(_us20050239611A120051027D00002Jpg);
+var _us20050239611A120051027D00003Jpg = require("../img/US20050239611A1-20051027-D00003.jpg");
+var _us20050239611A120051027D00003JpgDefault = parcelHelpers.interopDefault(_us20050239611A120051027D00003Jpg);
+var _us20050239611A120051027D00004Jpg = require("../img/US20050239611A1-20051027-D00004.jpg");
+var _us20050239611A120051027D00004JpgDefault = parcelHelpers.interopDefault(_us20050239611A120051027D00004Jpg);
 var _projectsModuleScss = require("./Projects.module.scss");
+var _mba741Team1PresentationPptx = require("url:../../public/documents/mba-741-team-1-presentation.pptx");
+var _mba741Team1PresentationPptxDefault = parcelHelpers.interopDefault(_mba741Team1PresentationPptx);
+var _mba741Team1ConsultingReportDocx = require("url:../../public/documents/mba-741-team-1-consulting-report.docx");
+var _mba741Team1ConsultingReportDocxDefault = parcelHelpers.interopDefault(_mba741Team1ConsultingReportDocx);
+var _mba741Team3PresentationPptx = require("url:../../public/documents/mba-741-team-3-presentation.pptx");
+var _mba741Team3PresentationPptxDefault = parcelHelpers.interopDefault(_mba741Team3PresentationPptx);
+var _mba741Team3FinalReportDocx = require("url:../../public/documents/mba-741-team-3-final-report.docx");
+var _mba741Team3FinalReportDocxDefault = parcelHelpers.interopDefault(_mba741Team3FinalReportDocx);
+const MBA_DOCUMENTS = {
+    team1Presentation: (0, _mba741Team1PresentationPptxDefault.default),
+    team1Report: (0, _mba741Team1ConsultingReportDocxDefault.default),
+    team3Presentation: (0, _mba741Team3PresentationPptxDefault.default),
+    team3Report: (0, _mba741Team3FinalReportDocxDefault.default)
+};
+const PATENT_URL = "https://patents.google.com/patent/US20050239611A1/en";
+const PATENT_ABSTRACT = "An exercise assembly structured to direct the foot-ankle-leg, knee, etc. and associated portions of a person's body through a plurality of different paths of movement, wherein each path of movement comprises an at least partially different configuration such that exercise resulting from the various movements will be concentrated on predetermined portions of the body being exercised. The platform is suspended by a support assembly interconnected to a base and is preferably, but not exclusively, directed through the aforementioned paths of movement manually by the user. A sensor assembly including a processor may determine and store selected movements of the platform for graphical or other visual display to the user and for programmed duplication of the sensed paths movement when desired. A weight assembly including at least one but preferably a plurality of different weights are interconnected to the platform and extend outwardly therefrom to provide additional resistive forces to the user's foot, ankle, and leg as they are exercised.";
 const features = [
     {
         title: "Enhanced Lower Limb Function",
@@ -39525,6 +39547,78 @@ const features = [
         description: "Adjustable for rehabilitation, sports training, clinical research, and daily functional applications."
     }
 ];
+const developmentTimeline = [
+    {
+        period: "2005\u20132006",
+        detail: "U.S. patent published October 27, 2005 and issued in 2006 for the Leg-Ankle-Foot Exercise Assembly (inventor: Luis Alberto Commisso)\u2014a user-driven platform guiding the foot, ankle, and lower leg through multiple paths of movement with adjustable resistance."
+    },
+    {
+        period: "2019\u20132021",
+        detail: "First prototype entered IRB-reviewed validation pathways at the University of Miami and drew clinical research interest from additional universities in the United States and abroad."
+    },
+    {
+        period: "2021\u20132023",
+        detail: "Renewed mechanical design and engineering enhancements to the Multi-Ax-Sys platform, refining multi-axis control, selective axis locking, and data capture for 3-D foot\u2013ankle\u2013knee kinematics."
+    }
+];
+const patentFigures = [
+    {
+        src: (0, _us20050239611A120051027D00001JpgDefault.default),
+        alt: "Patent Fig. 1 \u2014 leg-ankle-foot exercise assembly with multi-axis movement path",
+        caption: "Fig. 1 \u2014 Foot platform, support assembly, adjustable weights, and rotational path of movement."
+    },
+    {
+        src: (0, _us20050239611A120051027D00002JpgDefault.default),
+        alt: "Patent Figs. 2\u20135 \u2014 side and front views of the exercise assembly",
+        caption: "Figs. 2\u20135 \u2014 Side profile and front views showing tilt, dorsiflexion, and resistive loading."
+    },
+    {
+        src: (0, _us20050239611A120051027D00003JpgDefault.default),
+        alt: "Patent Figs. 6\u20138 \u2014 three-dimensional exercise paths",
+        caption: "Figs. 6\u20138 \u2014 Configured paths of movement (figure-eight, vertical loop, and angled rotation)."
+    },
+    {
+        src: (0, _us20050239611A120051027D00004JpgDefault.default),
+        alt: "Patent Figs. 9\u201311 \u2014 sensor assembly, axes, and processor display",
+        caption: "Figs. 9\u201311 \u2014 Sensor assembly on X, Y, and Z axes with processor and visual display."
+    }
+];
+const validationPartners = [
+    {
+        name: "University of Miami",
+        detail: "The first prototype was reviewed under an institutional validation protocol in the Department of Kinesiology and Sport Sciences (Dr. Joseph F. Signorile, Ph.D.). University correspondence described the device as capable of measuring kinetics along the central axes of the ankle and supporting diagnosis and training with three-dimensional motion tracking. Expanded multi-site trials are planned pending research funding."
+    },
+    {
+        name: "University of Saint Augustine for Health Sciences",
+        detail: "Director of Research Vibhor Agrawal, Ph.D. (Miami, FL) engaged in 2021 to review the technology and explore future collaboration on device characterization and clinical research."
+    },
+    {
+        name: "Suffolk University \u2014 MBA Experiential Intensive",
+        detail: "Multiple MBA 741 student teams completed capstone business analyses for Free Joint Motion through The Austral Group, covering market entry, sports-medicine device landscape, FDA considerations, and strategic partnerships (2022).",
+        documents: [
+            {
+                label: "MBA 741 Team 1 \u2014 market analysis and recommendations (presentation)",
+                href: MBA_DOCUMENTS.team1Presentation
+            },
+            {
+                label: "MBA 741 Team 1 \u2014 consulting report",
+                href: MBA_DOCUMENTS.team1Report
+            },
+            {
+                label: "MBA 741 Team 3 \u2014 U.S. market entry and competitive landscape (presentation)",
+                href: MBA_DOCUMENTS.team3Presentation
+            },
+            {
+                label: "MBA 741 Team 3 \u2014 final report",
+                href: MBA_DOCUMENTS.team3Report
+            }
+        ]
+    },
+    {
+        name: "Henley Business School \u2014 Executive MBA",
+        detail: "Joint global mission engagement connecting international executive leadership with the Multi-Ax-Sys roadmap."
+    }
+];
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pageShellDefault.default), {
         title: "Projects",
@@ -39537,7 +39631,7 @@ const Projects = ()=>{
                     children: "Flagship product"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 38,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -39545,7 +39639,7 @@ const Projects = ()=>{
                     children: "Multi-Ax-Sys"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 39,
+                    lineNumber: 144,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39555,168 +39649,449 @@ const Projects = ()=>{
                         controls: true,
                         playsInline: true,
                         preload: "metadata",
-                        "aria-label": "Multi-Ax-Sys multi-axis foot motion concept",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                src: (0, _xWeb1080PMp4Default.default),
-                                type: "video/mp4",
-                                media: "(min-width: 1024px)"
-                            }, void 0, false, {
-                                fileName: "src/pages/Projects.js",
-                                lineNumber: 49,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                src: (0, _xWeb720PMp4Default.default),
-                                type: "video/mp4"
-                            }, void 0, false, {
-                                fileName: "src/pages/Projects.js",
-                                lineNumber: 54,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                        "aria-label": "Multi-Ax-Sys device demonstration",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                            src: (0, _multiAxSysWeb720PMp4Default.default),
+                            type: "video/mp4"
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 154,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/pages/Projects.js",
-                        lineNumber: 42,
+                        lineNumber: 147,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 41,
+                    lineNumber: 146,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: _projectsModuleScss.elevator,
                     children: [
-                        "Introducing the ",
+                        "The ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
                             children: "Multi-Ax-Sys"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 59,
-                            columnNumber: 27
+                            lineNumber: 159,
+                            columnNumber: 15
                         }, undefined),
-                        ": a revolutionary semi-open exoskeleton designed to support, guide, and resist specific human foot movements. Unlike other mechanisms, it minimizes negative external forces and allows for natural 3D motion. Ideal for orthopedists, sports medicine practitioners, and rehabilitation, it aids in neuroplasticity and improves lower leg and foot kinetic chain function. With adjustable resistance and precise motion tracking, it enhances training, rehabilitation, and research. The Multi-Ax-Sys empowers the foot, prevents injuries, and optimizes performance\u2014join us in revolutionizing lower limb motion."
+                        " is a semi-open, multi-axis leg\u2013ankle\u2013foot system designed to support, guide, and resist specific human foot movements\u2014minimizing inappropriate external forces while enabling natural three-dimensional motion. Built on decades of biomechanical research and a foundational U.S. patent, it targets strengthening, rehabilitation, and clinical assessment of the lower limb kinetic chain."
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 58,
+                    lineNumber: 158,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: _projectsModuleScss.overview,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    className: _projectsModuleScss.section,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            className: _projectsModuleScss.sectionLabel,
+                            children: "Development timeline"
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 167,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+                            className: _projectsModuleScss.timeline,
+                            children: developmentTimeline.map((entry)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: _projectsModuleScss.timelineItem,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: _projectsModuleScss.timelinePeriod,
+                                            children: entry.period
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 171,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _projectsModuleScss.timelineDetail,
+                                            children: entry.detail
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 172,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, entry.period, true, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 170,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 168,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/Projects.js",
+                    lineNumber: 166,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    className: _projectsModuleScss.section,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            className: _projectsModuleScss.sectionLabel,
+                            children: "Patent foundation"
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 179,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _projectsModuleScss.body,
+                            children: [
+                                "The core technology originates from the",
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: _projectsModuleScss.inlineLink,
+                                    href: PATENT_URL,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: "Leg-Ankle-Foot Exercise Assembly"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 182,
+                                    columnNumber: 13
+                                }, undefined),
+                                " ",
+                                "(U.S. Patent",
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: _projectsModuleScss.inlineLink,
+                                    href: PATENT_URL,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: "US20050239611A1"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 191,
+                                    columnNumber: 13
+                                }, undefined),
+                                "), invented by Luis Alberto Commisso. Unlike conventional single-exercise devices with complicated yet limited mechanics, this assembly directs the foot, ankle, and lower leg through a plurality of configured ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                    children: "paths of movement"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 201,
+                                    columnNumber: 47
+                                }, undefined),
+                                "\u2014rotating relative to multiple axes\u2014while resistance is generated by the user's own effort rather than an external motor."
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 180,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _projectsModuleScss.patentAbstract,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                    className: _projectsModuleScss.patentAbstractTitle,
+                                    children: "Abstract"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 205,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.body,
+                                    children: PATENT_ABSTRACT
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 206,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.patentAbstractSource,
+                                    children: [
+                                        "Source:",
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            className: _projectsModuleScss.inlineLink,
+                                            href: PATENT_URL,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            children: "Google Patents \u2014 US20050239611A1"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 209,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 207,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 204,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("blockquote", {
+                            className: _projectsModuleScss.patentQuote,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: "\u201CThe present invention is an exercise assembly that targets specific parts of the body, including the legs, ankle, and foot\u2026 The assembly provides resistance to the user's movements to improve strength and performance\u2026 designed to be used with the user's own movements, rather than relying on an external motor or driver.\u201D"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 220,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                                    children: "\u2014 U.S. Patent US20050239611A1"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 226,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 219,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _projectsModuleScss.body,
+                            children: "The invention addresses a gap in conventional equipment: most known devices cannot perform beneficial, versatile exercise across the different muscle groupings, joints, and related structures of the lower leg and foot in an effective manner. The support structure moves relative to a base along defined paths, with adjustable weighting to match the movement being trained."
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 228,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _projectsModuleScss.patentFigureGrid,
+                            children: patentFigures.map((figure)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                    className: _projectsModuleScss.figure,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: _projectsModuleScss.patentFigure,
+                                            src: figure.src,
+                                            alt: figure.alt,
+                                            loading: "lazy"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 238,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                            className: _projectsModuleScss.figureCaption,
+                                            children: figure.caption
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 244,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, figure.alt, true, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 237,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 235,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/Projects.js",
+                    lineNumber: 178,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    className: _projectsModuleScss.section,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                             className: _projectsModuleScss.sectionLabel,
                             children: "Overview"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 70,
+                            lineNumber: 251,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "The Multi-Ax-Sys is a groundbreaking bio-functional exoskeleton designed to revolutionize lower-leg and foot rehabilitation. This unique mechanism allows for precise and customized support, guidance, and resistance for specific human foot movements. By incorporating multiple axes and sliding planes, it adapts instantaneously to dynamic changes in foot motion."
+                            className: _projectsModuleScss.body,
+                            children: "Multi-Ax-Sys extends the patented concept into a bio-functional platform that allows precise support, guidance, and resistance across multiple axes and sliding planes\u2014adapting instantaneously to dynamic foot motion. The system can selectively lock or release participation of synergistic joints (knee, tibia\u2013fibular complex, ankle, and foot segments) so clinicians and researchers can train or measure integrated kinematics rather than isolating the ankle as a single hinge."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 71,
+                            lineNumber: 252,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Unlike other existing mechanisms, it mitigates adverse effects caused by external counter-forces, ensuring the safety and effectiveness of rehabilitation and training. The Multi-Ax-Sys is not just a device, but a comprehensive solution for orthopedists, sports medicine practitioners, and researchers\u2014facilitating neuroplasticity and the reorganization of neurophysiology through movement education and re-education."
+                            className: _projectsModuleScss.body,
+                            children: "Resistance modes include isometric, isotonic, and natural isokinetic torque. Integrated sensing supports position, speed, acceleration, and three-dimensional spatial displacement\u2014aligning with electro-goniometry and kinetic analysis used during prototype development."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 78,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "By employing resistance modes such as isometric, isotonic, and natural isokinetic torque, the system optimizes endurance, corrects motion patterns, and enhances foot performance. It accommodates users' anatomical characteristics with precise control, and serves as a valuable tool for medical research and clinical trials with accurate 3D kinetic data for lower-leg and foot motion analysis."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 85,
+                            lineNumber: 260,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 69,
+                    lineNumber: 250,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: _projectsModuleScss.productBlock,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    className: _projectsModuleScss.section,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                             className: _projectsModuleScss.sectionLabel,
-                            children: "Product description"
+                            children: "Validation & academic engagement"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 95,
+                            lineNumber: 269,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "The Multi-Ax-Sys is a state-of-the-art wearable device designed to follow lower limb movements. It incorporates sensors and actuators to optimize biomechanics and enhance performance while minimizing the risk of injuries."
+                            className: _projectsModuleScss.body,
+                            children: "The prototype has been presented for validation studies at several universities and institutions. Early work established institutional review and laboratory testing frameworks; expanded trials across partner sites are planned as research funding becomes available."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 96,
+                            lineNumber: 270,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: _projectsModuleScss.partnerList,
+                            children: validationPartners.map((partner)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: _projectsModuleScss.partnerItem,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                            className: _projectsModuleScss.partnerName,
+                                            children: partner.name
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 279,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _projectsModuleScss.body,
+                                            children: partner.detail
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 280,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        partner.documents?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                            className: _projectsModuleScss.documentList,
+                                            children: partner.documents.map((doc)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        className: _projectsModuleScss.documentLink,
+                                                        href: doc.href,
+                                                        target: "_blank",
+                                                        rel: "noopener noreferrer",
+                                                        children: doc.label
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Projects.js",
+                                                        lineNumber: 285,
+                                                        columnNumber: 25
+                                                    }, undefined)
+                                                }, doc.href, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 284,
+                                                    columnNumber: 23
+                                                }, undefined))
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 282,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    ]
+                                }, partner.name, true, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 278,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 276,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _projectsModuleScss.bodyMuted,
+                            children: "Suffolk deliverables (Teams 1, 3, 5, and 7) included consulting reports and final presentations on market analysis, competitive positioning, and partnership strategy\u2014 supporting the transition from prototype to clinical and commercial pathways."
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 300,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 94,
+                    lineNumber: 268,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    className: _projectsModuleScss.sectionLabel,
-                    children: "Key features & benefits"
-                }, void 0, false, {
-                    fileName: "src/pages/Projects.js",
-                    lineNumber: 103,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: _projectsModuleScss.featureGrid,
-                    children: features.map((feature)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                className: _projectsModuleScss.featureCard,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                        className: _projectsModuleScss.featureTitle,
-                                        children: feature.title
-                                    }, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    className: _projectsModuleScss.section,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            className: _projectsModuleScss.sectionLabel,
+                            children: "Key features & benefits"
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 308,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: _projectsModuleScss.featureGrid,
+                            children: features.map((feature)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                        className: _projectsModuleScss.featureCard,
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                className: _projectsModuleScss.featureTitle,
+                                                children: feature.title
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Projects.js",
+                                                lineNumber: 313,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: _projectsModuleScss.featureText,
+                                                children: feature.description
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Projects.js",
+                                                lineNumber: 314,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 108,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: _projectsModuleScss.featureText,
-                                        children: feature.description
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Projects.js",
-                                        lineNumber: 109,
+                                        lineNumber: 312,
                                         columnNumber: 17
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/Projects.js",
-                                lineNumber: 107,
-                                columnNumber: 15
-                            }, undefined)
-                        }, feature.title, false, {
+                                }, feature.title, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 311,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 106,
-                            columnNumber: 13
-                        }, undefined))
-                }, void 0, false, {
+                            lineNumber: 309,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 104,
+                    lineNumber: 307,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: _projectsModuleScss.vision,
-                    children: "We envision a future where the Multi-Ax-Sys becomes a cornerstone of medical practice, transforming the lives of patients and athletes alike\u2014unlocking the full potential of lower-leg and foot rehabilitation and kinetic therapy."
+                    children: "We envision Multi-Ax-Sys as a cornerstone of lower-limb rehabilitation and kinetic therapy\u2014giving health professionals technology that respects neurophysiological control, multi-axis foot function, and the real demands of gait, sport, and recovery."
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 115,
+                    lineNumber: 321,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39728,7 +40103,16 @@ const Projects = ()=>{
                             children: "Explore the technology"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 122,
+                            lineNumber: 328,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                            className: _projectsModuleScss.secondaryBtn,
+                            to: "/publications",
+                            children: "Research observations"
+                        }, void 0, false, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 331,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -39737,24 +40121,24 @@ const Projects = ()=>{
                             children: "Partner with us"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 125,
+                            lineNumber: 334,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 121,
+                    lineNumber: 327,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/Projects.js",
-            lineNumber: 37,
+            lineNumber: 142,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/Projects.js",
-        lineNumber: 33,
+        lineNumber: 138,
         columnNumber: 5
     }, undefined);
 };
@@ -39768,26 +40152,72 @@ $RefreshReg$(_c, "Projects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","url:../videos/x_web_720p.mp4":"h86pg","url:../videos/x_web_1080p.mp4":"fZZvo","./Projects.module.scss":"ieo5y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieo5y":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","url:../videos/multi-ax-sys_web_720p.mp4":"k7UvO","../img/US20050239611A1-20051027-D00001.jpg":"eloDv","../img/US20050239611A1-20051027-D00002.jpg":"j3F7P","../img/US20050239611A1-20051027-D00003.jpg":"9CglF","../img/US20050239611A1-20051027-D00004.jpg":"8CH8S","./Projects.module.scss":"ieo5y","url:../../public/documents/mba-741-team-1-presentation.pptx":"acHwD","url:../../public/documents/mba-741-team-1-consulting-report.docx":"dmeqd","url:../../public/documents/mba-741-team-3-presentation.pptx":"aJTYH","url:../../public/documents/mba-741-team-3-final-report.docx":"gS3y3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k7UvO":[function(require,module,exports,__globalThis) {
+module.exports = require("ed688cde5a3c1f75").getBundleURL('ej6rf') + "multi-ax-sys_web_720p.3e42a9d7.mp4" + "?" + Date.now();
+
+},{"ed688cde5a3c1f75":"lgJ39"}],"eloDv":[function(require,module,exports,__globalThis) {
+module.exports = require("a51f6c035d7f545b").getBundleURL('ej6rf') + "US20050239611A1-20051027-D00001.355993ec.jpg" + "?" + Date.now();
+
+},{"a51f6c035d7f545b":"lgJ39"}],"j3F7P":[function(require,module,exports,__globalThis) {
+module.exports = require("53115323af64f4f8").getBundleURL('ej6rf') + "US20050239611A1-20051027-D00002.d42fa287.jpg" + "?" + Date.now();
+
+},{"53115323af64f4f8":"lgJ39"}],"9CglF":[function(require,module,exports,__globalThis) {
+module.exports = require("c4294cc9c92c253f").getBundleURL('ej6rf') + "US20050239611A1-20051027-D00003.225f5dc6.jpg" + "?" + Date.now();
+
+},{"c4294cc9c92c253f":"lgJ39"}],"8CH8S":[function(require,module,exports,__globalThis) {
+module.exports = require("89b15e10cd409e20").getBundleURL('ej6rf') + "US20050239611A1-20051027-D00004.a5a7af5f.jpg" + "?" + Date.now();
+
+},{"89b15e10cd409e20":"lgJ39"}],"ieo5y":[function(require,module,exports,__globalThis) {
 module.exports["actions"] = `eyAqFG_actions`;
+module.exports["body"] = `eyAqFG_body`;
+module.exports["bodyMuted"] = `eyAqFG_bodyMuted`;
+module.exports["documentLink"] = `eyAqFG_documentLink`;
+module.exports["documentList"] = `eyAqFG_documentList`;
 module.exports["elevator"] = `eyAqFG_elevator`;
 module.exports["eyebrow"] = `eyAqFG_eyebrow`;
 module.exports["featureCard"] = `eyAqFG_featureCard`;
 module.exports["featureGrid"] = `eyAqFG_featureGrid`;
 module.exports["featureText"] = `eyAqFG_featureText`;
 module.exports["featureTitle"] = `eyAqFG_featureTitle`;
-module.exports["overview"] = `eyAqFG_overview`;
+module.exports["figure"] = `eyAqFG_figure`;
+module.exports["figureCaption"] = `eyAqFG_figureCaption`;
+module.exports["inlineLink"] = `eyAqFG_inlineLink`;
+module.exports["partnerItem"] = `eyAqFG_partnerItem`;
+module.exports["partnerList"] = `eyAqFG_partnerList`;
+module.exports["partnerName"] = `eyAqFG_partnerName`;
+module.exports["patentAbstract"] = `eyAqFG_patentAbstract`;
+module.exports["patentAbstractSource"] = `eyAqFG_patentAbstractSource`;
+module.exports["patentAbstractTitle"] = `eyAqFG_patentAbstractTitle`;
+module.exports["patentFigure"] = `eyAqFG_patentFigure`;
+module.exports["patentFigureGrid"] = `eyAqFG_patentFigureGrid`;
+module.exports["patentQuote"] = `eyAqFG_patentQuote`;
 module.exports["primaryBtn"] = `eyAqFG_primaryBtn`;
-module.exports["productBlock"] = `eyAqFG_productBlock`;
 module.exports["project"] = `eyAqFG_project`;
 module.exports["projectTitle"] = `eyAqFG_projectTitle`;
 module.exports["projectVideo"] = `eyAqFG_projectVideo`;
 module.exports["projectVisual"] = `eyAqFG_projectVisual`;
 module.exports["secondaryBtn"] = `eyAqFG_secondaryBtn`;
+module.exports["section"] = `eyAqFG_section`;
 module.exports["sectionLabel"] = `eyAqFG_sectionLabel`;
+module.exports["timeline"] = `eyAqFG_timeline`;
+module.exports["timelineDetail"] = `eyAqFG_timelineDetail`;
+module.exports["timelineItem"] = `eyAqFG_timelineItem`;
+module.exports["timelinePeriod"] = `eyAqFG_timelinePeriod`;
 module.exports["vision"] = `eyAqFG_vision`;
 
-},{}],"3Lyxx":[function(require,module,exports,__globalThis) {
+},{}],"acHwD":[function(require,module,exports,__globalThis) {
+module.exports = require("9c2aeddd7b807f3c").getBundleURL('ej6rf') + "mba-741-team-1-presentation.4402799b.pptx" + "?" + Date.now();
+
+},{"9c2aeddd7b807f3c":"lgJ39"}],"dmeqd":[function(require,module,exports,__globalThis) {
+module.exports = require("3906fdcb368ca17f").getBundleURL('ej6rf') + "mba-741-team-1-consulting-report.c137c44b.docx" + "?" + Date.now();
+
+},{"3906fdcb368ca17f":"lgJ39"}],"aJTYH":[function(require,module,exports,__globalThis) {
+module.exports = require("a322de69e0436557").getBundleURL('ej6rf') + "mba-741-team-3-presentation.61831147.pptx" + "?" + Date.now();
+
+},{"a322de69e0436557":"lgJ39"}],"gS3y3":[function(require,module,exports,__globalThis) {
+module.exports = require("56a42b3a3dd85393").getBundleURL('ej6rf') + "mba-741-team-3-final-report.4395898f.docx" + "?" + Date.now();
+
+},{"56a42b3a3dd85393":"lgJ39"}],"3Lyxx":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$af26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

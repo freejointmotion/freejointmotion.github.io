@@ -6,16 +6,23 @@
 }
 
 .projectVisual {
-  margin-bottom: 28px;
-  text-align: center;
+  width: 100%;
+  max-width: min(720px, 100%);
+  margin: 0 auto 36px;
 }
 
 .projectVideo {
-  @include project-mark-media;
-  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  background: #f8fafc;
-  box-shadow: 0 4px 16px rgba(19, 54, 75, 0.1);
+  background: #0a1620;
+  box-shadow: 0 8px 28px rgba(19, 54, 75, 0.14);
+
+  // Product demo: native aspect ratio, capped at 720p source width
+  @media (min-width: 768px) {
+    border-radius: 10px;
+  }
 }
 
 .eyebrow {
@@ -50,27 +57,178 @@
   margin-bottom: 14px;
 }
 
-.overview,
-.productBlock {
+.section {
   margin-bottom: 36px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+}
 
-  p {
-    @include cell-body;
-    font-size: 1.05rem;
-    margin-bottom: 16px;
+.body {
+  @include cell-body;
+  font-size: 1.05rem;
+  margin: 0 0 16px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.productBlock {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 28px;
+.bodyMuted {
+  @include cell-body;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 20px 0 0;
+  font-style: italic;
+}
+
+.inlineLink {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 16px 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(19, 54, 75, 0.08);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.timelinePeriod {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #007acc;
+}
+
+.timelineDetail {
+  @include cell-body;
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.patentQuote {
+  @include statement;
+  margin: 20px 0 24px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #4a5568;
+
+  footer {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-style: normal;
+  }
+}
+
+.patentAbstract {
+  margin: 20px 0 24px;
+  padding: 20px 24px;
+  background: #f8fafc;
+  border: 1px solid rgba(19, 54, 75, 0.1);
+}
+
+.patentAbstractTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #13364b;
+  margin: 0 0 12px;
+}
+
+.patentAbstractSource {
+  margin: 12px 0 0;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+.patentFigureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.figure {
+  margin: 0;
+}
+
+.patentFigure {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(19, 54, 75, 0.1);
+  background: #f8fafc;
+}
+
+.figureCaption {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #6b7280;
+}
+
+.partnerList {
+  @include item-stack;
+  margin-top: 8px;
+}
+
+.partnerItem {
+  @include stack-item;
+}
+
+.partnerName {
+  @include cell-title;
+  font-size: 1.05rem;
+}
+
+.documentList {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.documentLink {
+  display: inline-block;
+  padding: 8px 0;
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
 }
 
 .featureGrid {
