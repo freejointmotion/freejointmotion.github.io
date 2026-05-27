@@ -28,7 +28,6 @@ const patentDetails = [
   { label: "Filed", value: "August 21, 2001" },
   { label: "Granted / published", value: "April 12, 2005" },
   { label: "Inventor", value: "Luis Alberto Commisso" },
-  { label: "Status", value: "Expired — lifetime (adjusted expiration February 10, 2022)" },
 ];
 
 const PATENT_ABSTRACT =

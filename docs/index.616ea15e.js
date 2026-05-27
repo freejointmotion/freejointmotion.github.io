@@ -39549,10 +39549,6 @@ const patentDetails = [
     {
         label: "Inventor",
         value: "Luis Alberto Commisso"
-    },
-    {
-        label: "Status",
-        value: "Expired \u2014 lifetime (adjusted expiration February 10, 2022)"
     }
 ];
 const PATENT_ABSTRACT = "An exercise assembly structured to direct the foot-ankle-leg, knee, etc. and associated portions of a person's body through a plurality of different paths of movement, wherein each path of movement comprises an at least partially different configuration such that exercise resulting from the various movements will be concentrated on predetermined portions of the body being exercised. The platform is suspended by a support assembly interconnected to a base and is preferably, but not exclusively, directed through the aforementioned paths of movement manually by the user. A sensor assembly including a processor may determine and store selected movements of the platform for graphical or other visual display to the user and for programmed duplication of the sensed paths movement when desired. A weight assembly including at least one but preferably a plurality of different weights are interconnected to the platform and extend outwardly therefrom to provide additional resistive forces to the user's foot, ankle, and leg as they are exercised.";
@@ -39658,7 +39654,7 @@ const Projects = ()=>{
                     children: "Flagship product"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 153,
+                    lineNumber: 152,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -39666,7 +39662,7 @@ const Projects = ()=>{
                     children: "Multi-Ax-Sys"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 154,
+                    lineNumber: 153,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39682,17 +39678,17 @@ const Projects = ()=>{
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 164,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Projects.js",
-                        lineNumber: 157,
+                        lineNumber: 156,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 156,
+                    lineNumber: 155,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39703,14 +39699,14 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 169,
+                            lineNumber: 168,
                             columnNumber: 15
                         }, undefined),
                         " is a semi-open, multi-axis leg\u2013ankle\u2013foot system designed to support, guide, and resist natural foot motion or gestures\u2014minimizing inappropriate external forces while enabling multi-planar motion. Built on decades of biomechanical research and a foundational U.S. patent, it targets strengthening, rehabilitation, and clinical assessment of the lower limb kinetic chain."
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 168,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -39721,7 +39717,7 @@ const Projects = ()=>{
                             children: "Development timeline"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 177,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
@@ -39734,7 +39730,7 @@ const Projects = ()=>{
                                             children: entry.period
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 181,
+                                            lineNumber: 180,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39742,24 +39738,24 @@ const Projects = ()=>{
                                             children: entry.detail
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 182,
+                                            lineNumber: 181,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, entry.period, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 180,
+                                    lineNumber: 179,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 178,
+                            lineNumber: 177,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 176,
+                    lineNumber: 175,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -39770,7 +39766,7 @@ const Projects = ()=>{
                             children: "Patent foundation"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 189,
+                            lineNumber: 188,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39786,7 +39782,7 @@ const Projects = ()=>{
                                     children: "Leg-Ankle-Foot Exercise Assembly"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 192,
+                                    lineNumber: 191,
                                     columnNumber: 13
                                 }, undefined),
                                 " ",
@@ -39800,7 +39796,7 @@ const Projects = ()=>{
                                     children: PATENT_NUMBER
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 201,
+                                    lineNumber: 200,
                                     columnNumber: 13
                                 }, undefined),
                                 "), invented by Luis Alberto Commisso. Unlike conventional single-exercise devices with complicated yet limited mechanics, this assembly directs the foot, ankle, and lower leg through a plurality of configured ",
@@ -39808,14 +39804,14 @@ const Projects = ()=>{
                                     children: "paths of movement"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 211,
+                                    lineNumber: 210,
                                     columnNumber: 47
                                 }, undefined),
                                 "\u2014rotating relative to multiple axes\u2014while resistance is generated by the user's own effort rather than an external motor."
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 190,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dl", {
@@ -39828,7 +39824,7 @@ const Projects = ()=>{
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 217,
+                                            lineNumber: 216,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dd", {
@@ -39836,18 +39832,18 @@ const Projects = ()=>{
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 218,
+                                            lineNumber: 217,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, item.label, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 216,
+                                    lineNumber: 215,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 214,
+                            lineNumber: 213,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39858,7 +39854,7 @@ const Projects = ()=>{
                                     children: "Abstract"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 223,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39866,7 +39862,7 @@ const Projects = ()=>{
                                     children: PATENT_ABSTRACT
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 224,
+                                    lineNumber: 223,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39885,19 +39881,19 @@ const Projects = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 227,
+                                            lineNumber: 226,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 225,
+                                    lineNumber: 224,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 222,
+                            lineNumber: 221,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("blockquote", {
@@ -39907,7 +39903,7 @@ const Projects = ()=>{
                                     children: "\u201CThe present invention is an exercise assembly that targets specific parts of the body, including the legs, ankle, and foot\u2026 The assembly provides resistance to the user's movements to improve strength and performance\u2026 designed to be used with the user's own movements, rather than relying on an external motor or driver.\u201D"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 238,
+                                    lineNumber: 237,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -39917,13 +39913,13 @@ const Projects = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 244,
+                                    lineNumber: 243,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 237,
+                            lineNumber: 236,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39931,7 +39927,7 @@ const Projects = ()=>{
                             children: "The invention addresses a gap in conventional equipment: most known devices cannot perform beneficial, versatile exercise across the different muscle groupings, joints, and related structures of the lower leg and foot in an effective manner. The support structure moves relative to a base along defined paths, with adjustable weighting to match the movement being trained."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 246,
+                            lineNumber: 245,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39946,7 +39942,7 @@ const Projects = ()=>{
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 256,
+                                            lineNumber: 255,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
@@ -39954,24 +39950,24 @@ const Projects = ()=>{
                                             children: figure.caption
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 262,
+                                            lineNumber: 261,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, figure.alt, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 255,
+                                    lineNumber: 254,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 253,
+                            lineNumber: 252,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 188,
+                    lineNumber: 187,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -39982,7 +39978,7 @@ const Projects = ()=>{
                             children: "Overview"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 269,
+                            lineNumber: 268,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39990,7 +39986,7 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys extends the patented concept into a bio-functional platform that allows precise support, guidance, and resistance across multiple axes and sliding planes\u2014adapting instantaneously to dynamic foot motion. The system can selectively lock or release participation of synergistic joints (knee, tibia\u2013fibular complex, ankle, and foot segments) so clinicians and researchers can train or measure integrated kinematics rather than isolating the ankle as a single hinge."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 270,
+                            lineNumber: 269,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39998,13 +39994,13 @@ const Projects = ()=>{
                             children: "Resistance modes include isometric, isotonic, and natural isokinetic torque. Integrated sensing supports position, speed, acceleration, and three-dimensional spatial displacement\u2014aligning with electro-goniometry and kinetic analysis used during prototype development."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 278,
+                            lineNumber: 277,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 268,
+                    lineNumber: 267,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -40015,7 +40011,7 @@ const Projects = ()=>{
                             children: "Validation & academic engagement"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 287,
+                            lineNumber: 286,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40023,7 +40019,7 @@ const Projects = ()=>{
                             children: "The prototype has been presented for validation studies at several universities and institutions. Early work established institutional review and laboratory testing frameworks; expanded trials across partner sites are planned as research funding becomes available."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 288,
+                            lineNumber: 287,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40036,7 +40032,7 @@ const Projects = ()=>{
                                             children: partner.name
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 297,
+                                            lineNumber: 296,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40044,7 +40040,7 @@ const Projects = ()=>{
                                             children: partner.detail
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 298,
+                                            lineNumber: 297,
                                             columnNumber: 17
                                         }, undefined),
                                         partner.documents?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40058,28 +40054,28 @@ const Projects = ()=>{
                                                         children: doc.label
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Projects.js",
-                                                        lineNumber: 303,
+                                                        lineNumber: 302,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, doc.href, false, {
                                                     fileName: "src/pages/Projects.js",
-                                                    lineNumber: 302,
+                                                    lineNumber: 301,
                                                     columnNumber: 23
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 300,
+                                            lineNumber: 299,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, partner.name, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 296,
+                                    lineNumber: 295,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 294,
+                            lineNumber: 293,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40087,13 +40083,13 @@ const Projects = ()=>{
                             children: "Suffolk deliverables (Teams 1, 3, 5, and 7) included consulting reports and final presentations on market analysis, competitive positioning, and partnership strategy\u2014 supporting the transition from prototype to clinical and commercial pathways."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 318,
+                            lineNumber: 317,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 286,
+                    lineNumber: 285,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -40104,7 +40100,7 @@ const Projects = ()=>{
                             children: "Key features & benefits"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 326,
+                            lineNumber: 325,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40118,7 +40114,7 @@ const Projects = ()=>{
                                                 children: feature.title
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 331,
+                                                lineNumber: 330,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40126,29 +40122,29 @@ const Projects = ()=>{
                                                 children: feature.description
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 332,
+                                                lineNumber: 331,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 330,
+                                        lineNumber: 329,
                                         columnNumber: 17
                                     }, undefined)
                                 }, feature.title, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 329,
+                                    lineNumber: 328,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 327,
+                            lineNumber: 326,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 325,
+                    lineNumber: 324,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40156,7 +40152,7 @@ const Projects = ()=>{
                     children: "We envision Multi-Ax-Sys as a cornerstone of lower-limb rehabilitation and kinetic therapy\u2014giving health professionals technology that respects neurophysiological control, multi-axis foot function, and the real demands of gait, sport, and recovery."
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 339,
+                    lineNumber: 338,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40168,7 +40164,7 @@ const Projects = ()=>{
                             children: "Explore the technology"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 346,
+                            lineNumber: 345,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40177,7 +40173,7 @@ const Projects = ()=>{
                             children: "Research observations"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 349,
+                            lineNumber: 348,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40186,24 +40182,24 @@ const Projects = ()=>{
                             children: "Partner with us"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 352,
+                            lineNumber: 351,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 345,
+                    lineNumber: 344,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/Projects.js",
-            lineNumber: 152,
+            lineNumber: 151,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/Projects.js",
-        lineNumber: 148,
+        lineNumber: 147,
         columnNumber: 5
     }, undefined);
 };
