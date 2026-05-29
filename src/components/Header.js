@@ -49,9 +49,6 @@ const Header = () => {
           <NavLink to="/technologies" className={mainLinkClass} onClick={closeMenu}>
             Technologies
           </NavLink>
-          <NavLink to="/projects" className={mainLinkClass} onClick={closeMenu}>
-            Projects
-          </NavLink>
           <NavLink to="/contact" className={contactBtnClass} onClick={closeMenu}>
             Contact
           </NavLink>
@@ -90,9 +87,6 @@ const Header = () => {
             <NavLink to="/technologies" className={menuLinkClass} onClick={closeMenu}>
               Technologies
             </NavLink>
-            <NavLink to="/projects" className={menuLinkClass} onClick={closeMenu}>
-              Projects
-            </NavLink>
             <NavLink to="/services" className={menuLinkClass} onClick={closeMenu}>
               Services
             </NavLink>
@@ -104,6 +98,9 @@ const Header = () => {
             </NavLink>
             <NavLink to="/impact" className={menuLinkClass} onClick={closeMenu}>
               Impact
+            </NavLink>
+            <NavLink to="/projects" className={menuLinkClass} onClick={closeMenu}>
+              Projects
             </NavLink>
             <div className={styles.menuCta}>
               <NavLink to="/contact" className={menuContactBtnClass} onClick={closeMenu}>
@@ -127,6 +124,9 @@ const Header = () => {
           </NavLink>
           <NavLink to="/impact" className={subLinkClass} onClick={closeMenu}>
             Impact
+          </NavLink>
+          <NavLink to="/projects" className={subLinkClass} onClick={closeMenu}>
+            Projects
           </NavLink>
         </nav>
       </header>
