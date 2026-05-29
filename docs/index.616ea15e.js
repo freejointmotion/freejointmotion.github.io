@@ -40442,8 +40442,12 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _publicationsModuleScss = require("./Publications.module.scss");
 var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4 = require("url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4");
 var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4Default = parcelHelpers.interopDefault(_fatigueFootRelatedAccidentFootballMatchWeb720PMp4);
-var _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4 = require("url:../videos/ignoring the basis of human Neurophysiological responses_web_720p.mp4");
-var _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4Default = parcelHelpers.interopDefault(_ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4);
+var _medislipper1000PlusJpg = require("../img/medislipper-1000-plus.jpg");
+var _medislipper1000PlusJpgDefault = parcelHelpers.interopDefault(_medislipper1000PlusJpg);
+var _medislipperFootCradlePng = require("../img/medislipper-foot-cradle.png");
+var _medislipperFootCradlePngDefault = parcelHelpers.interopDefault(_medislipperFootCradlePng);
+var _elginLowerLegExerciserJpg = require("../img/elgin-lower-leg-exerciser.jpg");
+var _elginLowerLegExerciserJpgDefault = parcelHelpers.interopDefault(_elginLowerLegExerciserJpg);
 var _biomeccanicaDellaCavigliaCopertinaJpg = require("../img/Biomeccanica-della-caviglia-Copertina.jpg");
 var _biomeccanicaDellaCavigliaCopertinaJpgDefault = parcelHelpers.interopDefault(_biomeccanicaDellaCavigliaCopertinaJpg);
 var _tibiaDorsiCalfMachinePng = require("../img/Tibia Dorsi Calf Machine.png");
@@ -40459,32 +40463,87 @@ const observations = [
         body: [
             "During sustained high-intensity locomotion, peripheral fatigue progressively compromises the timing and stability of foot\u2013ground interaction. When neuromuscular control degrades faster than conscious compensation can correct, the foot\u2013ankle complex may adopt maladaptive loading strategies.",
             "The sequence documented here shows a non-contact failure: no external perturbation is required for injury risk to emerge. From a biomechanical standpoint, this pattern is consistent with fatigue-driven loss of anticipatory postural adjustments and reduced capacity to regulate impact forces through the kinetic chain.",
-            "Such observations support the need for assessment protocols that treat fatigue not merely as performance decline, but as a measurable shift in neurophysiological control of movement."
+            "Such observations support the need for assessment protocols that treat fatigue not merely as performance decline, but as a measurable shift in neurophysiological control of movement\u2014and for rehabilitation technology that trains coordination under realistic loading, not isolated repetitions disconnected from gait."
         ],
         video: (0, _fatigueFootRelatedAccidentFootballMatchWeb720PMp4Default.default)
     },
     {
-        id: "rehabilitation-external-bias",
-        category: "Clinical Practice \xb7 Field Observation",
-        title: "External Negative Bias in Rehabilitation Without Neurophysiological Grounding",
-        summary: "A rehabilitation interaction in which externally imposed negative cues appear disconnected from the patient\u2019s intrinsic neuromuscular state.",
+        id: "rehab-technology-market-gap",
+        category: "Rehabilitation Technology \xb7 Critical Review",
+        title: "Motorized and Lever-Based Ankle Apparatuses: Greater Complexity, Persistent Kinematic Disconnect",
+        summary: "Commercial devices marketed for active and passive ankle rehabilitation often impose fixed mechanical paths that diverge from the coupled, multi-planar motion of the talocrural and subtalar joints during functional movement.",
         body: [
-            "Please observe this professional in rehabilitation, ignoring the basis of human neurophysiological responses, while providing wrongfully external negative biases to a patient.",
-            "Therapeutic motor learning depends on feedback that is interpretable within the patient\u2019s current physiological state. When corrective cues are imposed externally\u2014without reference to intrinsic proprioceptive signals, fatigue, or compensatory strategies\u2014the motor system may encode avoidance patterns rather than stable, autonomous control.",
-            "From a human-factors and rehabilitation-science perspective, externally cued negative bias can reinforce maladaptive coordination if it is not calibrated to what the neuromuscular system can reliably process at that moment. Effective intervention should align cueing with measurable neurophysiological readiness, not with assumptions about compliance or effort alone."
+            "The contemporary ankle-rehabilitation market spans a wide price and sophistication spectrum\u2014from elastic resistance bands and single-plane seated trainers to motorized platforms and weighted lever systems. Devices at the upper end of this spectrum are frequently presented as technologically advanced solutions for proprioceptive recovery and tibio-tarsal range of motion. Yet proximity to clinical settings and digital monitoring does not, by itself, guarantee biomechanical fidelity.",
+            "A recurring design limitation across these categories is the substitution of a machine-defined degrees-of-freedom problem for the foot\u2019s intrinsic degrees of freedom. When the foot is rigidly fixated, driven along a crank-defined arc, or loaded through discrete inversion\u2013eversion and dorsiflexion\u2013plantarflexion stations, the motor system learns coordination within the device\u2019s constraints\u2014not within the variable coupling of joints, soft tissue, and ground reaction forces encountered in walking, running, or cutting.",
+            "The following apparatuses illustrate this gap. They represent some of the closer approximations to multi-axis intent currently available in commerce; they remain materially disconnected from authentic foot function relative to a user-guided, multi-planar platform."
         ],
-        video: (0, _ignoringTheBasisOfHumanNeurophysiologicalResponsesWeb720PMp4Default.default)
+        images: [
+            {
+                src: (0, _medislipper1000PlusJpgDefault.default),
+                alt: "Medislipper 1000 Plus \u2014 motorized ankle rehabilitation apparatus with digital control panel",
+                caption: "Medislipper 1000 Plus: motorized drive, rigid foot cradle, and calf support\u2014movement constrained to the machine\u2019s mechanical path."
+            },
+            {
+                src: (0, _medislipperFootCradlePngDefault.default),
+                alt: "Foot secured in Medislipper metal frame with heel cup and forefoot plate",
+                caption: "Foot fixated on a flat platform within a sliding linkage; natural circumduction and axis migration are not reproduced."
+            },
+            {
+                src: (0, _elginLowerLegExerciserJpgDefault.default),
+                alt: "Fabrication Enterprises Elgin Lower Leg Exerciser with foot platform, weight pegs, and leather straps",
+                caption: "Elgin\xae Lower Leg Exerciser: foot strapped to a pivoting platform with weight-loaded arms for discrete inversion, eversion, dorsiflexion, and plantarflexion stations."
+            }
+        ],
+        subsections: [
+            {
+                title: "Medislipper 1000 Plus (Medisport)",
+                body: [
+                    "The Medislipper 1000 Plus is marketed for active and passive rehabilitation of ankle injuries and sprains, with force sensors to monitor angular velocity and applied force during exercise. From a rehabilitation-science perspective, instrumentation that quantifies patient output is valuable for tracking progress\u2014but measurability of effort within a device does not establish validity of the movement being trained.",
+                    "Mechanically, the apparatus couples a motorized housing to a foot carriage via crank-and-rail linkage. The foot rests in a rectangular metal frame with heel cup and forefoot plate; the calf is supported separately on a padded post. Motion is therefore executed as a driven, partially guided trajectory whose instantaneous center of rotation is dictated by the machine\u2019s pivot geometry, not by the shifting axis of rotation that characterizes talocrural and subtalar coupling during weight-bearing locomotion.",
+                    "Passive cycling through a predetermined arc may restore range in a clinical sense, yet it decouples ankle motion from the neuromuscular sequencing required for proprioceptive re-weighting during gait: eccentric control at initial contact, mid-stance stability, and terminal-stance power generation. Active exercise against the device\u2019s path still encodes a single dominant movement solution; it does not train the foot to negotiate multi-planar perturbations, intrinsic arch control, or the windlass stiffening of the forefoot.",
+                    "In summary, the Medislipper occupies a more elaborate niche than elastic-band or seated dorsiflexion products, but its fundamental model remains one of external path imposition\u2014a disconnect from the real foot movements that rehabilitation ultimately must restore."
+                ],
+                references: [
+                    {
+                        label: "Medislipper 1000 Plus \u2014 active and passive rehabilitation of ankle injuries and sprains",
+                        url: "https://www.medislipper-medisport.com/en/for-the-active-and-passive-rehabilitation-of-ankle-injuries-and-sprains/",
+                        note: "Manufacturer description of indications, force sensors, and clinical positioning."
+                    },
+                    {
+                        label: "Early rehabilitation treatment of ankle sprains in athletes (Prof. Cosimo Costantino)",
+                        url: "https://www.medislipper-medisport.com/en/for-the-active-and-passive-rehabilitation-of-ankle-injuries-and-sprains/",
+                        note: "Cited on the manufacturer site as supporting evidence for Medislipper effectiveness."
+                    }
+                ]
+            },
+            {
+                title: "Fabrication Enterprises Elgin\xae Lower Leg Exerciser",
+                body: [
+                    "The Elgin\xae Lower Leg Exerciser (Fabrication Enterprises; manual, weight-plate resistance) is positioned for load-resisting inversion, eversion, dorsiflexion, and plantarflexion exercises. Unlike the Medislipper\u2019s continuous motorized path, this class of device segments the ankle into discrete, operator-selected movement stations\u2014an architecture that mirrors traditional strength-training logic applied to a joint complex that does not function as independent planar hinges.",
+                    "Segmenting inversion, eversion, dorsiflexion, and plantarflexion into separate loading episodes treats the ankle\u2013foot as a set of orthogonal actions. In vivo, these motions are coupled: subtalar pronation accompanies internal rotation of the leg; dorsiflexion at the talocrural joint interacts with peroneal mortise mechanics and arch dynamics. Training each plane in isolation reinforces compartmentalized motor programs that may not integrate under fatigue, uneven surfaces, or sport-specific demands.",
+                    "The seated, open-chain configuration further removes ground-reaction constraints. Force vectors, timing, and co-contraction patterns differ materially from closed-chain gait, where the foot must stabilize the center of mass while accepting and propelling body weight. A 33-lb floor unit with defined dimensional envelope signals institutional durability, not ecological validity of movement.",
+                    "Relative to elastic resistance or single-axis tibialis trainers, the Elgin system offers graded resistance and explicit plane selection\u2014yet it still externalizes the problem of which movement to perform and when, rather than permitting the neuromuscular system to explore stabilizing paths across combined axes. It is closer to clinical strength equipment than to functional re-education of the foot as an integrated lever."
+                ],
+                references: [
+                    {
+                        label: "Fabrication Enterprises Elgin\xae Lower Leg Exerciser Without Weights (M-824404-2612)",
+                        url: "https://axiommedicals.com/products/fabrication-enterprises-elgin-r-lower-leg-exerciser-without-weights-m-824404-2612-each",
+                        note: "Product specifications: manual resistance, inversion/eversion/dorsiflexion/plantarflexion stations, ankle/leg target area."
+                    }
+                ]
+            }
+        ]
     },
     {
         id: "foot-biomechanics-x-framework",
         category: "Biomechanics \xb7 Conceptual Framework",
-        title: 'The "X" Framework: Constrained Ankle Machines vs. Natural Foot Function and Free Movement',
-        summary: "A visual contrast\u2014four paired endpoints on an X\u2014juxtaposing rigid, single-plane training devices with authentic foot biomechanics and unconstrained human movement.",
+        title: 'The "X" Framework: From Single-Plane Trainers to Natural Foot Function and Free Movement',
+        summary: "A structured contrast\u2014four paired endpoints on an X\u2014juxtaposing limiting commercial devices (including single-plane trainers) with evidence-based ankle\u2013foot biomechanics and unconstrained human movement.",
         body: [
-            "Look closely: the whole composition reads like the letter X, with images arranged two-by-two at each extremity of its arms. Two arms depict limiting, mechanistic paths; the other two express (1) how the foot actually works as an integrated biomechanical system, and (2) what free, natural movement looks like when the lower limb is not forced into artificial constraints.",
-            "On the problematic side, commercial seated tibia dorsi / tibialis-trainer machines\u2014such as the Bells of Steel Tibialis Trainer Machine and similar products\u2014typify a flawed model of ankle\u2013foot training. They lock the foot on a platform, load dorsiflexion and plantarflexion in a single open-chain plane, and treat the foot\u2013ankle complex as a simple hinge. That design cannot reproduce the coupled motion of the talocrural and subtalar joints, the peroneal mortise widening during dorsiflexion, intrinsic foot control of the medial arch, or the windlass mechanism that stiffens the forefoot during push-off.",
-            "Such devices disconnect strengthening from gait: they generate force vectors and timing that differ from ground reaction during walking, offer no meaningful pronation\u2013supination or multi-axis resistance, and bypass the neurophysiological sequencing described in gait analysis\u2014from eccentric tibialis anterior activity at initial contact through triceps surae power generation in terminal stance. They are convenient for isolated muscle loading, but poor substitutes for educating the motor system that must control the foot in three dimensions under fatigue and variable surfaces.",
-            "The constructive side of the X aligns with evidence-based ankle and foot biomechanics: the foot evolved from a flexible grasping structure into a rigid lever that transmits triceps surae force to the ground; the talocrural and subtalar joints govern most clinically relevant motion; blocking subtalar function shifts stress proximally and distally; and authentic locomotion depends on six gait determinants that keep the center of gravity on a smooth sinusoidal path. Free movement is not a single-plane repetition\u2014it is coordinated, multi-axis, and context-dependent."
+            "The letter X organizes this analysis: two arms represent mechanistic, device-imposed constraints; the other two represent (1) how the foot operates as an integrated biomechanical system, and (2) what unconstrained, context-dependent movement requires when the lower limb is not forced into artificial paths.",
+            "At one extreme of the market sit inexpensive elastic-band protocols and rudimentary cueing\u2014useful for compliance but devoid of multi-axis fidelity. At a middle tier sit motorized platforms (e.g., Medislipper) and lever-based stations (e.g., Elgin\xae), which add sophistication yet still substitute machine geometry for physiological coupling. At the accessible consumer end, seated tibia dorsi / tibialis-trainer machines\u2014such as the Bells of Steel Tibialis Trainer and similar products\u2014compress the problem further: the foot is locked on a platform, dorsiflexion and plantarflexion occur in a single open-chain plane, and the talocrural\u2013subtalar system is modeled as a hinge.",
+            "None of these categories reproduce the coupled motion of the talocrural and subtalar joints, peroneal mortise widening during dorsiflexion, intrinsic arch control, or the windlass mechanism that stiffens the forefoot during push-off. They generate force vectors and timing that differ from ground reaction during walking; they offer little meaningful training of pronation\u2013supination integration or multi-axis resistance under variable load.",
+            "The constructive arm of the X aligns with evidence-based ankle and foot biomechanics: the foot as a lever transmitting triceps surae force; talocrural and subtalar joints governing clinically relevant motion; proximal and distal stress redistribution when subtalar function is blocked; and locomotion as six gait determinants maintaining a smooth center-of-gravity path. Free movement is coordinated, multi-planar, and context-dependent\u2014not a repetition count on a machine-defined arc."
         ],
         heroImage: {
             src: (0, _biomeccanicaDellaCavigliaCopertinaJpgDefault.default),
@@ -40495,12 +40554,12 @@ const observations = [
             {
                 src: (0, _tibiaDorsiCalfMachinePngDefault.default),
                 alt: "Seated tibia dorsi calf machine \u2014 single-plane open-chain ankle loading",
-                caption: "Typical seated dorsiflexion machine: foot fixed, motion reduced to one plane."
+                caption: "Seated dorsiflexion machine: foot fixed, motion reduced to one plane\u2014representative of the lower-complexity market tier."
             },
             {
                 src: (0, _tibiaDorsiCalfMachine2PngDefault.default),
                 alt: "Tibia dorsi calf machine side view showing constrained foot placement",
-                caption: "The same class of device\u2014unable to train subtalar coupling or gait-specific force paths."
+                caption: "The same device class\u2014unable to train subtalar coupling or gait-specific force paths."
             }
         ],
         references: [
@@ -40518,6 +40577,7 @@ const observations = [
     }
 ];
 const Publications = ()=>{
+    const hasMedia = (item)=>item.video || item.heroImage || item.images && item.images.length > 0;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: _publicationsModuleScss.publications,
         children: [
@@ -40526,24 +40586,24 @@ const Publications = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         className: _publicationsModuleScss.title,
-                        children: "Real-World Movement and Rehabilitation Insights"
+                        children: "Ankle Rehabilitation Technology: A Critical Review"
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 89,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: _publicationsModuleScss.intro,
-                        children: "Documented field observations from biomechanics and rehabilitation practice\u2014 short-form analyses of movement failure, clinical cueing, and the neurophysiological basis of motor control under real-world conditions."
+                        children: "Field observations and structured analysis of contemporary rehabilitation apparatuses\u2014from motorized platforms and lever-based exercisers to single-plane commercial trainers\u2014evaluated against the biomechanical and neurophysiological requirements of authentic foot function."
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 91,
+                        lineNumber: 161,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 88,
+                lineNumber: 156,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40552,9 +40612,9 @@ const Publications = ()=>{
                         id: item.id,
                         className: `${_publicationsModuleScss.observation} ${index % 2 === 1 ? _publicationsModuleScss.observationAlt : ""}`,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: _publicationsModuleScss.observationInner,
+                            className: `${_publicationsModuleScss.observationInner} ${!hasMedia(item) ? _publicationsModuleScss.observationContentOnly : ""}`,
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                hasMedia(item) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: _publicationsModuleScss.media,
                                     children: [
                                         item.video && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
@@ -40572,23 +40632,23 @@ const Publications = ()=>{
                                                     media: "(min-width: 1024px)"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 118,
-                                                    columnNumber: 23
+                                                    lineNumber: 194,
+                                                    columnNumber: 25
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
                                                     src: item.video,
                                                     type: "video/mp4"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 124,
-                                                    columnNumber: 21
+                                                    lineNumber: 200,
+                                                    columnNumber: 23
                                                 }, undefined),
                                                 "Your browser does not support the video tag."
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 108,
-                                            columnNumber: 19
+                                            lineNumber: 184,
+                                            columnNumber: 21
                                         }, undefined),
                                         item.heroImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                             className: _publicationsModuleScss.heroFigure,
@@ -40600,25 +40660,25 @@ const Publications = ()=>{
                                                     loading: "lazy"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 131,
-                                                    columnNumber: 21
+                                                    lineNumber: 207,
+                                                    columnNumber: 23
                                                 }, undefined),
                                                 item.heroImage.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
                                                     className: _publicationsModuleScss.caption,
                                                     children: item.heroImage.caption
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 138,
-                                                    columnNumber: 23
+                                                    lineNumber: 214,
+                                                    columnNumber: 25
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 130,
-                                            columnNumber: 19
+                                            lineNumber: 206,
+                                            columnNumber: 21
                                         }, undefined),
                                         item.images?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: `${_publicationsModuleScss.imageGrid} ${item.heroImage ? _publicationsModuleScss.imageGridBelow : ""}`,
+                                            className: `${_publicationsModuleScss.imageGrid} ${item.heroImage ? _publicationsModuleScss.imageGridBelow : ""} ${item.images.length === 3 ? _publicationsModuleScss.imageGridThree : ""}`,
                                             children: item.images.map((image)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                                     className: _publicationsModuleScss.figure,
                                                     children: [
@@ -40629,33 +40689,33 @@ const Publications = ()=>{
                                                             loading: "lazy"
                                                         }, void 0, false, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 153,
-                                                            columnNumber: 25
+                                                            lineNumber: 229,
+                                                            columnNumber: 27
                                                         }, undefined),
                                                         image.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
                                                             className: _publicationsModuleScss.caption,
                                                             children: image.caption
                                                         }, void 0, false, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 160,
-                                                            columnNumber: 27
+                                                            lineNumber: 236,
+                                                            columnNumber: 29
                                                         }, undefined)
                                                     ]
                                                 }, image.alt, true, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 152,
-                                                    columnNumber: 23
+                                                    lineNumber: 228,
+                                                    columnNumber: 25
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 146,
-                                            columnNumber: 19
+                                            lineNumber: 222,
+                                            columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 106,
-                                    columnNumber: 15
+                                    lineNumber: 182,
+                                    columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: _publicationsModuleScss.content,
@@ -40665,7 +40725,7 @@ const Publications = ()=>{
                                             children: item.category
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 171,
+                                            lineNumber: 248,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -40673,7 +40733,7 @@ const Publications = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 172,
+                                            lineNumber: 249,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40681,7 +40741,7 @@ const Publications = ()=>{
                                             children: item.summary
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 173,
+                                            lineNumber: 250,
                                             columnNumber: 17
                                         }, undefined),
                                         item.body.map((paragraph, pIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40689,7 +40749,84 @@ const Publications = ()=>{
                                                 children: paragraph
                                             }, pIndex, false, {
                                                 fileName: "src/pages/Publications.js",
-                                                lineNumber: 175,
+                                                lineNumber: 252,
+                                                columnNumber: 19
+                                            }, undefined)),
+                                        item.subsections?.map((sub)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: _publicationsModuleScss.subsection,
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: _publicationsModuleScss.subsectionTitle,
+                                                        children: sub.title
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Publications.js",
+                                                        lineNumber: 259,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    sub.body.map((paragraph, pIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: _publicationsModuleScss.body,
+                                                            children: paragraph
+                                                        }, pIndex, false, {
+                                                            fileName: "src/pages/Publications.js",
+                                                            lineNumber: 261,
+                                                            columnNumber: 23
+                                                        }, undefined)),
+                                                    sub.references?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: _publicationsModuleScss.references,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                                className: _publicationsModuleScss.referencesTitle,
+                                                                children: "References"
+                                                            }, void 0, false, {
+                                                                fileName: "src/pages/Publications.js",
+                                                                lineNumber: 267,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                                className: _publicationsModuleScss.referenceList,
+                                                                children: sub.references.map((ref)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        className: _publicationsModuleScss.referenceItem,
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                                className: _publicationsModuleScss.referenceLink,
+                                                                                href: ref.url,
+                                                                                target: "_blank",
+                                                                                rel: "noopener noreferrer",
+                                                                                children: ref.label
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/pages/Publications.js",
+                                                                                lineNumber: 271,
+                                                                                columnNumber: 31
+                                                                            }, undefined),
+                                                                            ref.note && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                                className: _publicationsModuleScss.referenceNote,
+                                                                                children: ref.note
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/pages/Publications.js",
+                                                                                lineNumber: 280,
+                                                                                columnNumber: 33
+                                                                            }, undefined)
+                                                                        ]
+                                                                    }, ref.url, true, {
+                                                                        fileName: "src/pages/Publications.js",
+                                                                        lineNumber: 270,
+                                                                        columnNumber: 29
+                                                                    }, undefined))
+                                                            }, void 0, false, {
+                                                                fileName: "src/pages/Publications.js",
+                                                                lineNumber: 268,
+                                                                columnNumber: 25
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/pages/Publications.js",
+                                                        lineNumber: 266,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                ]
+                                            }, sub.title, true, {
+                                                fileName: "src/pages/Publications.js",
+                                                lineNumber: 258,
                                                 columnNumber: 19
                                             }, undefined)),
                                         item.references?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40700,7 +40837,7 @@ const Publications = ()=>{
                                                     children: "References"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 182,
+                                                    lineNumber: 292,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40716,7 +40853,7 @@ const Publications = ()=>{
                                                                     children: ref.label
                                                                 }, void 0, false, {
                                                                     fileName: "src/pages/Publications.js",
-                                                                    lineNumber: 186,
+                                                                    lineNumber: 296,
                                                                     columnNumber: 27
                                                                 }, undefined),
                                                                 ref.note && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40724,52 +40861,52 @@ const Publications = ()=>{
                                                                     children: ref.note
                                                                 }, void 0, false, {
                                                                     fileName: "src/pages/Publications.js",
-                                                                    lineNumber: 195,
+                                                                    lineNumber: 305,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
                                                         }, ref.url, true, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 185,
+                                                            lineNumber: 295,
                                                             columnNumber: 25
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 183,
+                                                    lineNumber: 293,
                                                     columnNumber: 21
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 181,
+                                            lineNumber: 291,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 170,
+                                    lineNumber: 247,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Publications.js",
-                            lineNumber: 105,
+                            lineNumber: 176,
                             columnNumber: 13
                         }, undefined)
                     }, item.id, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 100,
+                        lineNumber: 171,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 98,
+                lineNumber: 169,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Publications.js",
-        lineNumber: 87,
+        lineNumber: 155,
         columnNumber: 5
     }, undefined);
 };
@@ -40783,7 +40920,7 @@ $RefreshReg$(_c, "Publications");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","url:../videos/ignoring the basis of human Neurophysiological responses_web_720p.mp4":"19Peu","../img/Biomeccanica-della-caviglia-Copertina.jpg":"Jh9lI","../img/Tibia Dorsi Calf Machine.png":"bhMlB","../img/Tibia Dorsi Calf Machine 2.png":"croFM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","../img/medislipper-1000-plus.jpg":"47EVx","../img/medislipper-foot-cradle.png":"7KGi7","../img/elgin-lower-leg-exerciser.jpg":"el0uf","../img/Biomeccanica-della-caviglia-Copertina.jpg":"Jh9lI","../img/Tibia Dorsi Calf Machine.png":"bhMlB","../img/Tibia Dorsi Calf Machine 2.png":"croFM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
 module.exports["body"] = `jhcZbW_body`;
 module.exports["caption"] = `jhcZbW_caption`;
 module.exports["category"] = `jhcZbW_category`;
@@ -40795,11 +40932,13 @@ module.exports["heroImage"] = `jhcZbW_heroImage`;
 module.exports["image"] = `jhcZbW_image`;
 module.exports["imageGrid"] = `jhcZbW_imageGrid`;
 module.exports["imageGridBelow"] = `jhcZbW_imageGridBelow`;
+module.exports["imageGridThree"] = `jhcZbW_imageGridThree`;
 module.exports["intro"] = `jhcZbW_intro`;
 module.exports["list"] = `jhcZbW_list`;
 module.exports["media"] = `jhcZbW_media`;
 module.exports["observation"] = `jhcZbW_observation`;
 module.exports["observationAlt"] = `jhcZbW_observationAlt`;
+module.exports["observationContentOnly"] = `jhcZbW_observationContentOnly`;
 module.exports["observationInner"] = `jhcZbW_observationInner`;
 module.exports["observationTitle"] = `jhcZbW_observationTitle`;
 module.exports["publications"] = `jhcZbW_publications`;
@@ -40809,6 +40948,8 @@ module.exports["referenceList"] = `jhcZbW_referenceList`;
 module.exports["referenceNote"] = `jhcZbW_referenceNote`;
 module.exports["references"] = `jhcZbW_references`;
 module.exports["referencesTitle"] = `jhcZbW_referencesTitle`;
+module.exports["subsection"] = `jhcZbW_subsection`;
+module.exports["subsectionTitle"] = `jhcZbW_subsectionTitle`;
 module.exports["summary"] = `jhcZbW_summary`;
 module.exports["title"] = `jhcZbW_title`;
 module.exports["video"] = `jhcZbW_video`;
@@ -40816,10 +40957,16 @@ module.exports["video"] = `jhcZbW_video`;
 },{}],"761FU":[function(require,module,exports,__globalThis) {
 module.exports = require("a287120ecdd4414f").getBundleURL('ej6rf') + "fatigue-foot-related-accident-football-match_web_720p.0e5dfc4f.mp4" + "?" + Date.now();
 
-},{"a287120ecdd4414f":"lgJ39"}],"19Peu":[function(require,module,exports,__globalThis) {
-module.exports = require("c497b0856155b985").getBundleURL('ej6rf') + "ignoring the basis of human Neurophysiological responses_web_720p.baccdb2f.mp4" + "?" + Date.now();
+},{"a287120ecdd4414f":"lgJ39"}],"47EVx":[function(require,module,exports,__globalThis) {
+module.exports = require("9176f810461f7b3a").getBundleURL('ej6rf') + "medislipper-1000-plus.2da33e9e.jpg" + "?" + Date.now();
 
-},{"c497b0856155b985":"lgJ39"}],"Jh9lI":[function(require,module,exports,__globalThis) {
+},{"9176f810461f7b3a":"lgJ39"}],"7KGi7":[function(require,module,exports,__globalThis) {
+module.exports = require("25679c9361ab3486").getBundleURL('ej6rf') + "medislipper-foot-cradle.f28c8689.png" + "?" + Date.now();
+
+},{"25679c9361ab3486":"lgJ39"}],"el0uf":[function(require,module,exports,__globalThis) {
+module.exports = require("4788db364245dbe0").getBundleURL('ej6rf') + "elgin-lower-leg-exerciser.13010755.jpg" + "?" + Date.now();
+
+},{"4788db364245dbe0":"lgJ39"}],"Jh9lI":[function(require,module,exports,__globalThis) {
 module.exports = require("ecdef73ac2fb6357").getBundleURL('ej6rf') + "Biomeccanica-della-caviglia-Copertina.366e8b56.jpg" + "?" + Date.now();
 
 },{"ecdef73ac2fb6357":"lgJ39"}],"bhMlB":[function(require,module,exports,__globalThis) {

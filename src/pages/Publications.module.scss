@@ -102,6 +102,14 @@
   .referenceLink {
     color: #7ec8e8;
   }
+
+  .subsectionTitle {
+    color: #f1c40f;
+  }
+
+  .subsection {
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
 }
 
 .observationInner {
@@ -116,6 +124,11 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+}
+
+.observationContentOnly {
+  grid-template-columns: 1fr;
+  max-width: 820px;
 }
 
 .media {
@@ -153,6 +166,10 @@
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
+}
+
+.imageGridThree .figure:last-child {
+  grid-column: 1 / -1;
 }
 
 .figure {
@@ -262,6 +279,27 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.subsection {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(19, 54, 75, 0.1);
+
+  &:first-of-type {
+    margin-top: 24px;
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+.subsectionTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #13364b;
+  margin: 0 0 16px;
+  line-height: 1.35;
 }
 
 @media screen and (max-width: 768px) {
