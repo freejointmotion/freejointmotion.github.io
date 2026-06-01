@@ -211,9 +211,9 @@
 
 .pHiQEG_subHeader {
   z-index: 1000;
-  color: #13364b;
-  background: #f4f4f4;
-  border-bottom: 1px solid #13364b1f;
+  color: #fff;
+  background: #273e59;
+  border-bottom: 1px solid #ffffff1a;
   width: 100%;
   padding: 12px 15px;
   position: fixed;
@@ -233,7 +233,7 @@
 }
 
 .pHiQEG_subHeader .pHiQEG_subNav .pHiQEG_subLink {
-  color: #4a5568;
+  color: #ffffffd9;
   border-bottom: 2px solid #0000;
   margin: 0 15px;
   padding-bottom: 2px;
@@ -243,11 +243,11 @@
 }
 
 .pHiQEG_subHeader .pHiQEG_subNav .pHiQEG_subLink:hover {
-  color: #13364b;
+  color: #f1c40f;
 }
 
 .pHiQEG_subHeader .pHiQEG_subNav .pHiQEG_subActive {
-  color: #13364b;
+  color: #f1c40f;
   border-bottom-color: #f1c40f;
   font-weight: 600;
 }

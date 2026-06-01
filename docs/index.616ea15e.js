@@ -37593,15 +37593,16 @@ var _analytics = require("../config/analytics");
 var _s = $RefreshSig$();
 const GoogleAnalytics = ()=>{
     _s();
-    const { pathname } = (0, _reactRouter.useLocation)();
-    (0, _react.useEffect)(()=>{
-        (0, _analytics.trackPageView)(pathname);
+    const { pathname, search } = (0, _reactRouter.useLocation)();
+    (0, _react.useLayoutEffect)(()=>{
+        (0, _analytics.trackPageView)(pathname, search);
     }, [
-        pathname
+        pathname,
+        search
     ]);
     return null;
 };
-_s(GoogleAnalytics, "+8VPq4+XDMjo/kjL3WLkbwU2Amg=", false, function() {
+_s(GoogleAnalytics, "haKYhrgib4WvsI/Zi8e4wic4Gwo=", false, function() {
     return [
         (0, _reactRouter.useLocation)
     ];
@@ -37621,15 +37622,27 @@ $RefreshReg$(_c, "GoogleAnalytics");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GA_MEASUREMENT_ID", ()=>GA_MEASUREMENT_ID);
 parcelHelpers.export(exports, "GA_STREAM_ID", ()=>GA_STREAM_ID);
+parcelHelpers.export(exports, "getHashPageUrl", ()=>getHashPageUrl);
+parcelHelpers.export(exports, "getHashPagePath", ()=>getHashPagePath);
 parcelHelpers.export(exports, "trackPageView", ()=>trackPageView);
 const GA_MEASUREMENT_ID = "G-B7QYJB1Y83";
 const GA_STREAM_ID = "14985507414";
-const trackPageView = (pathname)=>{
+const getHashPageUrl = (pathname, search = "")=>{
+    const hashPath = pathname === "/" ? "/#/" : `/#${pathname}`;
+    return `${window.location.origin}${hashPath}${search}`;
+};
+const getHashPagePath = (pathname, search = "")=>{
+    const hashPath = pathname === "/" ? "/#/" : `/#${pathname}`;
+    return `${hashPath}${search}`;
+};
+const trackPageView = (pathname, search = "")=>{
     if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-    const pagePath = pathname === "/" ? "/#/" : `/#${pathname}`;
-    window.gtag("config", GA_MEASUREMENT_ID, {
+    const pageLocation = getHashPageUrl(pathname, search);
+    const pagePath = getHashPagePath(pathname, search);
+    window.gtag("event", "page_view", {
+        send_to: GA_MEASUREMENT_ID,
+        page_location: pageLocation,
         page_path: pagePath,
-        page_location: window.location.href,
         page_title: document.title
     });
 };
