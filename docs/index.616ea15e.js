@@ -40442,18 +40442,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _publicationsModuleScss = require("./Publications.module.scss");
 var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4 = require("url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4");
 var _fatigueFootRelatedAccidentFootballMatchWeb720PMp4Default = parcelHelpers.interopDefault(_fatigueFootRelatedAccidentFootballMatchWeb720PMp4);
-var _medislipper1000PlusJpg = require("../img/medislipper-1000-plus.jpg");
-var _medislipper1000PlusJpgDefault = parcelHelpers.interopDefault(_medislipper1000PlusJpg);
-var _medislipperFootCradlePng = require("../img/medislipper-foot-cradle.png");
-var _medislipperFootCradlePngDefault = parcelHelpers.interopDefault(_medislipperFootCradlePng);
-var _elginLowerLegExerciserJpg = require("../img/elgin-lower-leg-exerciser.jpg");
-var _elginLowerLegExerciserJpgDefault = parcelHelpers.interopDefault(_elginLowerLegExerciserJpg);
 var _biomeccanicaDellaCavigliaCopertinaJpg = require("../img/Biomeccanica-della-caviglia-Copertina.jpg");
 var _biomeccanicaDellaCavigliaCopertinaJpgDefault = parcelHelpers.interopDefault(_biomeccanicaDellaCavigliaCopertinaJpg);
-var _tibiaDorsiCalfMachinePng = require("../img/Tibia Dorsi Calf Machine.png");
-var _tibiaDorsiCalfMachinePngDefault = parcelHelpers.interopDefault(_tibiaDorsiCalfMachinePng);
-var _tibiaDorsiCalfMachine2Png = require("../img/Tibia Dorsi Calf Machine 2.png");
-var _tibiaDorsiCalfMachine2PngDefault = parcelHelpers.interopDefault(_tibiaDorsiCalfMachine2Png);
 const observations = [
     {
         id: "fatigue-foot-failure",
@@ -40471,65 +40461,29 @@ const observations = [
         id: "rehab-technology-market-gap",
         category: "Rehabilitation Technology \xb7 Critical Review",
         title: "Motorized and Lever-Based Ankle Apparatuses: Greater Complexity, Persistent Kinematic Disconnect",
-        summary: "Commercial devices marketed for active and passive ankle rehabilitation often impose fixed mechanical paths that diverge from the coupled, multi-planar motion of the talocrural and subtalar joints during functional movement.",
+        summary: "Rehabilitation apparatuses marketed for active and passive ankle recovery often impose fixed mechanical paths that diverge from the coupled, multi-planar motion of the talocrural and subtalar joints during functional movement.",
         body: [
-            "The contemporary ankle-rehabilitation market spans a wide price and sophistication spectrum\u2014from elastic resistance bands and single-plane seated trainers to motorized platforms and weighted lever systems. Devices at the upper end of this spectrum are frequently presented as technologically advanced solutions for proprioceptive recovery and tibio-tarsal range of motion. Yet proximity to clinical settings and digital monitoring does not, by itself, guarantee biomechanical fidelity.",
+            "The contemporary ankle-rehabilitation landscape spans a wide price and sophistication spectrum\u2014from elastic resistance bands and single-plane seated trainers to motorized platforms and weighted lever systems. Devices at the upper end of this spectrum are frequently presented as technologically advanced solutions for proprioceptive recovery and tibio-tarsal range of motion. Yet proximity to clinical settings and digital monitoring does not, by itself, guarantee biomechanical fidelity.",
             "A recurring design limitation across these categories is the substitution of a machine-defined degrees-of-freedom problem for the foot\u2019s intrinsic degrees of freedom. When the foot is rigidly fixated, driven along a crank-defined arc, or loaded through discrete inversion\u2013eversion and dorsiflexion\u2013plantarflexion stations, the motor system learns coordination within the device\u2019s constraints\u2014not within the variable coupling of joints, soft tissue, and ground reaction forces encountered in walking, running, or cutting.",
-            "The following apparatuses illustrate this gap. They represent some of the closer approximations to multi-axis intent currently available in commerce; they remain materially disconnected from authentic foot function relative to a user-guided, multi-planar platform."
-        ],
-        images: [
-            {
-                src: (0, _medislipper1000PlusJpgDefault.default),
-                alt: "Medislipper 1000 Plus \u2014 motorized ankle rehabilitation apparatus with digital control panel",
-                caption: "Medislipper 1000 Plus: motorized drive, rigid foot cradle, and calf support\u2014movement constrained to the machine\u2019s mechanical path."
-            },
-            {
-                src: (0, _medislipperFootCradlePngDefault.default),
-                alt: "Foot secured in Medislipper metal frame with heel cup and forefoot plate",
-                caption: "Foot fixated on a flat platform within a sliding linkage; natural circumduction and axis migration are not reproduced."
-            },
-            {
-                src: (0, _elginLowerLegExerciserJpgDefault.default),
-                alt: "Fabrication Enterprises Elgin Lower Leg Exerciser with foot platform, weight pegs, and leather straps",
-                caption: "Elgin\xae Lower Leg Exerciser: foot strapped to a pivoting platform with weight-loaded arms for discrete inversion, eversion, dorsiflexion, and plantarflexion stations."
-            }
+            "The following categories illustrate this gap. They represent some of the closer approximations to multi-axis intent currently available in practice; they remain materially disconnected from authentic foot function relative to a user-guided, multi-planar platform."
         ],
         subsections: [
             {
-                title: "Medislipper 1000 Plus (Medisport)",
+                title: "Motorized Active and Passive Rehabilitation Platforms",
                 body: [
-                    "The Medislipper 1000 Plus is marketed for active and passive rehabilitation of ankle injuries and sprains, with force sensors to monitor angular velocity and applied force during exercise. From a rehabilitation-science perspective, instrumentation that quantifies patient output is valuable for tracking progress\u2014but measurability of effort within a device does not establish validity of the movement being trained.",
-                    "Mechanically, the apparatus couples a motorized housing to a foot carriage via crank-and-rail linkage. The foot rests in a rectangular metal frame with heel cup and forefoot plate; the calf is supported separately on a padded post. Motion is therefore executed as a driven, partially guided trajectory whose instantaneous center of rotation is dictated by the machine\u2019s pivot geometry, not by the shifting axis of rotation that characterizes talocrural and subtalar coupling during weight-bearing locomotion.",
+                    "A common class of apparatus combines motorized drive with instrumentation to monitor angular velocity and applied force during exercise. From a rehabilitation-science perspective, quantifying patient output is valuable for tracking progress\u2014but measurability of effort within a device does not establish validity of the movement being trained.",
+                    "Mechanically, these systems typically couple a motorized housing to a foot carriage via crank-and-rail or similar linkage. The foot rests in a rigid frame with heel cup and forefoot support; the calf is often stabilized separately on a padded post. Motion is therefore executed as a driven, partially guided trajectory whose instantaneous center of rotation is dictated by the machine\u2019s pivot geometry, not by the shifting axis of rotation that characterizes talocrural and subtalar coupling during weight-bearing locomotion.",
                     "Passive cycling through a predetermined arc may restore range in a clinical sense, yet it decouples ankle motion from the neuromuscular sequencing required for proprioceptive re-weighting during gait: eccentric control at initial contact, mid-stance stability, and terminal-stance power generation. Active exercise against the device\u2019s path still encodes a single dominant movement solution; it does not train the foot to negotiate multi-planar perturbations, intrinsic arch control, or the windlass stiffening of the forefoot.",
-                    "In summary, the Medislipper occupies a more elaborate niche than elastic-band or seated dorsiflexion products, but its fundamental model remains one of external path imposition\u2014a disconnect from the real foot movements that rehabilitation ultimately must restore."
-                ],
-                references: [
-                    {
-                        label: "Medislipper 1000 Plus \u2014 active and passive rehabilitation of ankle injuries and sprains",
-                        url: "https://www.medislipper-medisport.com/en/for-the-active-and-passive-rehabilitation-of-ankle-injuries-and-sprains/",
-                        note: "Manufacturer description of indications, force sensors, and clinical positioning."
-                    },
-                    {
-                        label: "Early rehabilitation treatment of ankle sprains in athletes (Prof. Cosimo Costantino)",
-                        url: "https://www.medislipper-medisport.com/en/for-the-active-and-passive-rehabilitation-of-ankle-injuries-and-sprains/",
-                        note: "Cited on the manufacturer site as supporting evidence for Medislipper effectiveness."
-                    }
+                    "In summary, motorized platforms occupy a more elaborate niche than elastic-band or seated dorsiflexion approaches, but their fundamental model remains one of external path imposition\u2014a disconnect from the real foot movements that rehabilitation ultimately must restore."
                 ]
             },
             {
-                title: "Fabrication Enterprises Elgin\xae Lower Leg Exerciser",
+                title: "Lever-Based and Weight-Loaded Lower-Leg Exercisers",
                 body: [
-                    "The Elgin\xae Lower Leg Exerciser (Fabrication Enterprises; manual, weight-plate resistance) is positioned for load-resisting inversion, eversion, dorsiflexion, and plantarflexion exercises. Unlike the Medislipper\u2019s continuous motorized path, this class of device segments the ankle into discrete, operator-selected movement stations\u2014an architecture that mirrors traditional strength-training logic applied to a joint complex that does not function as independent planar hinges.",
+                    "Another prevalent design uses manual, weight-plate resistance for load-resisting inversion, eversion, dorsiflexion, and plantarflexion exercises. Unlike continuous motorized paths, this architecture segments the ankle into discrete, operator-selected movement stations\u2014mirroring traditional strength-training logic applied to a joint complex that does not function as independent planar hinges.",
                     "Segmenting inversion, eversion, dorsiflexion, and plantarflexion into separate loading episodes treats the ankle\u2013foot as a set of orthogonal actions. In vivo, these motions are coupled: subtalar pronation accompanies internal rotation of the leg; dorsiflexion at the talocrural joint interacts with peroneal mortise mechanics and arch dynamics. Training each plane in isolation reinforces compartmentalized motor programs that may not integrate under fatigue, uneven surfaces, or sport-specific demands.",
-                    "The seated, open-chain configuration further removes ground-reaction constraints. Force vectors, timing, and co-contraction patterns differ materially from closed-chain gait, where the foot must stabilize the center of mass while accepting and propelling body weight. A 33-lb floor unit with defined dimensional envelope signals institutional durability, not ecological validity of movement.",
-                    "Relative to elastic resistance or single-axis tibialis trainers, the Elgin system offers graded resistance and explicit plane selection\u2014yet it still externalizes the problem of which movement to perform and when, rather than permitting the neuromuscular system to explore stabilizing paths across combined axes. It is closer to clinical strength equipment than to functional re-education of the foot as an integrated lever."
-                ],
-                references: [
-                    {
-                        label: "Fabrication Enterprises Elgin\xae Lower Leg Exerciser Without Weights (M-824404-2612)",
-                        url: "https://axiommedicals.com/products/fabrication-enterprises-elgin-r-lower-leg-exerciser-without-weights-m-824404-2612-each",
-                        note: "Product specifications: manual resistance, inversion/eversion/dorsiflexion/plantarflexion stations, ankle/leg target area."
-                    }
+                    "The seated, open-chain configuration further removes ground-reaction constraints. Force vectors, timing, and co-contraction patterns differ materially from closed-chain gait, where the foot must stabilize the center of mass while accepting and propelling body weight. Institutional-grade construction signals durability in clinical settings, not ecological validity of movement.",
+                    "Relative to elastic resistance or single-axis dorsiflexion trainers, lever-based systems offer graded resistance and explicit plane selection\u2014yet they still externalize the problem of which movement to perform and when, rather than permitting the neuromuscular system to explore stabilizing paths across combined axes. They are closer to clinical strength equipment than to functional re-education of the foot as an integrated lever."
                 ]
             }
         ]
@@ -40538,10 +40492,10 @@ const observations = [
         id: "foot-biomechanics-x-framework",
         category: "Biomechanics \xb7 Conceptual Framework",
         title: 'The "X" Framework: From Single-Plane Trainers to Natural Foot Function and Free Movement',
-        summary: "A structured contrast\u2014four paired endpoints on an X\u2014juxtaposing limiting commercial devices (including single-plane trainers) with evidence-based ankle\u2013foot biomechanics and unconstrained human movement.",
+        summary: "A structured contrast\u2014four paired endpoints on an X\u2014juxtaposing limiting rehabilitation approaches with evidence-based ankle\u2013foot biomechanics and unconstrained human movement.",
         body: [
             "The letter X organizes this analysis: two arms represent mechanistic, device-imposed constraints; the other two represent (1) how the foot operates as an integrated biomechanical system, and (2) what unconstrained, context-dependent movement requires when the lower limb is not forced into artificial paths.",
-            "At one extreme of the market sit inexpensive elastic-band protocols and rudimentary cueing\u2014useful for compliance but devoid of multi-axis fidelity. At a middle tier sit motorized platforms (e.g., Medislipper) and lever-based stations (e.g., Elgin\xae), which add sophistication yet still substitute machine geometry for physiological coupling. At the accessible consumer end, seated tibia dorsi / tibialis-trainer machines\u2014such as the Bells of Steel Tibialis Trainer and similar products\u2014compress the problem further: the foot is locked on a platform, dorsiflexion and plantarflexion occur in a single open-chain plane, and the talocrural\u2013subtalar system is modeled as a hinge.",
+            "At one extreme sit inexpensive elastic-band protocols and rudimentary cueing\u2014useful for compliance but devoid of multi-axis fidelity. At a middle tier sit motorized platforms and lever-based stations, which add sophistication yet still substitute machine geometry for physiological coupling. At the accessible consumer end, seated dorsiflexion and tibialis-trainer machines compress the problem further: the foot is locked on a platform, dorsiflexion and plantarflexion occur in a single open-chain plane, and the talocrural\u2013subtalar system is modeled as a hinge.",
             "None of these categories reproduce the coupled motion of the talocrural and subtalar joints, peroneal mortise widening during dorsiflexion, intrinsic arch control, or the windlass mechanism that stiffens the forefoot during push-off. They generate force vectors and timing that differ from ground reaction during walking; they offer little meaningful training of pronation\u2013supination integration or multi-axis resistance under variable load.",
             "The constructive arm of the X aligns with evidence-based ankle and foot biomechanics: the foot as a lever transmitting triceps surae force; talocrural and subtalar joints governing clinically relevant motion; proximal and distal stress redistribution when subtalar function is blocked; and locomotion as six gait determinants maintaining a smooth center-of-gravity path. Free movement is coordinated, multi-planar, and context-dependent\u2014not a repetition count on a machine-defined arc."
         ],
@@ -40550,28 +40504,11 @@ const observations = [
             alt: "Ankle and foot biomechanics \u2014 evolution of the foot through walking (Formative Zone)",
             caption: "Reference imagery from Formative Zone on ankle biomechanics, foot evolution, and the six determinants of gait."
         },
-        images: [
-            {
-                src: (0, _tibiaDorsiCalfMachinePngDefault.default),
-                alt: "Seated tibia dorsi calf machine \u2014 single-plane open-chain ankle loading",
-                caption: "Seated dorsiflexion machine: foot fixed, motion reduced to one plane\u2014representative of the lower-complexity market tier."
-            },
-            {
-                src: (0, _tibiaDorsiCalfMachine2PngDefault.default),
-                alt: "Tibia dorsi calf machine side view showing constrained foot placement",
-                caption: "The same device class\u2014unable to train subtalar coupling or gait-specific force paths."
-            }
-        ],
         references: [
             {
                 label: "Biomeccanica della caviglia: dall\u2019evoluzione del piede al gesto di camminare (Formative Zone)",
                 url: "https://www.formativezone.it/biomeccanica-della-caviglia-dallevoluzione-del-piede-al-gesto-di-camminare/",
                 note: "Italian-language reference on ankle evolution, foot leverage, and the six determinants of gait."
-            },
-            {
-                label: "Example of a problematic commercial product (Bells of Steel Tibialis Trainer Machine)",
-                url: "https://bellsofsteel.us/products/tibialis-trainer-machine",
-                note: "Illustrative only\u2014representative of single-axis dorsiflexion trainers, not an endorsement."
             }
         ]
     }
@@ -40589,21 +40526,21 @@ const Publications = ()=>{
                         children: "Ankle Rehabilitation Technology: A Critical Review"
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 157,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: _publicationsModuleScss.intro,
-                        children: "Field observations and structured analysis of contemporary rehabilitation apparatuses\u2014from motorized platforms and lever-based exercisers to single-plane commercial trainers\u2014evaluated against the biomechanical and neurophysiological requirements of authentic foot function."
+                        children: "Field observations and structured analysis of contemporary rehabilitation approaches\u2014from motorized platforms and lever-based exercisers to single-plane training methods\u2014evaluated against the biomechanical and neurophysiological requirements of authentic foot function."
                     }, void 0, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 161,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 156,
+                lineNumber: 89,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40632,7 +40569,7 @@ const Publications = ()=>{
                                                     media: "(min-width: 1024px)"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 194,
+                                                    lineNumber: 127,
                                                     columnNumber: 25
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
@@ -40640,14 +40577,14 @@ const Publications = ()=>{
                                                     type: "video/mp4"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 200,
+                                                    lineNumber: 133,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 "Your browser does not support the video tag."
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 184,
+                                            lineNumber: 117,
                                             columnNumber: 21
                                         }, undefined),
                                         item.heroImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
@@ -40660,7 +40597,7 @@ const Publications = ()=>{
                                                     loading: "lazy"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 207,
+                                                    lineNumber: 140,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 item.heroImage.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
@@ -40668,13 +40605,13 @@ const Publications = ()=>{
                                                     children: item.heroImage.caption
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 214,
+                                                    lineNumber: 147,
                                                     columnNumber: 25
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 206,
+                                            lineNumber: 139,
                                             columnNumber: 21
                                         }, undefined),
                                         item.images?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40689,7 +40626,7 @@ const Publications = ()=>{
                                                             loading: "lazy"
                                                         }, void 0, false, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 229,
+                                                            lineNumber: 162,
                                                             columnNumber: 27
                                                         }, undefined),
                                                         image.caption && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
@@ -40697,24 +40634,24 @@ const Publications = ()=>{
                                                             children: image.caption
                                                         }, void 0, false, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 236,
+                                                            lineNumber: 169,
                                                             columnNumber: 29
                                                         }, undefined)
                                                     ]
                                                 }, image.alt, true, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 228,
+                                                    lineNumber: 161,
                                                     columnNumber: 25
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 222,
+                                            lineNumber: 155,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 182,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40725,7 +40662,7 @@ const Publications = ()=>{
                                             children: item.category
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 248,
+                                            lineNumber: 181,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -40733,7 +40670,7 @@ const Publications = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 249,
+                                            lineNumber: 182,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40741,7 +40678,7 @@ const Publications = ()=>{
                                             children: item.summary
                                         }, void 0, false, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 250,
+                                            lineNumber: 183,
                                             columnNumber: 17
                                         }, undefined),
                                         item.body.map((paragraph, pIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40749,7 +40686,7 @@ const Publications = ()=>{
                                                 children: paragraph
                                             }, pIndex, false, {
                                                 fileName: "src/pages/Publications.js",
-                                                lineNumber: 252,
+                                                lineNumber: 185,
                                                 columnNumber: 19
                                             }, undefined)),
                                         item.subsections?.map((sub)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40760,7 +40697,7 @@ const Publications = ()=>{
                                                         children: sub.title
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Publications.js",
-                                                        lineNumber: 259,
+                                                        lineNumber: 192,
                                                         columnNumber: 21
                                                     }, undefined),
                                                     sub.body.map((paragraph, pIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40768,7 +40705,7 @@ const Publications = ()=>{
                                                             children: paragraph
                                                         }, pIndex, false, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 261,
+                                                            lineNumber: 194,
                                                             columnNumber: 23
                                                         }, undefined)),
                                                     sub.references?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40779,7 +40716,7 @@ const Publications = ()=>{
                                                                 children: "References"
                                                             }, void 0, false, {
                                                                 fileName: "src/pages/Publications.js",
-                                                                lineNumber: 267,
+                                                                lineNumber: 200,
                                                                 columnNumber: 25
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40795,7 +40732,7 @@ const Publications = ()=>{
                                                                                 children: ref.label
                                                                             }, void 0, false, {
                                                                                 fileName: "src/pages/Publications.js",
-                                                                                lineNumber: 271,
+                                                                                lineNumber: 204,
                                                                                 columnNumber: 31
                                                                             }, undefined),
                                                                             ref.note && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40803,30 +40740,30 @@ const Publications = ()=>{
                                                                                 children: ref.note
                                                                             }, void 0, false, {
                                                                                 fileName: "src/pages/Publications.js",
-                                                                                lineNumber: 280,
+                                                                                lineNumber: 213,
                                                                                 columnNumber: 33
                                                                             }, undefined)
                                                                         ]
                                                                     }, ref.url, true, {
                                                                         fileName: "src/pages/Publications.js",
-                                                                        lineNumber: 270,
+                                                                        lineNumber: 203,
                                                                         columnNumber: 29
                                                                     }, undefined))
                                                             }, void 0, false, {
                                                                 fileName: "src/pages/Publications.js",
-                                                                lineNumber: 268,
+                                                                lineNumber: 201,
                                                                 columnNumber: 25
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/pages/Publications.js",
-                                                        lineNumber: 266,
+                                                        lineNumber: 199,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, sub.title, true, {
                                                 fileName: "src/pages/Publications.js",
-                                                lineNumber: 258,
+                                                lineNumber: 191,
                                                 columnNumber: 19
                                             }, undefined)),
                                         item.references?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40837,7 +40774,7 @@ const Publications = ()=>{
                                                     children: "References"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 292,
+                                                    lineNumber: 225,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40853,7 +40790,7 @@ const Publications = ()=>{
                                                                     children: ref.label
                                                                 }, void 0, false, {
                                                                     fileName: "src/pages/Publications.js",
-                                                                    lineNumber: 296,
+                                                                    lineNumber: 229,
                                                                     columnNumber: 27
                                                                 }, undefined),
                                                                 ref.note && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40861,52 +40798,52 @@ const Publications = ()=>{
                                                                     children: ref.note
                                                                 }, void 0, false, {
                                                                     fileName: "src/pages/Publications.js",
-                                                                    lineNumber: 305,
+                                                                    lineNumber: 238,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
                                                         }, ref.url, true, {
                                                             fileName: "src/pages/Publications.js",
-                                                            lineNumber: 295,
+                                                            lineNumber: 228,
                                                             columnNumber: 25
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Publications.js",
-                                                    lineNumber: 293,
+                                                    lineNumber: 226,
                                                     columnNumber: 21
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Publications.js",
-                                            lineNumber: 291,
+                                            lineNumber: 224,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Publications.js",
-                                    lineNumber: 247,
+                                    lineNumber: 180,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Publications.js",
-                            lineNumber: 176,
+                            lineNumber: 109,
                             columnNumber: 13
                         }, undefined)
                     }, item.id, false, {
                         fileName: "src/pages/Publications.js",
-                        lineNumber: 171,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/pages/Publications.js",
-                lineNumber: 169,
+                lineNumber: 102,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Publications.js",
-        lineNumber: 155,
+        lineNumber: 88,
         columnNumber: 5
     }, undefined);
 };
@@ -40920,7 +40857,7 @@ $RefreshReg$(_c, "Publications");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","../img/medislipper-1000-plus.jpg":"47EVx","../img/medislipper-foot-cradle.png":"7KGi7","../img/elgin-lower-leg-exerciser.jpg":"el0uf","../img/Biomeccanica-della-caviglia-Copertina.jpg":"Jh9lI","../img/Tibia Dorsi Calf Machine.png":"bhMlB","../img/Tibia Dorsi Calf Machine 2.png":"croFM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Publications.module.scss":"16La7","url:../videos/fatigue-foot-related-accident-football-match_web_720p.mp4":"761FU","../img/Biomeccanica-della-caviglia-Copertina.jpg":"Jh9lI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"16La7":[function(require,module,exports,__globalThis) {
 module.exports["body"] = `jhcZbW_body`;
 module.exports["caption"] = `jhcZbW_caption`;
 module.exports["category"] = `jhcZbW_category`;
@@ -40957,25 +40894,10 @@ module.exports["video"] = `jhcZbW_video`;
 },{}],"761FU":[function(require,module,exports,__globalThis) {
 module.exports = require("a287120ecdd4414f").getBundleURL('ej6rf') + "fatigue-foot-related-accident-football-match_web_720p.0e5dfc4f.mp4" + "?" + Date.now();
 
-},{"a287120ecdd4414f":"lgJ39"}],"47EVx":[function(require,module,exports,__globalThis) {
-module.exports = require("9176f810461f7b3a").getBundleURL('ej6rf') + "medislipper-1000-plus.2da33e9e.jpg" + "?" + Date.now();
-
-},{"9176f810461f7b3a":"lgJ39"}],"7KGi7":[function(require,module,exports,__globalThis) {
-module.exports = require("25679c9361ab3486").getBundleURL('ej6rf') + "medislipper-foot-cradle.f28c8689.png" + "?" + Date.now();
-
-},{"25679c9361ab3486":"lgJ39"}],"el0uf":[function(require,module,exports,__globalThis) {
-module.exports = require("4788db364245dbe0").getBundleURL('ej6rf') + "elgin-lower-leg-exerciser.13010755.jpg" + "?" + Date.now();
-
-},{"4788db364245dbe0":"lgJ39"}],"Jh9lI":[function(require,module,exports,__globalThis) {
+},{"a287120ecdd4414f":"lgJ39"}],"Jh9lI":[function(require,module,exports,__globalThis) {
 module.exports = require("ecdef73ac2fb6357").getBundleURL('ej6rf') + "Biomeccanica-della-caviglia-Copertina.366e8b56.jpg" + "?" + Date.now();
 
-},{"ecdef73ac2fb6357":"lgJ39"}],"bhMlB":[function(require,module,exports,__globalThis) {
-module.exports = require("aa910f7e418e3da8").getBundleURL('ej6rf') + "Tibia Dorsi Calf Machine.86469361.png" + "?" + Date.now();
-
-},{"aa910f7e418e3da8":"lgJ39"}],"croFM":[function(require,module,exports,__globalThis) {
-module.exports = require("be191fc58ed5a93b").getBundleURL('ej6rf') + "Tibia Dorsi Calf Machine 2.20a81a84.png" + "?" + Date.now();
-
-},{"be191fc58ed5a93b":"lgJ39"}],"bQXlR":[function(require,module,exports,__globalThis) {
+},{"ecdef73ac2fb6357":"lgJ39"}],"bQXlR":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e32c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
