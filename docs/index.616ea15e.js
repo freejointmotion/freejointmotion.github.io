@@ -27228,6 +27228,8 @@ var _footer = require("./components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _scrollToTop = require("./components/ScrollToTop");
 var _scrollToTopDefault = parcelHelpers.interopDefault(_scrollToTop);
+var _googleAnalytics = require("./components/GoogleAnalytics");
+var _googleAnalyticsDefault = parcelHelpers.interopDefault(_googleAnalytics);
 var _home = require("./pages/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
 var _about = require("./pages/About");
@@ -27256,12 +27258,17 @@ const App = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 21,
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _googleAnalyticsDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 22,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
@@ -27270,32 +27277,8 @@ const App = ()=>{
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 25,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/about",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 26,
-                            columnNumber: 39
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/sectors",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sectorsDefault.default), {}, void 0, false, {
-                            fileName: "src/App.js",
                             lineNumber: 27,
-                            columnNumber: 41
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27303,11 +27286,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/knowledge",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _knowledgeDefault.default), {}, void 0, false, {
+                        path: "/about",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 28,
-                            columnNumber: 43
+                            columnNumber: 39
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27315,11 +27298,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/technologies",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _technologiesDefault.default), {}, void 0, false, {
+                        path: "/sectors",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sectorsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 29,
-                            columnNumber: 46
+                            columnNumber: 41
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27327,11 +27310,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/services",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+                        path: "/knowledge",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _knowledgeDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 30,
-                            columnNumber: 42
+                            columnNumber: 43
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27339,11 +27322,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/projects",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                        path: "/technologies",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _technologiesDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 31,
-                            columnNumber: 42
+                            columnNumber: 46
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27351,11 +27334,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/news",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsDefault.default), {}, void 0, false, {
+                        path: "/services",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 32,
-                            columnNumber: 38
+                            columnNumber: 42
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27363,11 +27346,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/publications",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
+                        path: "/projects",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 33,
-                            columnNumber: 46
+                            columnNumber: 42
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27375,11 +27358,11 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/impact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _impactDefault.default), {}, void 0, false, {
+                        path: "/news",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 34,
-                            columnNumber: 40
+                            columnNumber: 38
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -27387,32 +27370,56 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/contact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                        path: "/publications",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 35,
-                            columnNumber: 41
+                            columnNumber: 46
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
                         lineNumber: 35,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: "/impact",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _impactDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 36,
+                            columnNumber: 40
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: "/contact",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 37,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 37,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 24,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
@@ -27426,7 +27433,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./components/Header":"hsJbF","./components/Footer":"8pPOA","./components/ScrollToTop":"8xC27","./pages/Home":"KEnRd","./pages/About":"dep5E","./pages/Sectors":"jcDGq","./pages/Knowledge":"ILNmI","./pages/Technologies":"dSm1M","./pages/Services":"4LShI","./pages/Projects":"jlwAO","./pages/News":"3Lyxx","./pages/Publications":"2MBNT","./pages/Impact":"bQXlR","./pages/Contact":"izFEE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./components/Header":"hsJbF","./components/Footer":"8pPOA","./components/ScrollToTop":"8xC27","./components/GoogleAnalytics":"527Ng","./pages/Home":"KEnRd","./pages/About":"dep5E","./pages/Sectors":"jcDGq","./pages/Knowledge":"ILNmI","./pages/Technologies":"dSm1M","./pages/Services":"4LShI","./pages/Projects":"jlwAO","./pages/News":"3Lyxx","./pages/Publications":"2MBNT","./pages/Impact":"bQXlR","./pages/Contact":"izFEE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.1.3
  *
@@ -37571,7 +37578,63 @@ $RefreshReg$(_c, "ScrollToTop");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-router":"dXVwI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"KEnRd":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","react-router":"dXVwI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"527Ng":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9e94 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9e94.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactRouter = require("react-router");
+var _analytics = require("../config/analytics");
+var _s = $RefreshSig$();
+const GoogleAnalytics = ()=>{
+    _s();
+    const { pathname } = (0, _reactRouter.useLocation)();
+    (0, _react.useEffect)(()=>{
+        (0, _analytics.trackPageView)(pathname);
+    }, [
+        pathname
+    ]);
+    return null;
+};
+_s(GoogleAnalytics, "+8VPq4+XDMjo/kjL3WLkbwU2Amg=", false, function() {
+    return [
+        (0, _reactRouter.useLocation)
+    ];
+});
+_c = GoogleAnalytics;
+exports.default = GoogleAnalytics;
+var _c;
+$RefreshReg$(_c, "GoogleAnalytics");
+
+  $parcel$ReactRefreshHelpers$9e94.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","react-router":"dXVwI","../config/analytics":"Q9CsL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Q9CsL":[function(require,module,exports,__globalThis) {
+/** Google Analytics 4 — Free Joint Motion web stream */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GA_MEASUREMENT_ID", ()=>GA_MEASUREMENT_ID);
+parcelHelpers.export(exports, "GA_STREAM_ID", ()=>GA_STREAM_ID);
+parcelHelpers.export(exports, "trackPageView", ()=>trackPageView);
+const GA_MEASUREMENT_ID = "G-B7QYJB1Y83";
+const GA_STREAM_ID = "14985507414";
+const trackPageView = (pathname)=>{
+    if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+    const pagePath = pathname === "/" ? "/#/" : `/#${pathname}`;
+    window.gtag("config", GA_MEASUREMENT_ID, {
+        page_path: pagePath,
+        page_location: window.location.href,
+        page_title: document.title
+    });
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"KEnRd":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b542 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

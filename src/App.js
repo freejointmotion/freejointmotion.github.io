@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes } from 'react-router';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Sectors from "./pages/Sectors";
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <HashRouter basename="/">
       <ScrollToTop />
+      <GoogleAnalytics />
       <Header />
 
       <Routes>
