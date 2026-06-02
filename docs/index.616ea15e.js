@@ -37594,15 +37594,23 @@ var _s = $RefreshSig$();
 const GoogleAnalytics = ()=>{
     _s();
     const { pathname, search } = (0, _reactRouter.useLocation)();
-    (0, _react.useLayoutEffect)(()=>{
+    (0, _react.useEffect)(()=>{
         (0, _analytics.trackPageView)(pathname, search);
     }, [
         pathname,
         search
     ]);
+    (0, _react.useEffect)(()=>{
+        const onHashChange = ()=>{
+            const { pathname: hashPath, search: hashSearch } = (0, _analytics.getHashRoute)();
+            (0, _analytics.trackPageView)(hashPath, hashSearch);
+        };
+        window.addEventListener("hashchange", onHashChange);
+        return ()=>window.removeEventListener("hashchange", onHashChange);
+    }, []);
     return null;
 };
-_s(GoogleAnalytics, "haKYhrgib4WvsI/Zi8e4wic4Gwo=", false, function() {
+_s(GoogleAnalytics, "xes1dT/UKUpGG/KG5Ovli9C1Rkk=", false, function() {
     return [
         (0, _reactRouter.useLocation)
     ];
@@ -37622,28 +37630,97 @@ $RefreshReg$(_c, "GoogleAnalytics");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GA_MEASUREMENT_ID", ()=>GA_MEASUREMENT_ID);
 parcelHelpers.export(exports, "GA_STREAM_ID", ()=>GA_STREAM_ID);
+parcelHelpers.export(exports, "getHashRoute", ()=>getHashRoute);
 parcelHelpers.export(exports, "getHashPageUrl", ()=>getHashPageUrl);
 parcelHelpers.export(exports, "getHashPagePath", ()=>getHashPagePath);
+parcelHelpers.export(exports, "getPageTitle", ()=>getPageTitle);
+parcelHelpers.export(exports, "trackEvent", ()=>trackEvent);
 parcelHelpers.export(exports, "trackPageView", ()=>trackPageView);
 const GA_MEASUREMENT_ID = "G-B7QYJB1Y83";
 const GA_STREAM_ID = "14985507414";
+const ROUTE_TITLES = {
+    "/": "Home",
+    "/about": "About",
+    "/sectors": "Sectors",
+    "/knowledge": "Knowledge",
+    "/technologies": "Technologies",
+    "/services": "Services",
+    "/projects": "Projects",
+    "/news": "News",
+    "/publications": "Publications",
+    "/impact": "Impact",
+    "/contact": "Contact"
+};
+const SITE_NAME = "Free Joint Motion";
+const getHashRoute = ()=>{
+    const hash = window.location.hash || "#/";
+    const match = hash.match(/^#\/?(.*)$/);
+    const path = match?.[1] ? `/${match[1].split("?")[0]}` : "/";
+    const search = hash.includes("?") ? `?${hash.split("?")[1]}` : "";
+    return {
+        pathname: path === "/" ? "/" : path.replace(/\/$/, "") || "/",
+        search
+    };
+};
 const getHashPageUrl = (pathname, search = "")=>{
-    const hashPath = pathname === "/" ? "/#/" : `/#${pathname}`;
-    return `${window.location.origin}${hashPath}${search}`;
+    const hashPath = pathname === "/" ? "#/" : `#${pathname}`;
+    const base = window.location.origin + window.location.pathname.replace(/index\.html$/i, "");
+    const normalizedBase = base.endsWith("/") ? base.slice(0, -1) : base;
+    return `${normalizedBase}/${hashPath}${search}`.replace(/([^:]\/)\/+/g, "$1");
 };
 const getHashPagePath = (pathname, search = "")=>{
     const hashPath = pathname === "/" ? "/#/" : `/#${pathname}`;
     return `${hashPath}${search}`;
 };
+const getPageTitle = (pathname)=>{
+    const page = ROUTE_TITLES[pathname] || pathname.replace(/^\//, "") || "Home";
+    return `${page} \u{2014} ${SITE_NAME}`;
+};
+const runWhenGtagReady = (fn)=>{
+    if (typeof window === "undefined") return;
+    if (typeof window.gtag === "function") {
+        fn();
+        return;
+    }
+    const start = Date.now();
+    const timer = window.setInterval(()=>{
+        if (typeof window.gtag === "function") {
+            window.clearInterval(timer);
+            fn();
+        } else if (Date.now() - start > 5000) window.clearInterval(timer);
+    }, 50);
+};
+const trackEvent = (eventName, params = {})=>{
+    runWhenGtagReady(()=>{
+        window.gtag("event", eventName, {
+            send_to: GA_MEASUREMENT_ID,
+            page_location: window.location.href,
+            ...params
+        });
+    });
+};
 const trackPageView = (pathname, search = "")=>{
-    if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-    const pageLocation = getHashPageUrl(pathname, search);
-    const pagePath = getHashPagePath(pathname, search);
-    window.gtag("event", "page_view", {
-        send_to: GA_MEASUREMENT_ID,
-        page_location: pageLocation,
-        page_path: pagePath,
-        page_title: document.title
+    if (typeof window === "undefined") return;
+    const apply = ()=>{
+        const href = window.location.href;
+        const pagePath = getHashPagePath(pathname, search);
+        const pageTitle = getPageTitle(pathname);
+        document.title = pageTitle;
+        window.gtag("config", GA_MEASUREMENT_ID, {
+            page_path: pagePath,
+            page_location: href,
+            page_title: pageTitle
+        });
+        window.gtag("event", "page_view", {
+            send_to: GA_MEASUREMENT_ID,
+            page_path: pagePath,
+            page_location: href,
+            page_title: pageTitle,
+            page_referrer: document.referrer || undefined
+        });
+    };
+    requestAnimationFrame(()=>{
+        runWhenGtagReady(apply);
     });
 };
 
@@ -39578,6 +39655,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _pageShell = require("../components/PageShell");
 var _pageShellDefault = parcelHelpers.interopDefault(_pageShell);
+var _useVideoAnalytics = require("../hooks/useVideoAnalytics");
+var _useVideoAnalyticsDefault = parcelHelpers.interopDefault(_useVideoAnalytics);
 var _multiAxSysWeb720PMp4 = require("url:../videos/multi-ax-sys_web_720p.mp4");
 var _multiAxSysWeb720PMp4Default = parcelHelpers.interopDefault(_multiAxSysWeb720PMp4);
 var _us20050239611A120051027D00001Jpg = require("../img/US20050239611A1-20051027-D00001.jpg");
@@ -39597,6 +39676,7 @@ var _mba741Team3PresentationPptx = require("url:../../public/documents/mba-741-t
 var _mba741Team3PresentationPptxDefault = parcelHelpers.interopDefault(_mba741Team3PresentationPptx);
 var _mba741Team3FinalReportDocx = require("url:../../public/documents/mba-741-team-3-final-report.docx");
 var _mba741Team3FinalReportDocxDefault = parcelHelpers.interopDefault(_mba741Team3FinalReportDocx);
+var _s = $RefreshSig$();
 const MBA_DOCUMENTS = {
     team1Presentation: (0, _mba741Team1PresentationPptxDefault.default),
     team1Report: (0, _mba741Team1ConsultingReportDocxDefault.default),
@@ -39719,6 +39799,12 @@ const validationPartners = [
     }
 ];
 const Projects = ()=>{
+    _s();
+    const projectVideoRef = (0, _react.useRef)(null);
+    (0, _useVideoAnalyticsDefault.default)(projectVideoRef, {
+        videoName: "Multi-Ax-Sys demonstration",
+        videoLocation: "projects"
+    });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pageShellDefault.default), {
         title: "Projects",
         intro: "Innovations in kinetic therapy and lower-limb biomechanics.",
@@ -39730,7 +39816,7 @@ const Projects = ()=>{
                     children: "Flagship product"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 152,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -39738,12 +39824,13 @@ const Projects = ()=>{
                     children: "Multi-Ax-Sys"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 153,
+                    lineNumber: 161,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: _projectsModuleScss.projectVisual,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                        ref: projectVideoRef,
                         className: _projectsModuleScss.projectVideo,
                         controls: true,
                         playsInline: true,
@@ -39754,17 +39841,17 @@ const Projects = ()=>{
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 163,
+                            lineNumber: 172,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Projects.js",
-                        lineNumber: 156,
+                        lineNumber: 164,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 155,
+                    lineNumber: 163,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39775,14 +39862,14 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 168,
+                            lineNumber: 177,
                             columnNumber: 15
                         }, undefined),
                         " is a semi-open, multi-axis leg\u2013ankle\u2013foot system designed to support, guide, and resist natural foot motion or gestures\u2014minimizing inappropriate external forces while enabling multi-planar motion. Built on decades of biomechanical research and a foundational U.S. patent, it targets strengthening, rehabilitation, and clinical assessment of the lower limb kinetic chain."
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 167,
+                    lineNumber: 176,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -39793,7 +39880,7 @@ const Projects = ()=>{
                             children: "Development timeline"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 176,
+                            lineNumber: 185,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
@@ -39806,7 +39893,7 @@ const Projects = ()=>{
                                             children: entry.period
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 180,
+                                            lineNumber: 189,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39814,24 +39901,24 @@ const Projects = ()=>{
                                             children: entry.detail
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 181,
+                                            lineNumber: 190,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, entry.period, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 179,
+                                    lineNumber: 188,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 177,
+                            lineNumber: 186,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 175,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -39842,7 +39929,7 @@ const Projects = ()=>{
                             children: "Patent foundation"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 188,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39858,7 +39945,7 @@ const Projects = ()=>{
                                     children: "Leg-Ankle-Foot Exercise Assembly"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 191,
+                                    lineNumber: 200,
                                     columnNumber: 13
                                 }, undefined),
                                 " ",
@@ -39872,7 +39959,7 @@ const Projects = ()=>{
                                     children: PATENT_NUMBER
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 200,
+                                    lineNumber: 209,
                                     columnNumber: 13
                                 }, undefined),
                                 "), invented by Luis Alberto Commisso. Unlike conventional single-exercise devices with complicated yet limited mechanics, this assembly directs the foot, ankle, and lower leg through a plurality of configured ",
@@ -39880,14 +39967,14 @@ const Projects = ()=>{
                                     children: "paths of movement"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 210,
+                                    lineNumber: 219,
                                     columnNumber: 47
                                 }, undefined),
                                 "\u2014rotating relative to multiple axes\u2014while resistance is generated by the user's own effort rather than an external motor."
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 189,
+                            lineNumber: 198,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dl", {
@@ -39900,7 +39987,7 @@ const Projects = ()=>{
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 216,
+                                            lineNumber: 225,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dd", {
@@ -39908,18 +39995,18 @@ const Projects = ()=>{
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 217,
+                                            lineNumber: 226,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, item.label, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 215,
+                                    lineNumber: 224,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 213,
+                            lineNumber: 222,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39930,7 +40017,7 @@ const Projects = ()=>{
                                     children: "Abstract"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 222,
+                                    lineNumber: 231,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39938,7 +40025,7 @@ const Projects = ()=>{
                                     children: PATENT_ABSTRACT
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 223,
+                                    lineNumber: 232,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39957,19 +40044,19 @@ const Projects = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 226,
+                                            lineNumber: 235,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 224,
+                                    lineNumber: 233,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 221,
+                            lineNumber: 230,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("blockquote", {
@@ -39979,7 +40066,7 @@ const Projects = ()=>{
                                     children: "\u201CThe present invention is an exercise assembly that targets specific parts of the body, including the legs, ankle, and foot\u2026 The assembly provides resistance to the user's movements to improve strength and performance\u2026 designed to be used with the user's own movements, rather than relying on an external motor or driver.\u201D"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 237,
+                                    lineNumber: 246,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -39989,13 +40076,13 @@ const Projects = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 243,
+                                    lineNumber: 252,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 236,
+                            lineNumber: 245,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40003,7 +40090,7 @@ const Projects = ()=>{
                             children: "The invention addresses a gap in conventional equipment: most known devices cannot perform beneficial, versatile exercise across the different muscle groupings, joints, and related structures of the lower leg and foot in an effective manner. The support structure moves relative to a base along defined paths, with adjustable weighting to match the movement being trained."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 245,
+                            lineNumber: 254,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40018,7 +40105,7 @@ const Projects = ()=>{
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 255,
+                                            lineNumber: 264,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
@@ -40026,24 +40113,24 @@ const Projects = ()=>{
                                             children: figure.caption
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 261,
+                                            lineNumber: 270,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, figure.alt, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 254,
+                                    lineNumber: 263,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 252,
+                            lineNumber: 261,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 187,
+                    lineNumber: 196,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -40054,7 +40141,7 @@ const Projects = ()=>{
                             children: "Overview"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 268,
+                            lineNumber: 277,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40062,7 +40149,7 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys extends the patented concept into a bio-functional platform that allows precise support, guidance, and resistance across multiple axes and sliding planes\u2014adapting instantaneously to dynamic foot motion. The system can selectively lock or release participation of synergistic joints (knee, tibia\u2013fibular complex, ankle, and foot segments) so clinicians and researchers can train or measure integrated kinematics rather than isolating the ankle as a single hinge."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 269,
+                            lineNumber: 278,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40070,13 +40157,13 @@ const Projects = ()=>{
                             children: "Resistance modes include isometric, isotonic, and natural isokinetic torque. Integrated sensing supports position, speed, acceleration, and three-dimensional spatial displacement\u2014aligning with electro-goniometry and kinetic analysis used during prototype development."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 277,
+                            lineNumber: 286,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 267,
+                    lineNumber: 276,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -40087,7 +40174,7 @@ const Projects = ()=>{
                             children: "Validation & academic engagement"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 286,
+                            lineNumber: 295,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40095,7 +40182,7 @@ const Projects = ()=>{
                             children: "The prototype has been presented for validation studies at several universities and institutions. Early work established institutional review and laboratory testing frameworks; expanded trials across partner sites are planned as research funding becomes available."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 287,
+                            lineNumber: 296,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40108,7 +40195,7 @@ const Projects = ()=>{
                                             children: partner.name
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 296,
+                                            lineNumber: 305,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40116,7 +40203,7 @@ const Projects = ()=>{
                                             children: partner.detail
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 297,
+                                            lineNumber: 306,
                                             columnNumber: 17
                                         }, undefined),
                                         partner.documents?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40130,28 +40217,28 @@ const Projects = ()=>{
                                                         children: doc.label
                                                     }, void 0, false, {
                                                         fileName: "src/pages/Projects.js",
-                                                        lineNumber: 302,
+                                                        lineNumber: 311,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, doc.href, false, {
                                                     fileName: "src/pages/Projects.js",
-                                                    lineNumber: 301,
+                                                    lineNumber: 310,
                                                     columnNumber: 23
                                                 }, undefined))
                                         }, void 0, false, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 299,
+                                            lineNumber: 308,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, partner.name, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 295,
+                                    lineNumber: 304,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 293,
+                            lineNumber: 302,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40159,13 +40246,13 @@ const Projects = ()=>{
                             children: "Suffolk deliverables (Teams 1, 3, 5, and 7) included consulting reports and final presentations on market analysis, competitive positioning, and partnership strategy\u2014 supporting the transition from prototype to clinical and commercial pathways."
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 317,
+                            lineNumber: 326,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 285,
+                    lineNumber: 294,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -40176,7 +40263,7 @@ const Projects = ()=>{
                             children: "Key features & benefits"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 325,
+                            lineNumber: 334,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40190,7 +40277,7 @@ const Projects = ()=>{
                                                 children: feature.title
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 330,
+                                                lineNumber: 339,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40198,29 +40285,29 @@ const Projects = ()=>{
                                                 children: feature.description
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 331,
+                                                lineNumber: 340,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 329,
+                                        lineNumber: 338,
                                         columnNumber: 17
                                     }, undefined)
                                 }, feature.title, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 328,
+                                    lineNumber: 337,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 326,
+                            lineNumber: 335,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 324,
+                    lineNumber: 333,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40228,7 +40315,7 @@ const Projects = ()=>{
                     children: "We envision Multi-Ax-Sys as a cornerstone of lower-limb rehabilitation and kinetic therapy\u2014giving health professionals technology that respects neurophysiological control, multi-axis foot function, and the real demands of gait, sport, and recovery."
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 338,
+                    lineNumber: 347,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40240,7 +40327,7 @@ const Projects = ()=>{
                             children: "Explore the technology"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 345,
+                            lineNumber: 354,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40249,7 +40336,7 @@ const Projects = ()=>{
                             children: "Research observations"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 348,
+                            lineNumber: 357,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40258,27 +40345,32 @@ const Projects = ()=>{
                             children: "Partner with us"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 351,
+                            lineNumber: 360,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 344,
+                    lineNumber: 353,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/Projects.js",
-            lineNumber: 151,
+            lineNumber: 159,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/Projects.js",
-        lineNumber: 147,
+        lineNumber: 155,
         columnNumber: 5
     }, undefined);
 };
+_s(Projects, "i7RdRoVb86S7P/RnnCu6McU4IyY=", false, function() {
+    return [
+        (0, _useVideoAnalyticsDefault.default)
+    ];
+});
 _c = Projects;
 exports.default = Projects;
 var _c;
@@ -40289,7 +40381,90 @@ $RefreshReg$(_c, "Projects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","url:../videos/multi-ax-sys_web_720p.mp4":"k7UvO","../img/US20050239611A1-20051027-D00001.jpg":"eloDv","../img/US20050239611A1-20051027-D00002.jpg":"j3F7P","../img/US20050239611A1-20051027-D00003.jpg":"9CglF","../img/US20050239611A1-20051027-D00004.jpg":"8CH8S","./Projects.module.scss":"ieo5y","url:../../public/documents/mba-741-team-1-presentation.pptx":"acHwD","url:../../public/documents/mba-741-team-1-consulting-report.docx":"dmeqd","url:../../public/documents/mba-741-team-3-presentation.pptx":"aJTYH","url:../../public/documents/mba-741-team-3-final-report.docx":"gS3y3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k7UvO":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","../hooks/useVideoAnalytics":"ksmS3","url:../videos/multi-ax-sys_web_720p.mp4":"k7UvO","../img/US20050239611A1-20051027-D00001.jpg":"eloDv","../img/US20050239611A1-20051027-D00002.jpg":"j3F7P","../img/US20050239611A1-20051027-D00003.jpg":"9CglF","../img/US20050239611A1-20051027-D00004.jpg":"8CH8S","./Projects.module.scss":"ieo5y","url:../../public/documents/mba-741-team-1-presentation.pptx":"acHwD","url:../../public/documents/mba-741-team-1-consulting-report.docx":"dmeqd","url:../../public/documents/mba-741-team-3-presentation.pptx":"aJTYH","url:../../public/documents/mba-741-team-3-final-report.docx":"gS3y3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ksmS3":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0236 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0236.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _analytics = require("../config/analytics");
+var _s = $RefreshSig$();
+const PROGRESS_MILESTONES = [
+    25,
+    50,
+    75
+];
+/**
+ * GA4 video engagement for HTML5 <video> elements (play, pause, progress, complete).
+ */ const useVideoAnalytics = (videoRef, { videoName, videoLocation = "unknown" })=>{
+    _s();
+    (0, _react.useEffect)(()=>{
+        const video = videoRef.current;
+        if (!video) return;
+        const reachedMilestones = new Set();
+        const baseParams = ()=>({
+                video_title: videoName,
+                video_location: videoLocation,
+                video_current_time: Math.round(video.currentTime),
+                video_duration: Number.isFinite(video.duration) ? Math.round(video.duration) : undefined,
+                video_percent: video.duration ? Math.round(video.currentTime / video.duration * 100) : 0
+            });
+        const onPlay = ()=>{
+            (0, _analytics.trackEvent)("video_play", baseParams());
+        };
+        const onPause = ()=>{
+            if (video.ended) return;
+            (0, _analytics.trackEvent)("video_pause", baseParams());
+        };
+        const onEnded = ()=>{
+            (0, _analytics.trackEvent)("video_complete", {
+                ...baseParams(),
+                video_percent: 100
+            });
+        };
+        const onTimeUpdate = ()=>{
+            if (!video.duration) return;
+            const percent = video.currentTime / video.duration * 100;
+            PROGRESS_MILESTONES.forEach((milestone)=>{
+                if (percent >= milestone && !reachedMilestones.has(milestone)) {
+                    reachedMilestones.add(milestone);
+                    (0, _analytics.trackEvent)("video_progress", {
+                        ...baseParams(),
+                        video_percent: milestone,
+                        progress_milestone: milestone
+                    });
+                }
+            });
+        };
+        video.addEventListener("play", onPlay);
+        video.addEventListener("pause", onPause);
+        video.addEventListener("ended", onEnded);
+        video.addEventListener("timeupdate", onTimeUpdate);
+        return ()=>{
+            video.removeEventListener("play", onPlay);
+            video.removeEventListener("pause", onPause);
+            video.removeEventListener("ended", onEnded);
+            video.removeEventListener("timeupdate", onTimeUpdate);
+        };
+    }, [
+        videoRef,
+        videoName,
+        videoLocation
+    ]);
+};
+_s(useVideoAnalytics, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+exports.default = useVideoAnalytics;
+
+  $parcel$ReactRefreshHelpers$0236.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","../config/analytics":"Q9CsL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k7UvO":[function(require,module,exports,__globalThis) {
 module.exports = require("ed688cde5a3c1f75").getBundleURL('ej6rf') + "multi-ax-sys_web_720p.3e42a9d7.mp4" + "?" + Date.now();
 
 },{"ed688cde5a3c1f75":"lgJ39"}],"eloDv":[function(require,module,exports,__globalThis) {

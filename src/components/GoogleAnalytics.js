@@ -1,13 +1,23 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router";
-import { trackPageView } from "../config/analytics";
+import { getHashRoute, trackPageView } from "../config/analytics";
 
 const GoogleAnalytics = () => {
   const { pathname, search } = useLocation();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     trackPageView(pathname, search);
   }, [pathname, search]);
+
+  useEffect(() => {
+    const onHashChange = () => {
+      const { pathname: hashPath, search: hashSearch } = getHashRoute();
+      trackPageView(hashPath, hashSearch);
+    };
+
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
 
   return null;
 };

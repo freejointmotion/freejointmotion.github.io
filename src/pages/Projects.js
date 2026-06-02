@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router";
 import PageShell from "../components/PageShell";
+import useVideoAnalytics from "../hooks/useVideoAnalytics";
 import multiAxSysVideo from "url:../videos/multi-ax-sys_web_720p.mp4";
 import patentFigure1 from "../img/US20050239611A1-20051027-D00001.jpg";
 import patentFigure2 from "../img/US20050239611A1-20051027-D00002.jpg";
@@ -143,6 +144,13 @@ const validationPartners = [
 ];
 
 const Projects = () => {
+  const projectVideoRef = useRef(null);
+
+  useVideoAnalytics(projectVideoRef, {
+    videoName: "Multi-Ax-Sys demonstration",
+    videoLocation: "projects",
+  });
+
   return (
     <PageShell
       title="Projects"
@@ -154,6 +162,7 @@ const Projects = () => {
 
         <div className={styles.projectVisual}>
           <video
+            ref={projectVideoRef}
             className={styles.projectVideo}
             controls
             playsInline
