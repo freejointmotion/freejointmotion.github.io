@@ -1,4 +1,5 @@
 @use "../scss/research" as *;
+@use "../scss/page-hero" as ph;
 
 .about {
   min-height: 100vh;
@@ -7,63 +8,61 @@
 }
 
 .hero {
-  background: #fff;
-  border-bottom: 1px solid rgba(19, 54, 75, 0.1);
-  padding: 110px 24px 48px;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 150px;
-    padding-bottom: 56px;
-  }
+  @include ph.page-hero-dark;
 }
 
 .heroBrand {
   display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
+  justify-content: flex-start;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 28px;
+  }
 }
 
 .logo {
-  width: min(200px, 45vw);
+  width: min(120px, 32vw);
   height: auto;
   display: block;
-  padding: 20px 28px;
-  background: #374c67;
+
+  @media (min-width: 768px) {
+    width: min(160px, 28vw);
+  }
 }
 
 .heroContent {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 8px;
+  @include ph.page-hero-content;
+
+  & {
+    max-width: 780px;
+  }
 }
 
 .eyebrow {
   margin: 0 0 12px;
   font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #007acc;
+  @include ph.page-hero-eyebrow-light;
 }
 
 .title {
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(1.85rem, 4vw, 2.5rem);
-  font-weight: 300;
-  color: #13364b;
-  margin: 0 0 20px;
-  line-height: 1.15;
+  @include ph.page-hero-title;
+
+  & {
+    margin-bottom: 20px;
+  }
 }
 
 .lead {
-  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
-  line-height: 1.7;
-  color: #444;
-  margin: 0 auto;
-  max-width: 68ch;
+  @include ph.page-hero-intro;
+
+  @media (min-width: 768px) {
+    max-width: 68ch;
+  }
 }
 
 .body {
@@ -140,6 +139,12 @@
     gap: 40px;
     padding: 40px 48px;
     align-items: start;
+  }
+}
+
+.memberFeaturedNoPhoto {
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -236,12 +241,8 @@
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    min-height: 360px;
-    padding-top: 120px;
-  }
 
+@media screen and (max-width: 768px) {
   .mission {
     padding: 32px 24px;
   }

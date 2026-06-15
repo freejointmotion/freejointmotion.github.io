@@ -1,3 +1,5 @@
+@use "../scss/page-hero" as ph;
+
 .knowledge {
   min-height: 100vh;
   background: #f4f4f4;
@@ -5,49 +7,31 @@
 }
 
 .hero {
-  position: relative;
-  background-color: #13364b;
-  background-image: linear-gradient(
-    135deg,
-    #13364b 0%,
-    #234861 50%,
-    #2a5570 100%
-  );
-  padding: 110px 24px 48px;
-  text-align: center;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 150px;
-    padding-bottom: 56px;
-  }
+  @include ph.page-hero-dark;
 }
 
 .heroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 8px;
+  @include ph.page-hero-content;
+
+  & {
+    max-width: 780px;
+  }
 }
 
 .title {
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(1.85rem, 4vw, 2.6rem);
-  font-weight: 300;
-  color: #fff;
-  margin: 0 0 16px;
-  line-height: 1.2;
+  @include ph.page-hero-title;
+
+  & {
+    margin-bottom: 16px;
+  }
 }
 
 .intro {
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: #f0f4f8;
-  line-height: 1.7;
-  margin: 0 auto;
-  max-width: 68ch;
+  @include ph.page-hero-intro;
+
+  @media (min-width: 768px) {
+    max-width: 68ch;
+  }
 }
 
 .areas {
@@ -142,11 +126,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
-    padding-top: 120px;
-    padding-bottom: 40px;
-  }
-
   .areaOverlay,
   .alignright .areaOverlay {
     background: linear-gradient(

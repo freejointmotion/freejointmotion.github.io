@@ -1,3 +1,5 @@
+@use "../scss/page-hero" as ph;
+
 .page {
   min-height: 100vh;
   background: #f4f4f4;
@@ -5,65 +7,23 @@
 }
 
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 220px;
-  padding: 7.5rem 1.25rem 2rem;
-  background-color: #13364b;
-  background-image: linear-gradient(
-    135deg,
-    #13364b 0%,
-    #234861 50%,
-    #2a5570 100%
-  );
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    min-height: 360px;
-    padding: 9.5rem 24px 48px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    padding-top: 150px;
-    min-height: 400px;
-  }
+  @include ph.page-hero-dark;
 }
 
 .heroOverlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(35, 72, 97, 0.9);
+  @include ph.page-hero-overlay;
 }
 
 .heroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 860px;
+  @include ph.page-hero-content;
 }
 
 .title {
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(1.65rem, 4vw, 2.6rem);
-  font-weight: 400;
-  margin: 0 0 12px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  @include ph.page-hero-title;
 }
 
 .intro {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  line-height: 1.55;
-  margin: 0;
-  color: #e8eef3;
+  @include ph.page-hero-intro;
 }
 
 .content {

@@ -1,3 +1,6 @@
+@use "../scss/research" as *;
+@use "../scss/page-hero" as ph;
+
 .publications {
   background: #f4f4f4;
   min-height: 100vh;
@@ -5,67 +8,53 @@
 }
 
 .hero {
-  width: 100%;
-  min-height: 220px;
-  padding: 7.5rem 20px 2rem;
-  background-color: #13364b;
-  background-image: linear-gradient(
-    135deg,
-    #13364b 0%,
-    #234861 50%,
-    #2a5570 100%
-  );
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding: 9.5rem 24px 48px;
-    min-height: 360px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    padding-top: 150px;
-    min-height: 480px;
-  }
+  @include ph.page-hero-dark;
 }
 
 .hero::before {
   content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(35, 72, 97, 0.9);
+  @include ph.page-hero-overlay;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .title,
 .intro {
   position: relative;
-  z-index: 1;
+  z-index: 3;
+  width: 100%;
+  max-width: 860px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(126, 200, 232, 0.4);
+
+  @media (min-width: 768px) {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+  }
 }
 
 .title {
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(1.65rem, 4vw, 2.6rem);
-  font-weight: 400;
-  margin: 0 0 14px;
-  max-width: 900px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  @include ph.page-hero-title;
+
+  & {
+    margin-bottom: 14px;
+  }
 }
 
 .intro {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  line-height: 1.55;
-  max-width: 820px;
-  margin: 0 auto;
+  @include ph.page-hero-intro;
+
+  @media (min-width: 768px) {
+    max-width: 820px;
+  }
 }
 
 .list {

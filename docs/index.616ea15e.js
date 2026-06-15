@@ -38409,8 +38409,6 @@ var _freejointmotionLogoSvg = require("../img/freejointmotion_logo.svg");
 var _freejointmotionLogoSvgDefault = parcelHelpers.interopDefault(_freejointmotionLogoSvg);
 var _luisCommissoJpeg = require("../img/luis commisso.jpeg");
 var _luisCommissoJpegDefault = parcelHelpers.interopDefault(_luisCommissoJpeg);
-var _nestorLentiniJpg = require("../img/nestor lentini.jpg");
-var _nestorLentiniJpgDefault = parcelHelpers.interopDefault(_nestorLentiniJpg);
 var _dinoPalazziJpeg = require("../img/dino palazzi.jpeg");
 var _dinoPalazziJpegDefault = parcelHelpers.interopDefault(_dinoPalazziJpeg);
 const featuredTeam = [
@@ -38429,14 +38427,12 @@ const featuredTeam = [
         ]
     },
     {
-        id: "nestor-lentini",
-        name: "Nestor Lentini",
-        title: "Traumat\xf3logo y Deport\xf3logo",
-        role: "Medical Specialist",
-        image: (0, _nestorLentiniJpgDefault.default),
-        instagram: "https://www.instagram.com/nestorlentini/",
+        id: "luis-ayet",
+        name: "Luis Ayet",
+        title: "Business & Biomechanical Engineering",
+        role: "MBA \xb7 Biomechanical Engineer",
         bio: [
-            "M\xe9dico especialista en traumatolog\xeda y deportolog\xeda, con pr\xe1ctica cl\xednica en Buenos Aires y Pilar."
+            "Brings MBA-level business strategy together with biomechanical engineering expertise\u2014supporting Free Joint Motion's product development, market positioning, and partnership pathways."
         ]
     },
     {
@@ -38453,6 +38449,10 @@ const featuredTeam = [
 ];
 const teamMembers = [
     {
+        name: "Nestor Lentini",
+        role: "Medical Specialist \xb7 Traumatolog\xeda y Deportolog\xeda"
+    },
+    {
         name: "Federico Commisso",
         role: "Chief Technology Officer"
     },
@@ -38462,10 +38462,10 @@ const teamMembers = [
     }
 ];
 const MemberProfile = ({ member })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-        className: _aboutModuleScss.memberFeatured,
+        className: `${_aboutModuleScss.memberFeatured} ${!member.image ? _aboutModuleScss.memberFeaturedNoPhoto : ""}`,
         "aria-labelledby": `team-${member.id}`,
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            member.image && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: _aboutModuleScss.memberPhoto,
                 src: member.image,
                 alt: "",
@@ -38473,8 +38473,8 @@ const MemberProfile = ({ member })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ar
                 height: 280
             }, void 0, false, {
                 fileName: "src/pages/About.js",
-                lineNumber: 57,
-                columnNumber: 5
+                lineNumber: 56,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: _aboutModuleScss.memberDetails,
@@ -38555,7 +38555,7 @@ const MemberProfile = ({ member })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ar
         ]
     }, void 0, true, {
         fileName: "src/pages/About.js",
-        lineNumber: 53,
+        lineNumber: 51,
         columnNumber: 3
     }, undefined);
 _c = MemberProfile;
@@ -38565,60 +38565,58 @@ const About = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
                 className: _aboutModuleScss.hero,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: _aboutModuleScss.heroBrand,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: _aboutModuleScss.logo,
-                            src: (0, _freejointmotionLogoSvgDefault.default),
-                            alt: "Free Joint Motion",
-                            width: 200,
-                            height: 242
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: _aboutModuleScss.heroContent,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _aboutModuleScss.heroBrand,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: _aboutModuleScss.logo,
+                                src: (0, _freejointmotionLogoSvgDefault.default),
+                                alt: "Free Joint Motion",
+                                width: 160,
+                                height: 194
+                            }, void 0, false, {
+                                fileName: "src/pages/About.js",
+                                lineNumber: 112,
+                                columnNumber: 13
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/About.js",
                             lineNumber: 111,
                             columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _aboutModuleScss.eyebrow,
+                            children: "Free Joint Motion LLC"
+                        }, void 0, false, {
+                            fileName: "src/pages/About.js",
+                            lineNumber: 120,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: _aboutModuleScss.title,
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "src/pages/About.js",
+                            lineNumber: 121,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _aboutModuleScss.lead,
+                            children: "An international company based in Weston, Florida, dedicated to innovation in biomechanical medical devices. Led by Professor Luis Commisso, our team focuses on solutions for sports medicine, injury prevention, and rehabilitation."
+                        }, void 0, false, {
+                            fileName: "src/pages/About.js",
+                            lineNumber: 122,
+                            columnNumber: 11
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/pages/About.js",
-                        lineNumber: 110,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: _aboutModuleScss.heroContent,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: _aboutModuleScss.eyebrow,
-                                children: "Free Joint Motion LLC"
-                            }, void 0, false, {
-                                fileName: "src/pages/About.js",
-                                lineNumber: 120,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: _aboutModuleScss.title,
-                                children: "About Us"
-                            }, void 0, false, {
-                                fileName: "src/pages/About.js",
-                                lineNumber: 121,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: _aboutModuleScss.lead,
-                                children: "An international company based in Weston, Florida, dedicated to innovation in biomechanical medical devices. Led by Professor Luis Commisso, our team focuses on solutions for sports medicine, injury prevention, and rehabilitation."
-                            }, void 0, false, {
-                                fileName: "src/pages/About.js",
-                                lineNumber: 122,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/About.js",
-                        lineNumber: 119,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/About.js",
+                    lineNumber: 110,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/pages/About.js",
                 lineNumber: 109,
                 columnNumber: 7
@@ -38765,7 +38763,7 @@ $RefreshReg$(_c1, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.scss":"z6PJE","../img/freejointmotion_logo.svg":"bzSWH","../img/luis commisso.jpeg":"7YcLx","../img/nestor lentini.jpg":"htF3j","../img/dino palazzi.jpeg":"67Ay1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"z6PJE":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.scss":"z6PJE","../img/freejointmotion_logo.svg":"bzSWH","../img/luis commisso.jpeg":"7YcLx","../img/dino palazzi.jpeg":"67Ay1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"z6PJE":[function(require,module,exports,__globalThis) {
 module.exports["about"] = `towGPG_about`;
 module.exports["body"] = `towGPG_body`;
 module.exports["eyebrow"] = `towGPG_eyebrow`;
@@ -38778,6 +38776,7 @@ module.exports["memberBio"] = `towGPG_memberBio`;
 module.exports["memberCard"] = `towGPG_memberCard`;
 module.exports["memberDetails"] = `towGPG_memberDetails`;
 module.exports["memberFeatured"] = `towGPG_memberFeatured`;
+module.exports["memberFeaturedNoPhoto"] = `towGPG_memberFeaturedNoPhoto`;
 module.exports["memberLink"] = `towGPG_memberLink`;
 module.exports["memberLinks"] = `towGPG_memberLinks`;
 module.exports["memberName"] = `towGPG_memberName`;
@@ -38797,10 +38796,7 @@ module.exports["title"] = `towGPG_title`;
 },{}],"7YcLx":[function(require,module,exports,__globalThis) {
 module.exports = require("d99722f868b25200").getBundleURL('ej6rf') + "luis commisso.02858674.jpeg" + "?" + Date.now();
 
-},{"d99722f868b25200":"lgJ39"}],"htF3j":[function(require,module,exports,__globalThis) {
-module.exports = require("e2fb80b0f859ee79").getBundleURL('ej6rf') + "nestor lentini.82dd83fc.jpg" + "?" + Date.now();
-
-},{"e2fb80b0f859ee79":"lgJ39"}],"67Ay1":[function(require,module,exports,__globalThis) {
+},{"d99722f868b25200":"lgJ39"}],"67Ay1":[function(require,module,exports,__globalThis) {
 module.exports = require("e697f998b75bf33b").getBundleURL('ej6rf') + "dino palazzi.1e7f1e33.jpeg" + "?" + Date.now();
 
 },{"e697f998b75bf33b":"lgJ39"}],"jcDGq":[function(require,module,exports,__globalThis) {

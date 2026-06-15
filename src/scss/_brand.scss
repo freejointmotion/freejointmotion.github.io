@@ -1,0 +1,35 @@
+// Shared brand chrome — keep header and page heroes visually continuous on mobile.
+$header-slate: #374c67;
+$header-height: 80px;
+
+@mixin mobile-header-band {
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: $header-height;
+      background: $header-slate;
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+}
+
+@mixin mobile-hero-background {
+  background-color: $header-slate;
+  background-image: linear-gradient(
+    to bottom,
+    $header-slate 0,
+    $header-slate $header-height,
+    #334f66 140px,
+    #2f4a63 220px,
+    #2a5570 100%
+  );
+}
+
+@mixin mobile-hero-padding {
+  padding: calc(#{$header-height} + 2rem) 1.25rem 2rem;
+}

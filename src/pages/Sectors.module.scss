@@ -1,4 +1,5 @@
 @use "../scss/research" as *;
+@use "../scss/page-hero" as ph;
 
 .sectors {
   min-height: 100vh;
@@ -7,71 +8,40 @@
 }
 
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 380px;
-  padding: 110px 24px 52px;
-  background-color: #13364b;
-  background-image: linear-gradient(
-    135deg,
-    #13364b 0%,
-    #234861 45%,
-    #2a5570 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 160px;
-    min-height: 440px;
-  }
+  @include ph.page-hero-dark;
 }
 
 .heroOverlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(19, 54, 75, 0.75) 0%,
-    rgba(19, 54, 75, 0.9) 100%
-  );
-  pointer-events: none;
+  @include ph.page-hero-overlay;
 }
 
 .heroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 780px;
-  padding: 0 8px;
+  @include ph.page-hero-content;
+
+  & {
+    max-width: 780px;
+  }
 }
 
 .eyebrow {
-  color: #7ec8e8;
   @include data-index;
+  @include ph.page-hero-eyebrow-light;
 }
 
 .heroTitle {
-  font-family: Montserrat, sans-serif;
-  font-size: clamp(2rem, 5vw, 2.75rem);
-  font-weight: 300;
-  color: #fff;
-  margin: 0 0 20px;
-  line-height: 1.15;
+  @include ph.page-hero-title;
+
+  & {
+    margin-bottom: 20px;
+  }
 }
 
 .heroLead {
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  line-height: 1.7;
-  color: #f0f4f8;
-  margin: 0;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
+  @include ph.page-hero-intro;
+
+  @media (min-width: 768px) {
+    max-width: 640px;
+  }
 }
 
 .body {
@@ -206,9 +176,3 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    min-height: 360px;
-    padding-top: 120px;
-  }
-}

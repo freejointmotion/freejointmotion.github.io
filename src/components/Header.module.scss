@@ -1,16 +1,24 @@
+@use "../scss/brand" as brand;
+
 .header {
   z-index: 1000;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(55, 76, 103, 1);
+  background: brand.$header-slate;
   backdrop-filter: saturate(180%) blur(20px);
   color: white;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 767px) {
+    background: brand.$header-slate;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 
   .h1 {
     font-family: Montserrat, sans-serif;

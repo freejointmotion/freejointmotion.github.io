@@ -2,7 +2,6 @@ import React from "react";
 import * as styles from "./About.module.scss";
 import logo from "../img/freejointmotion_logo.svg";
 import luisPhoto from "../img/luis commisso.jpeg";
-import nestorPhoto from "../img/nestor lentini.jpg";
 import dinoPhoto from "../img/dino palazzi.jpeg";
 
 const featuredTeam = [
@@ -21,14 +20,12 @@ const featuredTeam = [
     ],
   },
   {
-    id: "nestor-lentini",
-    name: "Nestor Lentini",
-    title: "Traumatólogo y Deportólogo",
-    role: "Medical Specialist",
-    image: nestorPhoto,
-    instagram: "https://www.instagram.com/nestorlentini/",
+    id: "luis-ayet",
+    name: "Luis Ayet",
+    title: "Business & Biomechanical Engineering",
+    role: "MBA · Biomechanical Engineer",
     bio: [
-      "Médico especialista en traumatología y deportología, con práctica clínica en Buenos Aires y Pilar.",
+      "Brings MBA-level business strategy together with biomechanical engineering expertise—supporting Free Joint Motion's product development, market positioning, and partnership pathways.",
     ],
   },
   {
@@ -45,22 +42,25 @@ const featuredTeam = [
 ];
 
 const teamMembers = [
+  { name: "Nestor Lentini", role: "Medical Specialist · Traumatología y Deportología" },
   { name: "Federico Commisso", role: "Chief Technology Officer" },
   { name: "Jose Manuel Valladares", role: "Customer Outreach & Marketing" },
 ];
 
 const MemberProfile = ({ member }) => (
   <article
-    className={styles.memberFeatured}
+    className={`${styles.memberFeatured} ${!member.image ? styles.memberFeaturedNoPhoto : ""}`}
     aria-labelledby={`team-${member.id}`}
   >
-    <img
-      className={styles.memberPhoto}
-      src={member.image}
-      alt=""
-      width={280}
-      height={280}
-    />
+    {member.image && (
+      <img
+        className={styles.memberPhoto}
+        src={member.image}
+        alt=""
+        width={280}
+        height={280}
+      />
+    )}
     <div className={styles.memberDetails}>
       <h4 id={`team-${member.id}`} className={styles.memberName}>
         {member.name}
@@ -107,16 +107,16 @@ const About = () => {
   return (
     <section className={styles.about}>
       <header className={styles.hero}>
-        <div className={styles.heroBrand}>
-          <img
-            className={styles.logo}
-            src={logo}
-            alt="Free Joint Motion"
-            width={200}
-            height={242}
-          />
-        </div>
         <div className={styles.heroContent}>
+          <div className={styles.heroBrand}>
+            <img
+              className={styles.logo}
+              src={logo}
+              alt="Free Joint Motion"
+              width={160}
+              height={194}
+            />
+          </div>
           <p className={styles.eyebrow}>Free Joint Motion LLC</p>
           <h2 className={styles.title}>About Us</h2>
           <p className={styles.lead}>
