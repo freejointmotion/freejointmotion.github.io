@@ -17,7 +17,7 @@
   font-family: Montserrat, sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #007acc;
   margin-bottom: 10px;
@@ -34,8 +34,8 @@
 }
 
 @mixin cell-body {
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.55;
   color: #4a5568;
   margin: 0;
 }

@@ -27222,6 +27222,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
+var _ndaAccessContext = require("./context/NdaAccessContext");
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _footer = require("./components/Footer");
@@ -27253,173 +27254,179 @@ var _impactDefault = parcelHelpers.interopDefault(_impact);
 var _contact = require("./pages/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
-        basename: "/",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _googleAnalyticsDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 27,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/about",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 28,
-                            columnNumber: 39
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/sectors",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sectorsDefault.default), {}, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ndaAccessContext.NdaAccessProvider), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
+            basename: "/",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 24,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _googleAnalyticsDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 25,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 26,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 29,
+                                columnNumber: 34
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 29,
-                            columnNumber: 41
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/knowledge",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _knowledgeDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/about",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 30,
+                                columnNumber: 39
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 30,
-                            columnNumber: 43
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/technologies",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _technologiesDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/sectors",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sectorsDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 31,
+                                columnNumber: 41
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 31,
-                            columnNumber: 46
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/services",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/knowledge",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _knowledgeDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 32,
+                                columnNumber: 43
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 32,
-                            columnNumber: 42
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/projects",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/technologies",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _technologiesDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 33,
+                                columnNumber: 46
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 33,
-                            columnNumber: 42
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/news",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/services",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 34,
+                                columnNumber: 42
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 34,
-                            columnNumber: 38
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/publications",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/projects",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 35,
+                                columnNumber: 42
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 35,
-                            columnNumber: 46
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/impact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _impactDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/news",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 36,
+                                columnNumber: 38
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 36,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: "/contact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/publications",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 37,
+                                columnNumber: 46
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 37,
-                            columnNumber: 41
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/impact",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _impactDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 38,
+                                columnNumber: 40
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 38,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                            path: "/contact",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 39,
+                                columnNumber: 41
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 39,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.js",
+                    lineNumber: 28,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 42,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.js",
+            lineNumber: 23,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -27433,7 +27440,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./components/Header":"hsJbF","./components/Footer":"8pPOA","./components/ScrollToTop":"8xC27","./components/GoogleAnalytics":"527Ng","./pages/Home":"KEnRd","./pages/About":"dep5E","./pages/Sectors":"jcDGq","./pages/Knowledge":"ILNmI","./pages/Technologies":"dSm1M","./pages/Services":"4LShI","./pages/Projects":"jlwAO","./pages/News":"3Lyxx","./pages/Publications":"2MBNT","./pages/Impact":"bQXlR","./pages/Contact":"izFEE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./context/NdaAccessContext":"5UXii","./components/Header":"hsJbF","./components/Footer":"8pPOA","./components/ScrollToTop":"8xC27","./components/GoogleAnalytics":"527Ng","./pages/Home":"KEnRd","./pages/About":"dep5E","./pages/Sectors":"jcDGq","./pages/Knowledge":"ILNmI","./pages/Technologies":"dSm1M","./pages/Services":"4LShI","./pages/Projects":"jlwAO","./pages/News":"3Lyxx","./pages/Publications":"2MBNT","./pages/Impact":"bQXlR","./pages/Contact":"izFEE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.1.3
  *
@@ -36449,461 +36456,126 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"hsJbF":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"5UXii":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4615 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bfed.prelude(module);
+$parcel$ReactRefreshHelpers$4615.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NdaAccessProvider", ()=>NdaAccessProvider);
+parcelHelpers.export(exports, "useNdaAccess", ()=>useNdaAccess);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouter = require("react-router");
-var _headerModuleScss = require("./Header.module.scss");
-var _freejointmotionLogoSvg = require("../img/freejointmotion_logo.svg");
-var _freejointmotionLogoSvgDefault = parcelHelpers.interopDefault(_freejointmotionLogoSvg);
-var _s = $RefreshSig$();
-const Header = ()=>{
-    _s();
-    const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
-    const closeMenu = ()=>setMenuOpen(false);
-    const mainLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.link} ${_headerModuleScss.active}` : _headerModuleScss.link;
-    const subLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.subLink} ${_headerModuleScss.subActive}` : _headerModuleScss.subLink;
-    const menuLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.menuLink} ${_headerModuleScss.menuActive}` : _headerModuleScss.menuLink;
-    const contactBtnClass = ({ isActive })=>isActive ? `${_headerModuleScss.contactBtn} ${_headerModuleScss.contactBtnActive}` : _headerModuleScss.contactBtn;
-    const menuContactBtnClass = ({ isActive })=>isActive ? `${_headerModuleScss.menuContactBtn} ${_headerModuleScss.menuContactBtnActive}` : _headerModuleScss.menuContactBtn;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: _headerModuleScss.header,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: _headerModuleScss.h1,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/",
-                            onClick: closeMenu,
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: _headerModuleScss.logo,
-                                src: (0, _freejointmotionLogoSvgDefault.default),
-                                alt: "Free Joint Motion"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 32,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 31,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                        className: _headerModuleScss.nav,
-                        "aria-label": "Main",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/",
-                                end: true,
-                                className: mainLinkClass,
-                                onClick: closeMenu,
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 37,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/about",
-                                className: mainLinkClass,
-                                onClick: closeMenu,
-                                children: "About"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 40,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/sectors",
-                                className: mainLinkClass,
-                                onClick: closeMenu,
-                                children: "Sectors"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 43,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/knowledge",
-                                className: mainLinkClass,
-                                onClick: closeMenu,
-                                children: "Knowledge"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 46,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/technologies",
-                                className: mainLinkClass,
-                                onClick: closeMenu,
-                                children: "Technologies"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 49,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                to: "/contact",
-                                className: contactBtnClass,
-                                onClick: closeMenu,
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 52,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: _headerModuleScss.menu,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "menu-toggle",
-                                className: _headerModuleScss.menuToggle,
-                                checked: menuOpen,
-                                onChange: ()=>setMenuOpen(!menuOpen)
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 58,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "menu-toggle",
-                                className: _headerModuleScss.menuIcon,
-                                "aria-label": "Menu",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: _headerModuleScss.line
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 66,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: _headerModuleScss.line
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 67,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: _headerModuleScss.line
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 68,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 65,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                                className: `${_headerModuleScss.menuNav} ${menuOpen ? _headerModuleScss.showMenu : ""}`,
-                                "aria-label": "Mobile",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/",
-                                        end: true,
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Home"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 75,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/about",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "About"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 78,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/sectors",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Sectors"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 81,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/knowledge",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Knowledge"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 84,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/technologies",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Technologies"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 87,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/services",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Services"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 90,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/news",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "News"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 93,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/publications",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Publications"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 96,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/impact",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Impact"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 99,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                        to: "/projects",
-                                        className: menuLinkClass,
-                                        onClick: closeMenu,
-                                        children: "Projects"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 102,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: _headerModuleScss.menuCta,
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                                            to: "/contact",
-                                            className: menuContactBtnClass,
-                                            onClick: closeMenu,
-                                            children: "Contact us"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Header.js",
-                                            lineNumber: 106,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 105,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 71,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Header.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: _headerModuleScss.subHeader,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                    className: _headerModuleScss.subNav,
-                    "aria-label": "Secondary",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/services",
-                            className: subLinkClass,
-                            onClick: closeMenu,
-                            children: "Services"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 116,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/news",
-                            className: subLinkClass,
-                            onClick: closeMenu,
-                            children: "News"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 119,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/publications",
-                            className: subLinkClass,
-                            onClick: closeMenu,
-                            children: "Publications"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 122,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/impact",
-                            className: subLinkClass,
-                            onClick: closeMenu,
-                            children: "Impact"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 125,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
-                            to: "/projects",
-                            className: subLinkClass,
-                            onClick: closeMenu,
-                            children: "Projects"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 128,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 115,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 114,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
+var _nda = require("../config/nda");
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const NdaAccessContext = /*#__PURE__*/ (0, _react.createContext)(null);
+const readSession = ()=>{
+    try {
+        return sessionStorage.getItem((0, _nda.NDA_SESSION_KEY)) === "granted";
+    } catch  {
+        return false;
+    }
 };
-_s(Header, "K77eQVFAaxZgbvGoNWFAiCE7OTY=");
-_c = Header;
-exports.default = Header;
+const writeSession = (granted)=>{
+    try {
+        if (granted) sessionStorage.setItem((0, _nda.NDA_SESSION_KEY), "granted");
+        else sessionStorage.removeItem((0, _nda.NDA_SESSION_KEY));
+    } catch  {
+    /* private browsing */ }
+};
+const NdaAccessProvider = ({ children })=>{
+    _s();
+    const [hasAccess, setHasAccess] = (0, _react.useState)(readSession);
+    const [accessKey, setAccessKey] = (0, _react.useState)((0, _nda.NDA_ACCESS_KEY));
+    const [ready, setReady] = (0, _react.useState)(!(0, _nda.ndaConfigUrl));
+    (0, _react.useEffect)(()=>{
+        if (!(0, _nda.ndaConfigUrl)) return;
+        fetch((0, _nda.ndaConfigUrl)).then((res)=>res.ok ? res.json() : null).then((data)=>{
+            const key = (data?.accessKey || "").trim();
+            if (key) setAccessKey(key);
+        }).catch(()=>{}).finally(()=>setReady(true));
+    }, []);
+    const grantAccess = (0, _react.useCallback)(()=>{
+        setHasAccess(true);
+        writeSession(true);
+    }, []);
+    const revokeAccess = (0, _react.useCallback)(()=>{
+        setHasAccess(false);
+        writeSession(false);
+    }, []);
+    const verifyAccessKey = (0, _react.useCallback)((candidate)=>{
+        const normalized = (candidate || "").trim();
+        if (!normalized || !accessKey || accessKey === "CHANGE_ME_SET_NDA_PASSWORD") return false;
+        if (normalized === accessKey) {
+            grantAccess();
+            return true;
+        }
+        return false;
+    }, [
+        accessKey,
+        grantAccess
+    ]);
+    const value = (0, _react.useMemo)(()=>({
+            hasAccess,
+            ready,
+            grantAccess,
+            revokeAccess,
+            verifyAccessKey,
+            isConfigured: accessKey && accessKey !== "CHANGE_ME_SET_NDA_PASSWORD"
+        }), [
+        hasAccess,
+        ready,
+        grantAccess,
+        revokeAccess,
+        verifyAccessKey,
+        accessKey
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NdaAccessContext.Provider, {
+        value: value,
+        children: children
+    }, void 0, false, {
+        fileName: "src/context/NdaAccessContext.js",
+        lineNumber: 86,
+        columnNumber: 5
+    }, undefined);
+};
+_s(NdaAccessProvider, "86UwNKYWz7ixq1ZSsILd/22mkMM=");
+_c = NdaAccessProvider;
+const useNdaAccess = ()=>{
+    _s1();
+    const context = (0, _react.useContext)(NdaAccessContext);
+    if (!context) throw new Error("useNdaAccess must be used within NdaAccessProvider");
+    return context;
+};
+_s1(useNdaAccess, "b9L3QQ+jgeyIrH0NfHrJ8nn7VMU=");
 var _c;
-$RefreshReg$(_c, "Header");
+$RefreshReg$(_c, "NdaAccessProvider");
 
-  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+  $parcel$ReactRefreshHelpers$4615.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./Header.module.scss":"iHVjE","../img/freejointmotion_logo.svg":"bzSWH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iHVjE":[function(require,module,exports,__globalThis) {
-module.exports["active"] = `pHiQEG_active`;
-module.exports["contactBtn"] = `pHiQEG_contactBtn`;
-module.exports["contactBtnActive"] = `pHiQEG_contactBtnActive`;
-module.exports["h1"] = `pHiQEG_h1`;
-module.exports["header"] = `pHiQEG_header`;
-module.exports["line"] = `pHiQEG_line`;
-module.exports["link"] = `pHiQEG_link`;
-module.exports["logo"] = `pHiQEG_logo`;
-module.exports["menu"] = `pHiQEG_menu`;
-module.exports["menuActive"] = `pHiQEG_menuActive`;
-module.exports["menuContactBtn"] = `pHiQEG_menuContactBtn`;
-module.exports["menuContactBtnActive"] = `pHiQEG_menuContactBtnActive`;
-module.exports["menuCta"] = `pHiQEG_menuCta`;
-module.exports["menuIcon"] = `pHiQEG_menuIcon`;
-module.exports["menuLink"] = `pHiQEG_menuLink`;
-module.exports["menuNav"] = `pHiQEG_menuNav`;
-module.exports["menuToggle"] = `pHiQEG_menuToggle`;
-module.exports["nav"] = `pHiQEG_nav`;
-module.exports["showMenu"] = `pHiQEG_showMenu`;
-module.exports["subActive"] = `pHiQEG_subActive`;
-module.exports["subHeader"] = `pHiQEG_subHeader`;
-module.exports["subLink"] = `pHiQEG_subLink`;
-module.exports["subNav"] = `pHiQEG_subNav`;
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../config/nda":"dMfPP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dMfPP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NDA_ACCESS_KEY", ()=>NDA_ACCESS_KEY);
+parcelHelpers.export(exports, "ndaConfigUrl", ()=>ndaConfigUrl);
+parcelHelpers.export(exports, "NDA_SESSION_KEY", ()=>NDA_SESSION_KEY);
+var _ndaConfigJson = require("./nda.config.json");
+var _ndaConfigJsonDefault = parcelHelpers.interopDefault(_ndaConfigJson);
+const fromFile = ((0, _ndaConfigJsonDefault.default).accessKey || "").trim();
+const fromEnv = "".trim();
+const NDA_ACCESS_KEY = fromEnv || fromFile;
+const ndaConfigUrl = "/nda.json";
+const NDA_SESSION_KEY = "fjm_nda_access";
 
-},{}],"bzSWH":[function(require,module,exports,__globalThis) {
-module.exports = require("7c21b345f65de0a3").getBundleURL('ej6rf') + "freejointmotion_logo.97882008.svg" + "?" + Date.now();
-
-},{"7c21b345f65de0a3":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
+},{"./nda.config.json":"7zf4j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7zf4j":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse("{\"accessKey\":\"7_Vor934U@gNkCN!\"}");
 
 },{}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
@@ -37495,6 +37167,462 @@ module.exports = require("9e039173d01172ab");
 },{}],"dAfSs":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
+},{}],"hsJbF":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bfed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouter = require("react-router");
+var _headerModuleScss = require("./Header.module.scss");
+var _freejointmotionLogoSvg = require("../img/freejointmotion_logo.svg");
+var _freejointmotionLogoSvgDefault = parcelHelpers.interopDefault(_freejointmotionLogoSvg);
+var _s = $RefreshSig$();
+const Header = ()=>{
+    _s();
+    const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
+    const closeMenu = ()=>setMenuOpen(false);
+    const mainLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.link} ${_headerModuleScss.active}` : _headerModuleScss.link;
+    const subLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.subLink} ${_headerModuleScss.subActive}` : _headerModuleScss.subLink;
+    const menuLinkClass = ({ isActive })=>isActive ? `${_headerModuleScss.menuLink} ${_headerModuleScss.menuActive}` : _headerModuleScss.menuLink;
+    const contactBtnClass = ({ isActive })=>isActive ? `${_headerModuleScss.contactBtn} ${_headerModuleScss.contactBtnActive}` : _headerModuleScss.contactBtn;
+    const menuContactBtnClass = ({ isActive })=>isActive ? `${_headerModuleScss.menuContactBtn} ${_headerModuleScss.menuContactBtnActive}` : _headerModuleScss.menuContactBtn;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                className: _headerModuleScss.header,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: _headerModuleScss.h1,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/",
+                            onClick: closeMenu,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: _headerModuleScss.logo,
+                                src: (0, _freejointmotionLogoSvgDefault.default),
+                                alt: "Free Joint Motion"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 32,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                        className: _headerModuleScss.nav,
+                        "aria-label": "Main",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/",
+                                end: true,
+                                className: mainLinkClass,
+                                onClick: closeMenu,
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 37,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/about",
+                                className: mainLinkClass,
+                                onClick: closeMenu,
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 40,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/sectors",
+                                className: mainLinkClass,
+                                onClick: closeMenu,
+                                children: "Sectors"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 43,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/knowledge",
+                                className: mainLinkClass,
+                                onClick: closeMenu,
+                                children: "Knowledge"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/technologies",
+                                className: mainLinkClass,
+                                onClick: closeMenu,
+                                children: "Technologies"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 49,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                to: "/contact",
+                                className: contactBtnClass,
+                                onClick: closeMenu,
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: _headerModuleScss.menu,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "menu-toggle",
+                                className: _headerModuleScss.menuToggle,
+                                checked: menuOpen,
+                                onChange: ()=>setMenuOpen(!menuOpen)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 58,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "menu-toggle",
+                                className: _headerModuleScss.menuIcon,
+                                "aria-label": "Menu",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: _headerModuleScss.line
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 66,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: _headerModuleScss.line
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 67,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: _headerModuleScss.line
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 65,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                                className: `${_headerModuleScss.menuNav} ${menuOpen ? _headerModuleScss.showMenu : ""}`,
+                                "aria-label": "Mobile",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/",
+                                        end: true,
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Home"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 75,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/about",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "About"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 78,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/sectors",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Sectors"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 81,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/knowledge",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Knowledge"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 84,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/technologies",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Technologies"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/services",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Services"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 90,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/news",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "News"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 93,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/publications",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Publications"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 96,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/impact",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Impact"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 99,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                        to: "/projects",
+                                        className: menuLinkClass,
+                                        onClick: closeMenu,
+                                        children: "Projects"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 102,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: _headerModuleScss.menuCta,
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                            to: "/contact",
+                                            className: menuContactBtnClass,
+                                            onClick: closeMenu,
+                                            children: "Contact us"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 106,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 105,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                className: _headerModuleScss.subHeader,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                    className: _headerModuleScss.subNav,
+                    "aria-label": "Secondary",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/services",
+                            className: subLinkClass,
+                            onClick: closeMenu,
+                            children: "Services"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 116,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/news",
+                            className: subLinkClass,
+                            onClick: closeMenu,
+                            children: "News"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 119,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/publications",
+                            className: subLinkClass,
+                            onClick: closeMenu,
+                            children: "Publications"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 122,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/impact",
+                            className: subLinkClass,
+                            onClick: closeMenu,
+                            children: "Impact"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 125,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                            to: "/projects",
+                            className: subLinkClass,
+                            onClick: closeMenu,
+                            children: "Projects"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 128,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 115,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 114,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Header, "K77eQVFAaxZgbvGoNWFAiCE7OTY=");
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./Header.module.scss":"iHVjE","../img/freejointmotion_logo.svg":"bzSWH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iHVjE":[function(require,module,exports,__globalThis) {
+module.exports["active"] = `pHiQEG_active`;
+module.exports["contactBtn"] = `pHiQEG_contactBtn`;
+module.exports["contactBtnActive"] = `pHiQEG_contactBtnActive`;
+module.exports["h1"] = `pHiQEG_h1`;
+module.exports["header"] = `pHiQEG_header`;
+module.exports["line"] = `pHiQEG_line`;
+module.exports["link"] = `pHiQEG_link`;
+module.exports["logo"] = `pHiQEG_logo`;
+module.exports["menu"] = `pHiQEG_menu`;
+module.exports["menuActive"] = `pHiQEG_menuActive`;
+module.exports["menuContactBtn"] = `pHiQEG_menuContactBtn`;
+module.exports["menuContactBtnActive"] = `pHiQEG_menuContactBtnActive`;
+module.exports["menuCta"] = `pHiQEG_menuCta`;
+module.exports["menuIcon"] = `pHiQEG_menuIcon`;
+module.exports["menuLink"] = `pHiQEG_menuLink`;
+module.exports["menuNav"] = `pHiQEG_menuNav`;
+module.exports["menuToggle"] = `pHiQEG_menuToggle`;
+module.exports["nav"] = `pHiQEG_nav`;
+module.exports["showMenu"] = `pHiQEG_showMenu`;
+module.exports["subActive"] = `pHiQEG_subActive`;
+module.exports["subHeader"] = `pHiQEG_subHeader`;
+module.exports["subLink"] = `pHiQEG_subLink`;
+module.exports["subNav"] = `pHiQEG_subNav`;
+
+},{}],"bzSWH":[function(require,module,exports,__globalThis) {
+module.exports = require("7c21b345f65de0a3").getBundleURL('ej6rf') + "freejointmotion_logo.97882008.svg" + "?" + Date.now();
+
+},{"7c21b345f65de0a3":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
 },{}],"8pPOA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -37744,125 +37872,70 @@ var _xWeb720PMp4Default = parcelHelpers.interopDefault(_xWeb720PMp4);
 var _xWeb1080PMp4 = require("url:../videos/x_web_1080p.mp4");
 var _xWeb1080PMp4Default = parcelHelpers.interopDefault(_xWeb1080PMp4);
 var _homeModuleScss = require("./Home.module.scss");
-const pillars = [
+const principles = [
     {
-        title: "Neurophysiological Integrity",
-        text: "Solutions grounded in how the nervous system actually controls movement\u2014not inappropriate external negative bias."
+        title: "Neurophysiological integrity",
+        text: "Movement solutions grounded in how the nervous system controls motion."
     },
     {
-        title: "Precision Biomechanics",
-        text: "Multi-axis mechanisms and 3D kinetic analysis for lower-leg and foot function across clinical and athletic contexts."
+        title: "Precision biomechanics",
+        text: "Multi-axis design and 3D kinetic analysis for clinical and athletic use."
     },
     {
-        title: "Evidence & Collaboration",
-        text: "Partnerships with orthopedists, sports medicine practitioners, and researchers worldwide."
+        title: "Evidence & collaboration",
+        text: "Partnerships with clinicians, researchers, and institutions worldwide."
     }
 ];
-const sectors = [
-    {
-        title: "Mobility",
-        path: "/sectors"
-    },
-    {
-        title: "Physical Activity & Sports",
-        path: "/sectors"
-    },
-    {
-        title: "Rehabilitation",
-        path: "/sectors"
-    },
-    {
-        title: "Personal Autonomy",
-        path: "/sectors"
-    }
-];
-const SectionHead = ({ eyebrow, title, lead, id, variant = "light" })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: variant === "dark" ? _homeModuleScss.sectionHeadDark : _homeModuleScss.sectionHead,
-        children: [
-            eyebrow && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: _homeModuleScss.eyebrow,
-                children: eyebrow
-            }, void 0, false, {
-                fileName: "src/pages/Home.js",
-                lineNumber: 36,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                id: id,
-                className: _homeModuleScss.sectionTitle,
-                children: title
-            }, void 0, false, {
-                fileName: "src/pages/Home.js",
-                lineNumber: 37,
-                columnNumber: 5
-            }, undefined),
-            lead && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: _homeModuleScss.sectionLead,
-                children: lead
-            }, void 0, false, {
-                fileName: "src/pages/Home.js",
-                lineNumber: 40,
-                columnNumber: 14
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/Home.js",
-        lineNumber: 31,
-        columnNumber: 3
-    }, undefined);
-_c = SectionHead;
 const Home = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: _homeModuleScss.home,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroSectionDefault.default), {}, void 0, false, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 47,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
                 className: _homeModuleScss.main,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                        className: _homeModuleScss.block,
-                        "aria-labelledby": "home-intro",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: _homeModuleScss.inner,
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SectionHead, {
-                                id: "home-intro",
-                                eyebrow: "Who we are",
-                                title: "Movement without limits. Performance: Minimizing external biases.",
-                                lead: "Free Joint Motion LLC is an international company based in Weston, Florida, advancing biomechanical medical devices for sports medicine, injury prevention, and rehabilitation. Led by Professor Luis Commisso, we translate scientific knowledge into kinetic therapy innovations that respect human neurophysiology."
-                            }, void 0, false, {
-                                fileName: "src/pages/Home.js",
-                                lineNumber: 52,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/pages/Home.js",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/pages/Home.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         className: `${_homeModuleScss.block} ${_homeModuleScss.blockAccent}`,
                         "aria-labelledby": "home-featured",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: _homeModuleScss.innerNarrow,
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SectionHead, {
-                                    id: "home-featured",
-                                    variant: "dark",
-                                    eyebrow: "Flagship innovation",
-                                    title: "Multi-Ax-Sys",
-                                    lead: "A semi-open exoskeleton that supports, guides, and resists natural foot motion or gestures\u2014minimizing negative external forces while enabling multi-planar motion."
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                                    className: _homeModuleScss.sectionHeadDark,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _homeModuleScss.eyebrow,
+                                            children: "Flagship innovation"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 35,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            id: "home-featured",
+                                            className: _homeModuleScss.sectionTitle,
+                                            children: "Multi-Ax-Sys"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 36,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _homeModuleScss.sectionLead,
+                                            children: "A semi-open system that supports, guides, and resists natural foot motion\u2014enabling multi-planar movement with minimal inappropriate external force."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 39,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 66,
+                                    lineNumber: 34,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
@@ -37880,7 +37953,7 @@ const Home = ()=>{
                                             media: "(min-width: 1024px)"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 82,
+                                            lineNumber: 53,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
@@ -37888,21 +37961,13 @@ const Home = ()=>{
                                             type: "video/mp4"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 87,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 73,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: _homeModuleScss.featuredDetail,
-                                    children: "Adjustable resistance and precise tracking enhance rehabilitation, training, and clinical research."
-                                }, void 0, false, {
-                                    fileName: "src/pages/Home.js",
-                                    lineNumber: 89,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37914,7 +37979,7 @@ const Home = ()=>{
                                             children: "View project"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 94,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -37923,216 +37988,142 @@ const Home = ()=>{
                                             children: "Our technology"
                                         }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 97,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 93,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 65,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 61,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         className: _homeModuleScss.block,
-                        "aria-labelledby": "home-pillars",
+                        "aria-labelledby": "home-principles",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: _homeModuleScss.innerWide,
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SectionHead, {
-                                    id: "home-pillars",
-                                    eyebrow: "Our approach",
-                                    title: "What we stand for",
-                                    lead: "Three principles guide how we design systems, interpret movement, and partner with clinicians and researchers."
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                                    className: _homeModuleScss.sectionHead,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _homeModuleScss.eyebrow,
+                                            children: "Our approach"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 74,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            id: "home-principles",
+                                            className: _homeModuleScss.sectionTitle,
+                                            children: "Biomechanical medical devices for rehabilitation and performance"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 75,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _homeModuleScss.sectionLead,
+                                            children: "Free Joint Motion LLC advances kinetic therapy innovations from Weston, Florida\u2014translating scientific knowledge into systems that respect human neurophysiology."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 78,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 106,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                    className: _homeModuleScss.pillarGrid,
-                                    children: pillars.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                                className: _homeModuleScss.pillarCard,
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: _homeModuleScss.pillarIndex,
-                                                        "aria-hidden": "true",
-                                                        children: String(index + 1).padStart(2, "0")
-                                                    }, void 0, false, {
-                                                        fileName: "src/pages/Home.js",
-                                                        lineNumber: 116,
-                                                        columnNumber: 21
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                        className: _homeModuleScss.pillarTitle,
-                                                        children: item.title
-                                                    }, void 0, false, {
-                                                        fileName: "src/pages/Home.js",
-                                                        lineNumber: 119,
-                                                        columnNumber: 21
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        className: _homeModuleScss.pillarText,
-                                                        children: item.text
-                                                    }, void 0, false, {
-                                                        fileName: "src/pages/Home.js",
-                                                        lineNumber: 120,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/pages/Home.js",
-                                                lineNumber: 115,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        }, item.title, false, {
+                                    className: _homeModuleScss.principleList,
+                                    children: principles.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    className: _homeModuleScss.principleTitle,
+                                                    children: item.title
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Home.js",
+                                                    lineNumber: 87,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: _homeModuleScss.principleText,
+                                                    children: item.text
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Home.js",
+                                                    lineNumber: 88,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, item.title, true, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 114,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 112,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/Home.js",
-                            lineNumber: 105,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/pages/Home.js",
-                        lineNumber: 104,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                        className: _homeModuleScss.block,
-                        "aria-labelledby": "home-explore",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: _homeModuleScss.innerWide,
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SectionHead, {
-                                    id: "home-explore",
-                                    eyebrow: "Where we apply our work",
-                                    title: "Sectors & scientific foundation",
-                                    lead: "From clinical rehabilitation to competitive sport\u2014grounded in rigorous biomechanical and human-factors expertise."
-                                }, void 0, false, {
-                                    fileName: "src/pages/Home.js",
-                                    lineNumber: 130,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: _homeModuleScss.exploreGrid,
+                                    className: _homeModuleScss.quickLinks,
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                            className: _homeModuleScss.explorePanel,
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                    className: _homeModuleScss.exploreTitle,
-                                                    children: "Sectors we serve"
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 138,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                                    className: _homeModuleScss.sectorList,
-                                                    children: sectors.map((sector)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                                                className: _homeModuleScss.sectorLink,
-                                                                to: sector.path,
-                                                                children: sector.title
-                                                            }, void 0, false, {
-                                                                fileName: "src/pages/Home.js",
-                                                                lineNumber: 142,
-                                                                columnNumber: 23
-                                                            }, undefined)
-                                                        }, sector.title, false, {
-                                                            fileName: "src/pages/Home.js",
-                                                            lineNumber: 141,
-                                                            columnNumber: 21
-                                                        }, undefined))
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 139,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                                    className: _homeModuleScss.textLink,
-                                                    to: "/sectors",
-                                                    children: "Explore all sectors"
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 148,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                                            className: _homeModuleScss.textLink,
+                                            to: "/sectors",
+                                            children: "Sectors we serve"
+                                        }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 137,
+                                            lineNumber: 93,
                                             columnNumber: 15
                                         }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                            className: _homeModuleScss.explorePanel,
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                    className: _homeModuleScss.exploreTitle,
-                                                    children: "Knowledge areas"
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 153,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    className: _homeModuleScss.exploreText,
-                                                    children: "Deep expertise in 3D anthropometry, human factors, digital health, user experience, and biomedical engineering\u2014applied to the relationship between the human body, products, and clinical environments."
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 154,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                                    className: _homeModuleScss.textLink,
-                                                    to: "/knowledge",
-                                                    children: "View knowledge areas"
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/Home.js",
-                                                    lineNumber: 159,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                                            className: _homeModuleScss.textLink,
+                                            to: "/knowledge",
+                                            children: "Knowledge areas"
+                                        }, void 0, false, {
                                             fileName: "src/pages/Home.js",
-                                            lineNumber: 152,
+                                            lineNumber: 96,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                                            className: _homeModuleScss.textLink,
+                                            to: "/publications",
+                                            children: "Research & observations"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Home.js",
+                                            lineNumber: 99,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Home.js",
-                                    lineNumber: 136,
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 129,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 128,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -38143,59 +38134,65 @@ const Home = ()=>{
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: _homeModuleScss.ctaPanel,
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SectionHead, {
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                         id: "home-cta",
-                                        eyebrow: "Work with us",
-                                        title: "Partner with us",
-                                        lead: "Collaborate on research, clinical validation, or device development for lower-limb kinetic therapy."
+                                        className: _homeModuleScss.ctaTitle,
+                                        children: "Partner on research, validation, or device development"
                                     }, void 0, false, {
                                         fileName: "src/pages/Home.js",
-                                        lineNumber: 170,
+                                        lineNumber: 109,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: _homeModuleScss.ctaLead,
+                                        children: "Connect with our team to explore clinical collaboration, NDA access, or commercial partnership."
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Home.js",
+                                        lineNumber: 112,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
                                         className: _homeModuleScss.btnPrimary,
                                         to: "/contact",
-                                        children: "Contact us"
+                                        children: "Get in touch"
                                     }, void 0, false, {
                                         fileName: "src/pages/Home.js",
-                                        lineNumber: 176,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/Home.js",
-                                lineNumber: 169,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/Home.js",
-                            lineNumber: 168,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.js",
-                        lineNumber: 167,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Home.js",
-                lineNumber: 49,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Home.js",
-        lineNumber: 46,
+        lineNumber: 25,
         columnNumber: 5
     }, undefined);
 };
-_c1 = Home;
+_c = Home;
 exports.default = Home;
-var _c, _c1;
-$RefreshReg$(_c, "SectionHead");
-$RefreshReg$(_c1, "Home");
+var _c;
+$RefreshReg$(_c, "Home");
 
   $parcel$ReactRefreshHelpers$b542.postlude(module);
 } finally {
@@ -38218,24 +38215,11 @@ var _reactRouter = require("react-router");
 var _heroSectionModuleScss = require("./HeroSection.module.scss");
 var _heroMp4 = require("url:../videos/hero.mp4");
 var _heroMp4Default = parcelHelpers.interopDefault(_heroMp4);
-var _s = $RefreshSig$();
 const HeroSection = ()=>{
-    _s();
-    const navigate = (0, _reactRouter.useNavigate)();
-    const videoRef = (0, _react.useRef)(null);
-    (0, _react.useEffect)(()=>{
-        if (videoRef.current) videoRef.current.play().catch((error)=>{
-            console.log("Autoplay failed, user interaction required:", error);
-        });
-    }, []);
-    const ctaClick = (path)=>{
-        navigate('/about');
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: _heroSectionModuleScss.hero,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                ref: videoRef,
                 autoPlay: true,
                 muted: true,
                 loop: true,
@@ -38247,69 +38231,108 @@ const HeroSection = ()=>{
                         type: "video/mp4"
                     }, void 0, false, {
                         fileName: "src/components/HeroSection.js",
-                        lineNumber: 27,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, undefined),
                     "Your browser does not support the video tag."
                 ]
             }, void 0, true, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 26,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: _heroSectionModuleScss.bg
+                className: _heroSectionModuleScss.scrim,
+                "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 30,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: _heroSectionModuleScss.overlay,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: _heroSectionModuleScss.title,
-                        children: "Movement without limits. Performance: Minimizing external biases."
-                    }, void 0, false, {
-                        fileName: "src/components/HeroSection.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: _heroSectionModuleScss.subtitle,
-                        children: "Innovating biomechanical medical devices for rehabilitation and performance."
-                    }, void 0, false, {
-                        fileName: "src/components/HeroSection.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: _heroSectionModuleScss.cta,
-                        onClick: ctaClick,
-                        children: "Learn More"
-                    }, void 0, false, {
-                        fileName: "src/components/HeroSection.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: _heroSectionModuleScss.copy,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _heroSectionModuleScss.kicker,
+                            children: "Free Joint Motion"
+                        }, void 0, false, {
+                            fileName: "src/components/HeroSection.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: _heroSectionModuleScss.title,
+                            children: [
+                                "Movement without limits.",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: _heroSectionModuleScss.titleAccent,
+                                    children: "Performance: minimizing external biases."
+                                }, void 0, false, {
+                                    fileName: "src/components/HeroSection.js",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/HeroSection.js",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: _heroSectionModuleScss.subtitle,
+                            children: "Biomechanical medical devices for rehabilitation, injury prevention, and athletic performance."
+                        }, void 0, false, {
+                            fileName: "src/components/HeroSection.js",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: _heroSectionModuleScss.actions,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                                    className: _heroSectionModuleScss.ctaPrimary,
+                                    to: "/contact",
+                                    children: "Get in touch"
+                                }, void 0, false, {
+                                    fileName: "src/components/HeroSection.js",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                                    className: _heroSectionModuleScss.ctaSecondary,
+                                    to: "/projects",
+                                    children: "View Multi-Ax-Sys"
+                                }, void 0, false, {
+                                    fileName: "src/components/HeroSection.js",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/HeroSection.js",
+                            lineNumber: 27,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/HeroSection.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/HeroSection.js",
-                lineNumber: 31,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/HeroSection.js",
-        lineNumber: 25,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
-_s(HeroSection, "1tqGQv/lOn/iXljKoHJyvtED4/c=", false, function() {
-    return [
-        (0, _reactRouter.useNavigate)
-    ];
-});
 _c = HeroSection;
 exports.default = HeroSection;
 var _c;
@@ -38321,13 +38344,18 @@ $RefreshReg$(_c, "HeroSection");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","./HeroSection.module.scss":"hrIAL","url:../videos/hero.mp4":"4s0XH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hrIAL":[function(require,module,exports,__globalThis) {
-module.exports["bg"] = `sbFlKq_bg`;
+module.exports["actions"] = `sbFlKq_actions`;
 module.exports["bgVideo"] = `sbFlKq_bgVideo`;
-module.exports["cta"] = `sbFlKq_cta`;
+module.exports["copy"] = `sbFlKq_copy`;
+module.exports["ctaPrimary"] = `sbFlKq_ctaPrimary`;
+module.exports["ctaSecondary"] = `sbFlKq_ctaSecondary`;
 module.exports["hero"] = `sbFlKq_hero`;
+module.exports["kicker"] = `sbFlKq_kicker`;
 module.exports["overlay"] = `sbFlKq_overlay`;
+module.exports["scrim"] = `sbFlKq_scrim`;
 module.exports["subtitle"] = `sbFlKq_subtitle`;
 module.exports["title"] = `sbFlKq_title`;
+module.exports["titleAccent"] = `sbFlKq_titleAccent`;
 
 },{}],"4s0XH":[function(require,module,exports,__globalThis) {
 module.exports = require("b8878b548ab55db4").getBundleURL('ej6rf') + "hero.c2e96e4a.mp4" + "?" + Date.now();
@@ -38345,30 +38373,23 @@ module.exports["blockAccent"] = `OpkwbW_blockAccent`;
 module.exports["blockCta"] = `OpkwbW_blockCta`;
 module.exports["btnPrimary"] = `OpkwbW_btnPrimary`;
 module.exports["btnSecondary"] = `OpkwbW_btnSecondary`;
+module.exports["ctaLead"] = `OpkwbW_ctaLead`;
 module.exports["ctaPanel"] = `OpkwbW_ctaPanel`;
-module.exports["exploreGrid"] = `OpkwbW_exploreGrid`;
-module.exports["explorePanel"] = `OpkwbW_explorePanel`;
-module.exports["exploreText"] = `OpkwbW_exploreText`;
-module.exports["exploreTitle"] = `OpkwbW_exploreTitle`;
+module.exports["ctaTitle"] = `OpkwbW_ctaTitle`;
 module.exports["eyebrow"] = `OpkwbW_eyebrow`;
-module.exports["featuredDetail"] = `OpkwbW_featuredDetail`;
 module.exports["home"] = `OpkwbW_home`;
-module.exports["inner"] = `OpkwbW_inner`;
 module.exports["innerNarrow"] = `OpkwbW_innerNarrow`;
 module.exports["innerWide"] = `OpkwbW_innerWide`;
 module.exports["main"] = `OpkwbW_main`;
-module.exports["pillarCard"] = `OpkwbW_pillarCard`;
-module.exports["pillarGrid"] = `OpkwbW_pillarGrid`;
-module.exports["pillarIndex"] = `OpkwbW_pillarIndex`;
-module.exports["pillarText"] = `OpkwbW_pillarText`;
-module.exports["pillarTitle"] = `OpkwbW_pillarTitle`;
+module.exports["principleList"] = `OpkwbW_principleList`;
+module.exports["principleText"] = `OpkwbW_principleText`;
+module.exports["principleTitle"] = `OpkwbW_principleTitle`;
 module.exports["projectMark"] = `OpkwbW_projectMark`;
+module.exports["quickLinks"] = `OpkwbW_quickLinks`;
 module.exports["sectionHead"] = `OpkwbW_sectionHead`;
 module.exports["sectionHeadDark"] = `OpkwbW_sectionHeadDark`;
 module.exports["sectionLead"] = `OpkwbW_sectionLead`;
 module.exports["sectionTitle"] = `OpkwbW_sectionTitle`;
-module.exports["sectorLink"] = `OpkwbW_sectorLink`;
-module.exports["sectorList"] = `OpkwbW_sectorList`;
 module.exports["textLink"] = `OpkwbW_textLink`;
 
 },{}],"dep5E":[function(require,module,exports,__globalThis) {
@@ -39655,6 +39676,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _pageShell = require("../components/PageShell");
 var _pageShellDefault = parcelHelpers.interopDefault(_pageShell);
+var _ndaGate = require("../components/NdaGate");
+var _ndaGateDefault = parcelHelpers.interopDefault(_ndaGate);
 var _useVideoAnalytics = require("../hooks/useVideoAnalytics");
 var _useVideoAnalyticsDefault = parcelHelpers.interopDefault(_useVideoAnalytics);
 var _multiAxSysWeb720PMp4 = require("url:../videos/multi-ax-sys_web_720p.mp4");
@@ -39798,13 +39821,48 @@ const validationPartners = [
         detail: "Joint global mission engagement connecting international executive leadership with the Multi-Ax-Sys roadmap."
     }
 ];
-const Projects = ()=>{
+const ProjectVideo = ()=>{
     _s();
     const projectVideoRef = (0, _react.useRef)(null);
     (0, _useVideoAnalyticsDefault.default)(projectVideoRef, {
         videoName: "Multi-Ax-Sys demonstration",
         videoLocation: "projects"
     });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: _projectsModuleScss.projectVisual,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+            ref: projectVideoRef,
+            className: _projectsModuleScss.projectVideo,
+            controls: true,
+            playsInline: true,
+            preload: "metadata",
+            "aria-label": "Multi-Ax-Sys device demonstration",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                src: (0, _multiAxSysWeb720PMp4Default.default),
+                type: "video/mp4"
+            }, void 0, false, {
+                fileName: "src/pages/Projects.js",
+                lineNumber: 165,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/pages/Projects.js",
+            lineNumber: 157,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/pages/Projects.js",
+        lineNumber: 156,
+        columnNumber: 5
+    }, undefined);
+};
+_s(ProjectVideo, "i7RdRoVb86S7P/RnnCu6McU4IyY=", false, function() {
+    return [
+        (0, _useVideoAnalyticsDefault.default)
+    ];
+});
+_c = ProjectVideo;
+const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pageShellDefault.default), {
         title: "Projects",
         intro: "Innovations in kinetic therapy and lower-limb biomechanics.",
@@ -39816,7 +39874,7 @@ const Projects = ()=>{
                     children: "Flagship product"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 160,
+                    lineNumber: 178,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -39824,34 +39882,7 @@ const Projects = ()=>{
                     children: "Multi-Ax-Sys"
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 161,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: _projectsModuleScss.projectVisual,
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                        ref: projectVideoRef,
-                        className: _projectsModuleScss.projectVideo,
-                        controls: true,
-                        playsInline: true,
-                        preload: "metadata",
-                        "aria-label": "Multi-Ax-Sys device demonstration",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                            src: (0, _multiAxSysWeb720PMp4Default.default),
-                            type: "video/mp4"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 172,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/pages/Projects.js",
-                        lineNumber: 164,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/pages/Projects.js",
-                    lineNumber: 163,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39862,408 +39893,428 @@ const Projects = ()=>{
                             children: "Multi-Ax-Sys"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 177,
+                            lineNumber: 182,
                             columnNumber: 15
                         }, undefined),
                         " is a semi-open, multi-axis leg\u2013ankle\u2013foot system designed to support, guide, and resist natural foot motion or gestures\u2014minimizing inappropriate external forces while enabling multi-planar motion. Built on decades of biomechanical research and a foundational U.S. patent, it targets strengthening, rehabilitation, and clinical assessment of the lower limb kinetic chain."
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 176,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: _projectsModuleScss.section,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ndaGateDefault.default), {
+                    showVideoPlaceholder: true,
+                    includes: [
+                        "Product demonstration video",
+                        "Development timeline and patent materials",
+                        "Technical overview and validation partners",
+                        "MBA deliverables and partner documentation"
+                    ],
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            className: _projectsModuleScss.sectionLabel,
-                            children: "Development timeline"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 185,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
-                            className: _projectsModuleScss.timeline,
-                            children: developmentTimeline.map((entry)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: _projectsModuleScss.timelineItem,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: _projectsModuleScss.timelinePeriod,
-                                            children: entry.period
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 189,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: _projectsModuleScss.timelineDetail,
-                                            children: entry.detail
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 190,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, entry.period, true, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 188,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 186,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/Projects.js",
-                    lineNumber: 184,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: _projectsModuleScss.section,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            className: _projectsModuleScss.sectionLabel,
-                            children: "Patent foundation"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 197,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.body,
-                            children: [
-                                "The core technology originates from the",
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: _projectsModuleScss.inlineLink,
-                                    href: PATENT_URL,
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    children: "Leg-Ankle-Foot Exercise Assembly"
-                                }, void 0, false, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 200,
-                                    columnNumber: 13
-                                }, undefined),
-                                " ",
-                                "(U.S. Patent",
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: _projectsModuleScss.inlineLink,
-                                    href: PATENT_URL,
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    children: PATENT_NUMBER
-                                }, void 0, false, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 209,
-                                    columnNumber: 13
-                                }, undefined),
-                                "), invented by Luis Alberto Commisso. Unlike conventional single-exercise devices with complicated yet limited mechanics, this assembly directs the foot, ankle, and lower leg through a plurality of configured ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                    children: "paths of movement"
-                                }, void 0, false, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 219,
-                                    columnNumber: 47
-                                }, undefined),
-                                "\u2014rotating relative to multiple axes\u2014while resistance is generated by the user's own effort rather than an external motor."
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectVideo, {}, void 0, false, {
                             fileName: "src/pages/Projects.js",
                             lineNumber: 198,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dl", {
-                            className: _projectsModuleScss.patentMeta,
-                            children: patentDetails.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: _projectsModuleScss.patentMetaRow,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dt", {
-                                            className: _projectsModuleScss.patentMetaLabel,
-                                            children: item.label
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 225,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dd", {
-                                            className: _projectsModuleScss.patentMetaValue,
-                                            children: item.value
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 226,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, item.label, true, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 224,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 222,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: _projectsModuleScss.patentAbstract,
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            className: _projectsModuleScss.section,
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                    className: _projectsModuleScss.patentAbstractTitle,
-                                    children: "Abstract"
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                    className: _projectsModuleScss.sectionLabel,
+                                    children: "Development timeline"
                                 }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 231,
+                                    lineNumber: 201,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+                                    className: _projectsModuleScss.timeline,
+                                    children: developmentTimeline.map((entry)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: _projectsModuleScss.timelineItem,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: _projectsModuleScss.timelinePeriod,
+                                                    children: entry.period
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 205,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: _projectsModuleScss.timelineDetail,
+                                                    children: entry.detail
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 206,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, entry.period, true, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 204,
+                                            columnNumber: 17
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 202,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/Projects.js",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            className: _projectsModuleScss.section,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                    className: _projectsModuleScss.sectionLabel,
+                                    children: "Patent foundation"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 213,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     className: _projectsModuleScss.body,
-                                    children: PATENT_ABSTRACT
-                                }, void 0, false, {
-                                    fileName: "src/pages/Projects.js",
-                                    lineNumber: 232,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: _projectsModuleScss.patentAbstractSource,
                                     children: [
-                                        "Source:",
+                                        "The core technology originates from the",
                                         " ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                             className: _projectsModuleScss.inlineLink,
                                             href: PATENT_URL,
                                             target: "_blank",
                                             rel: "noopener noreferrer",
+                                            children: "Leg-Ankle-Foot Exercise Assembly"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 216,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        " ",
+                                        "(U.S. Patent",
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            className: _projectsModuleScss.inlineLink,
+                                            href: PATENT_URL,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            children: PATENT_NUMBER
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 225,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "), invented by Luis Alberto Commisso. Unlike conventional single-exercise devices with complicated yet limited mechanics, this assembly directs the foot, ankle, and lower leg through a plurality of configured ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                            children: "paths of movement"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 235,
+                                            columnNumber: 49
+                                        }, undefined),
+                                        "\u2014rotating relative to multiple axes\u2014while resistance is generated by the user's own effort rather than an external motor."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 214,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dl", {
+                                    className: _projectsModuleScss.patentMeta,
+                                    children: patentDetails.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: _projectsModuleScss.patentMetaRow,
                                             children: [
-                                                "Google Patents \u2014 ",
-                                                PATENT_NUMBER
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dt", {
+                                                    className: _projectsModuleScss.patentMetaLabel,
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 241,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dd", {
+                                                    className: _projectsModuleScss.patentMetaValue,
+                                                    children: item.value
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 242,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, item.label, true, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 240,
+                                            columnNumber: 17
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 238,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: _projectsModuleScss.patentAbstract,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                            className: _projectsModuleScss.patentAbstractTitle,
+                                            children: "Abstract"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 247,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _projectsModuleScss.body,
+                                            children: PATENT_ABSTRACT
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 248,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: _projectsModuleScss.patentAbstractSource,
+                                            children: [
+                                                "Source:",
+                                                " ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    className: _projectsModuleScss.inlineLink,
+                                                    href: PATENT_URL,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    children: [
+                                                        "Google Patents \u2014 ",
+                                                        PATENT_NUMBER
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 251,
+                                                    columnNumber: 17
+                                                }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 235,
+                                            lineNumber: 249,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 233,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 230,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("blockquote", {
-                            className: _projectsModuleScss.patentQuote,
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    children: "\u201CThe present invention is an exercise assembly that targets specific parts of the body, including the legs, ankle, and foot\u2026 The assembly provides resistance to the user's movements to improve strength and performance\u2026 designed to be used with the user's own movements, rather than relying on an external motor or driver.\u201D"
-                                }, void 0, false, {
-                                    fileName: "src/pages/Projects.js",
                                     lineNumber: 246,
                                     columnNumber: 13
                                 }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("blockquote", {
+                                    className: _projectsModuleScss.patentQuote,
                                     children: [
-                                        "\u2014 U.S. Patent ",
-                                        PATENT_NUMBER
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "\u201CThe present invention is an exercise assembly that targets specific parts of the body, including the legs, ankle, and foot\u2026 The assembly provides resistance to the user's movements to improve strength and performance\u2026 designed to be used with the user's own movements, rather than relying on an external motor or driver.\u201D"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 262,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                                            children: [
+                                                "\u2014 U.S. Patent ",
+                                                PATENT_NUMBER
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 268,
+                                            columnNumber: 15
+                                        }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 252,
+                                    lineNumber: 261,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.body,
+                                    children: "The invention addresses a gap in conventional equipment: most known devices cannot perform beneficial, versatile exercise across the different muscle groupings, joints, and related structures of the lower leg and foot in an effective manner. The support structure moves relative to a base along defined paths, with adjustable weighting to match the movement being trained."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 270,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: _projectsModuleScss.patentFigureGrid,
+                                    children: patentFigures.map((figure)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                            className: _projectsModuleScss.figure,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: _projectsModuleScss.patentFigure,
+                                                    src: figure.src,
+                                                    alt: figure.alt,
+                                                    loading: "lazy"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 280,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                                    className: _projectsModuleScss.figureCaption,
+                                                    children: figure.caption
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 286,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, figure.alt, true, {
+                                            fileName: "src/pages/Projects.js",
+                                            lineNumber: 279,
+                                            columnNumber: 17
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 277,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 245,
+                            lineNumber: 212,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.body,
-                            children: "The invention addresses a gap in conventional equipment: most known devices cannot perform beneficial, versatile exercise across the different muscle groupings, joints, and related structures of the lower leg and foot in an effective manner. The support structure moves relative to a base along defined paths, with adjustable weighting to match the movement being trained."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 254,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: _projectsModuleScss.patentFigureGrid,
-                            children: patentFigures.map((figure)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
-                                    className: _projectsModuleScss.figure,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: _projectsModuleScss.patentFigure,
-                                            src: figure.src,
-                                            alt: figure.alt,
-                                            loading: "lazy"
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 264,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                            className: _projectsModuleScss.figureCaption,
-                                            children: figure.caption
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 270,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, figure.alt, true, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            className: _projectsModuleScss.section,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                    className: _projectsModuleScss.sectionLabel,
+                                    children: "Overview"
+                                }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 263,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
+                                    lineNumber: 293,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.body,
+                                    children: "Multi-Ax-Sys extends the patented concept into a bio-functional platform that allows precise support, guidance, and resistance across multiple axes and sliding planes\u2014adapting instantaneously to dynamic foot motion. The system can selectively lock or release participation of synergistic joints (knee, tibia\u2013fibular complex, ankle, and foot segments) so clinicians and researchers can train or measure integrated kinematics rather than isolating the ankle as a single hinge."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 294,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.body,
+                                    children: "Resistance modes include isometric, isotonic, and natural isokinetic torque. Integrated sensing supports position, speed, acceleration, and three-dimensional spatial displacement\u2014aligning with electro-goniometry and kinetic analysis used during prototype development."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 302,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 261,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/Projects.js",
-                    lineNumber: 196,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: _projectsModuleScss.section,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            className: _projectsModuleScss.sectionLabel,
-                            children: "Overview"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 277,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.body,
-                            children: "Multi-Ax-Sys extends the patented concept into a bio-functional platform that allows precise support, guidance, and resistance across multiple axes and sliding planes\u2014adapting instantaneously to dynamic foot motion. The system can selectively lock or release participation of synergistic joints (knee, tibia\u2013fibular complex, ankle, and foot segments) so clinicians and researchers can train or measure integrated kinematics rather than isolating the ankle as a single hinge."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 278,
+                            lineNumber: 292,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.body,
-                            children: "Resistance modes include isometric, isotonic, and natural isokinetic torque. Integrated sensing supports position, speed, acceleration, and three-dimensional spatial displacement\u2014aligning with electro-goniometry and kinetic analysis used during prototype development."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 286,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/Projects.js",
-                    lineNumber: 276,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: _projectsModuleScss.section,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            className: _projectsModuleScss.sectionLabel,
-                            children: "Validation & academic engagement"
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 295,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.body,
-                            children: "The prototype has been presented for validation studies at several universities and institutions. Early work established institutional review and laboratory testing frameworks; expanded trials across partner sites are planned as research funding becomes available."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 296,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            className: _projectsModuleScss.partnerList,
-                            children: validationPartners.map((partner)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    className: _projectsModuleScss.partnerItem,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                            className: _projectsModuleScss.partnerName,
-                                            children: partner.name
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 305,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: _projectsModuleScss.body,
-                                            children: partner.detail
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Projects.js",
-                                            lineNumber: 306,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        partner.documents?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                            className: _projectsModuleScss.documentList,
-                                            children: partner.documents.map((doc)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        className: _projectsModuleScss.documentLink,
-                                                        href: doc.href,
-                                                        target: "_blank",
-                                                        rel: "noopener noreferrer",
-                                                        children: doc.label
-                                                    }, void 0, false, {
-                                                        fileName: "src/pages/Projects.js",
-                                                        lineNumber: 311,
-                                                        columnNumber: 25
-                                                    }, undefined)
-                                                }, doc.href, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            className: _projectsModuleScss.section,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                    className: _projectsModuleScss.sectionLabel,
+                                    children: "Validation & academic engagement"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 311,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.body,
+                                    children: "The prototype has been presented for validation studies at several universities and institutions. Early work established institutional review and laboratory testing frameworks; expanded trials across partner sites are planned as research funding becomes available."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 312,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    className: _projectsModuleScss.partnerList,
+                                    children: validationPartners.map((partner)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: _projectsModuleScss.partnerItem,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                    className: _projectsModuleScss.partnerName,
+                                                    children: partner.name
+                                                }, void 0, false, {
                                                     fileName: "src/pages/Projects.js",
-                                                    lineNumber: 310,
-                                                    columnNumber: 23
-                                                }, undefined))
-                                        }, void 0, false, {
+                                                    lineNumber: 321,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: _projectsModuleScss.body,
+                                                    children: partner.detail
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 322,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                partner.documents?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                    className: _projectsModuleScss.documentList,
+                                                    children: partner.documents.map((doc)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                className: _projectsModuleScss.documentLink,
+                                                                href: doc.href,
+                                                                target: "_blank",
+                                                                rel: "noopener noreferrer",
+                                                                children: doc.label
+                                                            }, void 0, false, {
+                                                                fileName: "src/pages/Projects.js",
+                                                                lineNumber: 327,
+                                                                columnNumber: 27
+                                                            }, undefined)
+                                                        }, doc.href, false, {
+                                                            fileName: "src/pages/Projects.js",
+                                                            lineNumber: 326,
+                                                            columnNumber: 25
+                                                        }, undefined))
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/Projects.js",
+                                                    lineNumber: 324,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, partner.name, true, {
                                             fileName: "src/pages/Projects.js",
-                                            lineNumber: 308,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    ]
-                                }, partner.name, true, {
+                                            lineNumber: 320,
+                                            columnNumber: 17
+                                        }, undefined))
+                                }, void 0, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 304,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
+                                    lineNumber: 318,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: _projectsModuleScss.bodyMuted,
+                                    children: "Suffolk deliverables (Teams 1, 3, 5, and 7) included consulting reports and final presentations on market analysis, competitive positioning, and partnership strategy\u2014 supporting the transition from prototype to clinical and commercial pathways."
+                                }, void 0, false, {
+                                    fileName: "src/pages/Projects.js",
+                                    lineNumber: 342,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 302,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: _projectsModuleScss.bodyMuted,
-                            children: "Suffolk deliverables (Teams 1, 3, 5, and 7) included consulting reports and final presentations on market analysis, competitive positioning, and partnership strategy\u2014 supporting the transition from prototype to clinical and commercial pathways."
-                        }, void 0, false, {
-                            fileName: "src/pages/Projects.js",
-                            lineNumber: 326,
+                            lineNumber: 310,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 294,
+                    lineNumber: 189,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: _projectsModuleScss.section,
+                    className: `${_projectsModuleScss.section} ${_projectsModuleScss.sectionPublic}`,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                             className: _projectsModuleScss.sectionLabel,
                             children: "Key features & benefits"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 334,
+                            lineNumber: 351,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -40277,7 +40328,7 @@ const Projects = ()=>{
                                                 children: feature.title
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 339,
+                                                lineNumber: 356,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40285,29 +40336,29 @@ const Projects = ()=>{
                                                 children: feature.description
                                             }, void 0, false, {
                                                 fileName: "src/pages/Projects.js",
-                                                lineNumber: 340,
+                                                lineNumber: 357,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/Projects.js",
-                                        lineNumber: 338,
+                                        lineNumber: 355,
                                         columnNumber: 17
                                     }, undefined)
                                 }, feature.title, false, {
                                     fileName: "src/pages/Projects.js",
-                                    lineNumber: 337,
+                                    lineNumber: 354,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 335,
+                            lineNumber: 352,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 333,
+                    lineNumber: 350,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40315,7 +40366,7 @@ const Projects = ()=>{
                     children: "We envision Multi-Ax-Sys as a cornerstone of lower-limb rehabilitation and kinetic therapy\u2014giving health professionals technology that respects neurophysiological control, multi-axis foot function, and the real demands of gait, sport, and recovery."
                 }, void 0, false, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 347,
+                    lineNumber: 364,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40327,7 +40378,7 @@ const Projects = ()=>{
                             children: "Explore the technology"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 354,
+                            lineNumber: 371,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40336,7 +40387,7 @@ const Projects = ()=>{
                             children: "Research observations"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 357,
+                            lineNumber: 374,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -40345,43 +40396,253 @@ const Projects = ()=>{
                             children: "Partner with us"
                         }, void 0, false, {
                             fileName: "src/pages/Projects.js",
-                            lineNumber: 360,
+                            lineNumber: 377,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/Projects.js",
-                    lineNumber: 353,
+                    lineNumber: 370,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/Projects.js",
-            lineNumber: 159,
+            lineNumber: 177,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/Projects.js",
-        lineNumber: 155,
+        lineNumber: 173,
         columnNumber: 5
     }, undefined);
 };
-_s(Projects, "i7RdRoVb86S7P/RnnCu6McU4IyY=", false, function() {
-    return [
-        (0, _useVideoAnalyticsDefault.default)
-    ];
-});
-_c = Projects;
+_c1 = Projects;
 exports.default = Projects;
-var _c;
-$RefreshReg$(_c, "Projects");
+var _c, _c1;
+$RefreshReg$(_c, "ProjectVideo");
+$RefreshReg$(_c1, "Projects");
 
   $parcel$ReactRefreshHelpers$a69b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","../hooks/useVideoAnalytics":"ksmS3","url:../videos/multi-ax-sys_web_720p.mp4":"k7UvO","../img/US20050239611A1-20051027-D00001.jpg":"eloDv","../img/US20050239611A1-20051027-D00002.jpg":"j3F7P","../img/US20050239611A1-20051027-D00003.jpg":"9CglF","../img/US20050239611A1-20051027-D00004.jpg":"8CH8S","./Projects.module.scss":"ieo5y","url:../../public/documents/mba-741-team-1-presentation.pptx":"acHwD","url:../../public/documents/mba-741-team-1-consulting-report.docx":"dmeqd","url:../../public/documents/mba-741-team-3-presentation.pptx":"aJTYH","url:../../public/documents/mba-741-team-3-final-report.docx":"gS3y3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ksmS3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../components/PageShell":"e6FxX","../components/NdaGate":"5Iqrv","../hooks/useVideoAnalytics":"ksmS3","url:../videos/multi-ax-sys_web_720p.mp4":"k7UvO","../img/US20050239611A1-20051027-D00001.jpg":"eloDv","../img/US20050239611A1-20051027-D00002.jpg":"j3F7P","../img/US20050239611A1-20051027-D00003.jpg":"9CglF","../img/US20050239611A1-20051027-D00004.jpg":"8CH8S","./Projects.module.scss":"ieo5y","url:../../public/documents/mba-741-team-1-presentation.pptx":"acHwD","url:../../public/documents/mba-741-team-1-consulting-report.docx":"dmeqd","url:../../public/documents/mba-741-team-3-presentation.pptx":"aJTYH","url:../../public/documents/mba-741-team-3-final-report.docx":"gS3y3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5Iqrv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0121 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0121.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouter = require("react-router");
+var _ndaAccessContext = require("../context/NdaAccessContext");
+var _ndaGateModuleScss = require("./NdaGate.module.scss");
+var _s = $RefreshSig$();
+const NdaGate = ({ children, title = "Confidential \u2014 NDA required", description = "This material is available to partners who have executed a non-disclosure agreement. Enter the access key provided after signing.", includes, showVideoPlaceholder = false })=>{
+    _s();
+    const inputId = (0, _react.useId)();
+    const { hasAccess, verifyAccessKey, revokeAccess, isConfigured } = (0, _ndaAccessContext.useNdaAccess)();
+    const [value, setValue] = (0, _react.useState)("");
+    const [error, setError] = (0, _react.useState)("");
+    const onSubmit = (event)=>{
+        event.preventDefault();
+        setError("");
+        if (!isConfigured) {
+            setError("Access is not configured yet. Please contact Free Joint Motion.");
+            return;
+        }
+        if (!verifyAccessKey(value)) {
+            setError("Invalid access key. Contact us if you have signed an NDA.");
+            return;
+        }
+        setValue("");
+    };
+    if (hasAccess) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: _ndaGateModuleScss.unlocked,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: _ndaGateModuleScss.notice,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: _ndaGateModuleScss.noticeText,
+                        children: "Confidential content \u2014 authorized NDA access."
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 39,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "button",
+                        className: _ndaGateModuleScss.signOut,
+                        onClick: revokeAccess,
+                        children: "End session"
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 38,
+                columnNumber: 9
+            }, undefined),
+            children
+        ]
+    }, void 0, true, {
+        fileName: "src/components/NdaGate.js",
+        lineNumber: 37,
+        columnNumber: 7
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: _ndaGateModuleScss.gate,
+        children: [
+            showVideoPlaceholder && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: _ndaGateModuleScss.placeholder,
+                "aria-hidden": "true",
+                children: "Product demonstration video available under NDA"
+            }, void 0, false, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 54,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: _ndaGateModuleScss.gateTitle,
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 58,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: _ndaGateModuleScss.gateText,
+                children: [
+                    description,
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                        to: "/contact",
+                        children: "Request NDA access"
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, undefined),
+                    "."
+                ]
+            }, void 0, true, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 59,
+                columnNumber: 7
+            }, undefined),
+            includes?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: _ndaGateModuleScss.includesList,
+                children: includes.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: item
+                    }, item, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 66,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 64,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                className: _ndaGateModuleScss.form,
+                onSubmit: onSubmit,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        className: "visually-hidden",
+                        htmlFor: inputId,
+                        children: "NDA access key"
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        id: inputId,
+                        className: _ndaGateModuleScss.input,
+                        type: "password",
+                        name: "nda-access-key",
+                        value: value,
+                        onChange: (e)=>setValue(e.target.value),
+                        placeholder: "Access key",
+                        autoComplete: "off"
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: _ndaGateModuleScss.submit,
+                        type: "submit",
+                        children: "Unlock"
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 84,
+                        columnNumber: 9
+                    }, undefined),
+                    error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: _ndaGateModuleScss.error,
+                        children: error
+                    }, void 0, false, {
+                        fileName: "src/components/NdaGate.js",
+                        lineNumber: 87,
+                        columnNumber: 19
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/NdaGate.js",
+                lineNumber: 70,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/NdaGate.js",
+        lineNumber: 52,
+        columnNumber: 5
+    }, undefined);
+};
+_s(NdaGate, "lNSuE2AL8uwivretQBMmzaRa5wQ=", false, function() {
+    return [
+        (0, _react.useId),
+        (0, _ndaAccessContext.useNdaAccess)
+    ];
+});
+_c = NdaGate;
+exports.default = NdaGate;
+var _c;
+$RefreshReg$(_c, "NdaGate");
+
+  $parcel$ReactRefreshHelpers$0121.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../context/NdaAccessContext":"5UXii","./NdaGate.module.scss":"1CIYz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1CIYz":[function(require,module,exports,__globalThis) {
+module.exports["error"] = `VgIveW_error`;
+module.exports["form"] = `VgIveW_form`;
+module.exports["gate"] = `VgIveW_gate`;
+module.exports["gateText"] = `VgIveW_gateText`;
+module.exports["gateTitle"] = `VgIveW_gateTitle`;
+module.exports["includesList"] = `VgIveW_includesList`;
+module.exports["input"] = `VgIveW_input`;
+module.exports["notice"] = `VgIveW_notice`;
+module.exports["noticeText"] = `VgIveW_noticeText`;
+module.exports["placeholder"] = `VgIveW_placeholder`;
+module.exports["signOut"] = `VgIveW_signOut`;
+module.exports["submit"] = `VgIveW_submit`;
+module.exports["unlocked"] = `VgIveW_unlocked`;
+
+},{}],"ksmS3":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$0236 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40515,6 +40776,7 @@ module.exports["projectVisual"] = `eyAqFG_projectVisual`;
 module.exports["secondaryBtn"] = `eyAqFG_secondaryBtn`;
 module.exports["section"] = `eyAqFG_section`;
 module.exports["sectionLabel"] = `eyAqFG_sectionLabel`;
+module.exports["sectionPublic"] = `eyAqFG_sectionPublic`;
 module.exports["timeline"] = `eyAqFG_timeline`;
 module.exports["timelineDetail"] = `eyAqFG_timelineDetail`;
 module.exports["timelineItem"] = `eyAqFG_timelineItem`;

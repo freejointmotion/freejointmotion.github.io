@@ -51,8 +51,8 @@
 }
 
 .eyebrow {
-  @include data-index;
   color: #7ec8e8;
+  @include data-index;
 }
 
 .heroTitle {

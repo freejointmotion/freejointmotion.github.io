@@ -1,0 +1,133 @@
+.gate {
+  margin: 2rem 0 2.5rem;
+  border: 1px solid rgba(19, 54, 75, 0.14);
+  background: #f8fafc;
+  padding: clamp(1.5rem, 4vw, 2rem);
+}
+
+.unlocked {
+  margin: 2rem 0 0;
+}
+
+.gateTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #13364b;
+  margin: 0 0 0.65rem;
+}
+
+.gateText {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a5568;
+  margin: 0 0 1rem;
+  max-width: 42rem;
+}
+
+.includesList {
+  margin: 0 0 1.25rem;
+  padding: 0 0 0 1.1rem;
+  color: #4a5568;
+  font-size: 0.92rem;
+  line-height: 1.5;
+
+  li + li {
+    margin-top: 0.35rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  max-width: 24rem;
+}
+
+.input {
+  flex: 1 1 10rem;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+  border: 1px solid rgba(19, 54, 75, 0.2);
+  background: #fff;
+  color: #13364b;
+
+  &:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 1px;
+  }
+}
+
+.submit {
+  flex: 0 0 auto;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #13364b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus-visible {
+    background: #1e4a63;
+  }
+}
+
+.error {
+  width: 100%;
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  color: #b42318;
+}
+
+.notice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.75rem;
+  padding: 0.85rem 1rem;
+  background: rgba(19, 54, 75, 0.06);
+  border-left: 3px solid #007acc;
+}
+
+.noticeText {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+.signOut {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #007acc;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus-visible {
+    color: #13364b;
+  }
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  margin-bottom: 1.25rem;
+  background: #e8eef3;
+  color: #5a6a7a;
+  font-size: 0.92rem;
+  text-align: center;
+  padding: 1.5rem;
+}

@@ -5,41 +5,20 @@ import multiAxSysVideo720 from "url:../videos/x_web_720p.mp4";
 import multiAxSysVideo1080 from "url:../videos/x_web_1080p.mp4";
 import * as styles from "./Home.module.scss";
 
-const pillars = [
+const principles = [
   {
-    title: "Neurophysiological Integrity",
-    text: "Solutions grounded in how the nervous system actually controls movement—not inappropriate external negative bias.",
+    title: "Neurophysiological integrity",
+    text: "Movement solutions grounded in how the nervous system controls motion.",
   },
   {
-    title: "Precision Biomechanics",
-    text: "Multi-axis mechanisms and 3D kinetic analysis for lower-leg and foot function across clinical and athletic contexts.",
+    title: "Precision biomechanics",
+    text: "Multi-axis design and 3D kinetic analysis for clinical and athletic use.",
   },
   {
-    title: "Evidence & Collaboration",
-    text: "Partnerships with orthopedists, sports medicine practitioners, and researchers worldwide.",
+    title: "Evidence & collaboration",
+    text: "Partnerships with clinicians, researchers, and institutions worldwide.",
   },
 ];
-
-const sectors = [
-  { title: "Mobility", path: "/sectors" },
-  { title: "Physical Activity & Sports", path: "/sectors" },
-  { title: "Rehabilitation", path: "/sectors" },
-  { title: "Personal Autonomy", path: "/sectors" },
-];
-
-const SectionHead = ({ eyebrow, title, lead, id, variant = "light" }) => (
-  <header
-    className={
-      variant === "dark" ? styles.sectionHeadDark : styles.sectionHead
-    }
-  >
-    {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
-    <h2 id={id} className={styles.sectionTitle}>
-      {title}
-    </h2>
-    {lead && <p className={styles.sectionLead}>{lead}</p>}
-  </header>
-);
 
 const Home = () => {
   return (
@@ -47,29 +26,21 @@ const Home = () => {
       <HeroSection />
 
       <main className={styles.main}>
-        <section className={styles.block} aria-labelledby="home-intro">
-          <div className={styles.inner}>
-            <SectionHead
-              id="home-intro"
-              eyebrow="Who we are"
-              title="Movement without limits. Performance: Minimizing external biases."
-              lead="Free Joint Motion LLC is an international company based in Weston, Florida, advancing biomechanical medical devices for sports medicine, injury prevention, and rehabilitation. Led by Professor Luis Commisso, we translate scientific knowledge into kinetic therapy innovations that respect human neurophysiology."
-            />
-          </div>
-        </section>
-
         <section
           className={`${styles.block} ${styles.blockAccent}`}
           aria-labelledby="home-featured"
         >
           <div className={styles.innerNarrow}>
-            <SectionHead
-              id="home-featured"
-              variant="dark"
-              eyebrow="Flagship innovation"
-              title="Multi-Ax-Sys"
-              lead="A semi-open exoskeleton that supports, guides, and resists natural foot motion or gestures—minimizing negative external forces while enabling multi-planar motion."
-            />
+            <header className={styles.sectionHeadDark}>
+              <p className={styles.eyebrow}>Flagship innovation</p>
+              <h2 id="home-featured" className={styles.sectionTitle}>
+                Multi-Ax-Sys
+              </h2>
+              <p className={styles.sectionLead}>
+                A semi-open system that supports, guides, and resists natural foot
+                motion—enabling multi-planar movement with minimal inappropriate external force.
+              </p>
+            </header>
             <video
               className={styles.projectMark}
               autoPlay
@@ -86,10 +57,6 @@ const Home = () => {
               />
               <source src={multiAxSysVideo720} type="video/mp4" />
             </video>
-            <p className={styles.featuredDetail}>
-              Adjustable resistance and precise tracking enhance rehabilitation,
-              training, and clinical research.
-            </p>
             <div className={styles.actions}>
               <Link className={styles.btnPrimary} to="/projects">
                 View project
@@ -101,65 +68,37 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={styles.block} aria-labelledby="home-pillars">
+        <section className={styles.block} aria-labelledby="home-principles">
           <div className={styles.innerWide}>
-            <SectionHead
-              id="home-pillars"
-              eyebrow="Our approach"
-              title="What we stand for"
-              lead="Three principles guide how we design systems, interpret movement, and partner with clinicians and researchers."
-            />
-            <ul className={styles.pillarGrid}>
-              {pillars.map((item, index) => (
+            <header className={styles.sectionHead}>
+              <p className={styles.eyebrow}>Our approach</p>
+              <h2 id="home-principles" className={styles.sectionTitle}>
+                Biomechanical medical devices for rehabilitation and performance
+              </h2>
+              <p className={styles.sectionLead}>
+                Free Joint Motion LLC advances kinetic therapy innovations from Weston,
+                Florida—translating scientific knowledge into systems that respect human
+                neurophysiology.
+              </p>
+            </header>
+            <ul className={styles.principleList}>
+              {principles.map((item) => (
                 <li key={item.title}>
-                  <article className={styles.pillarCard}>
-                    <span className={styles.pillarIndex} aria-hidden="true">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className={styles.pillarTitle}>{item.title}</h3>
-                    <p className={styles.pillarText}>{item.text}</p>
-                  </article>
+                  <h3 className={styles.principleTitle}>{item.title}</h3>
+                  <p className={styles.principleText}>{item.text}</p>
                 </li>
               ))}
             </ul>
-          </div>
-        </section>
-
-        <section className={styles.block} aria-labelledby="home-explore">
-          <div className={styles.innerWide}>
-            <SectionHead
-              id="home-explore"
-              eyebrow="Where we apply our work"
-              title="Sectors & scientific foundation"
-              lead="From clinical rehabilitation to competitive sport—grounded in rigorous biomechanical and human-factors expertise."
-            />
-            <div className={styles.exploreGrid}>
-              <article className={styles.explorePanel}>
-                <h3 className={styles.exploreTitle}>Sectors we serve</h3>
-                <ul className={styles.sectorList}>
-                  {sectors.map((sector) => (
-                    <li key={sector.title}>
-                      <Link className={styles.sectorLink} to={sector.path}>
-                        {sector.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <Link className={styles.textLink} to="/sectors">
-                  Explore all sectors
-                </Link>
-              </article>
-              <article className={styles.explorePanel}>
-                <h3 className={styles.exploreTitle}>Knowledge areas</h3>
-                <p className={styles.exploreText}>
-                  Deep expertise in 3D anthropometry, human factors, digital health,
-                  user experience, and biomedical engineering—applied to the relationship
-                  between the human body, products, and clinical environments.
-                </p>
-                <Link className={styles.textLink} to="/knowledge">
-                  View knowledge areas
-                </Link>
-              </article>
+            <div className={styles.quickLinks}>
+              <Link className={styles.textLink} to="/sectors">
+                Sectors we serve
+              </Link>
+              <Link className={styles.textLink} to="/knowledge">
+                Knowledge areas
+              </Link>
+              <Link className={styles.textLink} to="/publications">
+                Research & observations
+              </Link>
             </div>
           </div>
         </section>
@@ -167,14 +106,15 @@ const Home = () => {
         <section className={`${styles.block} ${styles.blockCta}`} aria-labelledby="home-cta">
           <div className={styles.innerNarrow}>
             <div className={styles.ctaPanel}>
-              <SectionHead
-                id="home-cta"
-                eyebrow="Work with us"
-                title="Partner with us"
-                lead="Collaborate on research, clinical validation, or device development for lower-limb kinetic therapy."
-              />
+              <h2 id="home-cta" className={styles.ctaTitle}>
+                Partner on research, validation, or device development
+              </h2>
+              <p className={styles.ctaLead}>
+                Connect with our team to explore clinical collaboration, NDA access, or
+                commercial partnership.
+              </p>
               <Link className={styles.btnPrimary} to="/contact">
-                Contact us
+                Get in touch
               </Link>
             </div>
           </div>

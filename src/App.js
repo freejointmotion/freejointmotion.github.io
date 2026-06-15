@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Routes } from 'react-router';
+import { NdaAccessProvider } from "./context/NdaAccessContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -18,6 +19,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
+    <NdaAccessProvider>
     <HashRouter basename="/">
       <ScrollToTop />
       <GoogleAnalytics />
@@ -39,6 +41,7 @@ const App = () => {
 
       <Footer />
     </HashRouter>
+    </NdaAccessProvider>
   );
 };
 

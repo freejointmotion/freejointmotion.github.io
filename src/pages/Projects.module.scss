@@ -40,7 +40,7 @@
 
 .elevator {
   @include statement;
-  margin-bottom: 40px;
+  margin-bottom: 1.75rem;
 
   font-size: 1.12rem;
   line-height: 1.75;
@@ -61,6 +61,12 @@
   margin-bottom: 36px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+}
+
+.sectionPublic {
+  margin-top: 2.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(19, 54, 75, 0.1);
 }
 
 .body {

@@ -1,82 +1,151 @@
 
 .hero {
-  padding: 50px 0;
-  text-align: center;
   position: relative;
-  height: 100vh;
+  height: min(88vh, 760px);
+  min-height: 420px;
+  overflow: hidden;
 
-  .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // background-image:  url('../img/hero.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  @media (max-width: 767px) {
+    height: min(72vh, 560px);
+    min-height: 360px;
   }
+}
 
-  // darken the background image
-  .bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.bgVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.52) saturate(0.58) contrast(1.04);
+}
 
-  .bgVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.scrim {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 22, 32, 0.38);
+  background-image: linear-gradient(
+    165deg,
+    rgba(19, 54, 75, 0.68) 0%,
+    rgba(12, 30, 44, 0.76) 48%,
+    rgba(8, 18, 26, 0.84) 100%
+  );
+}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: clamp(6rem, 14vw, 8rem) clamp(1.25rem, 4vw, 2rem) clamp(2.5rem, 6vw, 4rem);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  @media (min-width: 768px) {
     align-items: center;
-    color: white;
   }
+}
 
-  .title {
-    font-family: Montserrat, sans-serif;
-    font-size: 3rem;
-    font-weight: 300;
+.copy {
+  width: 100%;
+  max-width: 44rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  padding-left: clamp(1.35rem, 3vw, 2rem);
+  background: transparent;
+  border: none;
+  border-left: 2px solid rgba(126, 200, 232, 0.28);
+
+  @media (min-width: 768px) {
+    text-align: center;
+    margin: 0 auto;
+    border-left: none;
+    padding-left: clamp(1.25rem, 3vw, 2rem);
   }
+}
 
-  .subtitle {
-    font-size: 1.2rem;
+.kicker {
+  margin: 0 0 0.65rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(126, 200, 232, 0.85);
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.65rem, 4.5vw, 2.75rem);
+  font-weight: 300;
+  line-height: 1.2;
+  color: #f8fafc;
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.titleAccent {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: clamp(1.05rem, 2.6vw, 1.55rem);
+  font-weight: 400;
+  color: rgba(232, 238, 243, 0.92);
+  line-height: 1.4;
+}
+
+.subtitle {
+  font-size: clamp(0.95rem, 2.2vw, 1.08rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0 0 1.35rem;
+  max-width: 36rem;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  .cta {
-    padding: 10px 20px;
-    background-color: #f1c40f;
-    color: #332a04;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    border-radius: 0;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 600;
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 
-    &:hover {
-      background-color: #f39c12;
-    }
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+.ctaPrimary {
+  background: #f1c40f;
+  color: #332a04;
+
+  &:hover {
+    background: #e6b80a;
+  }
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
   }
 }

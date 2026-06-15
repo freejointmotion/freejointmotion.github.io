@@ -17,8 +17,8 @@
 }
 
 .category {
-  @include data-index;
   margin-bottom: 0;
+  @include data-index;
 }
 
 .date {
