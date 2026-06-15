@@ -3,6 +3,12 @@
 .project {
   @include panel-flat-base;
   @include panel-flat-lg;
+
+  @media (max-width: 767px) {
+    padding: 1.25rem 0 2rem;
+    border: none;
+    background: transparent;
+  }
 }
 
 .projectVisual {
@@ -49,6 +55,11 @@
   strong {
     color: #13364b;
   }
+
+  @media (max-width: 767px) {
+    padding-left: 14px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .sectionLabel {
@@ -61,6 +72,11 @@
   margin-bottom: 36px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+
+  @media (max-width: 767px) {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+  }
 }
 
 .sectionPublic {
@@ -149,6 +165,11 @@
     color: #6b7280;
     font-style: normal;
   }
+
+  @media (max-width: 767px) {
+    padding-left: 14px;
+    margin: 16px 0 20px;
+  }
 }
 
 .patentMeta {
@@ -195,6 +216,15 @@
   padding: 20px 24px;
   background: #f8fafc;
   border: 1px solid rgba(19, 54, 75, 0.1);
+
+  @media (max-width: 767px) {
+    margin: 16px 0 20px;
+    padding: 1rem 0;
+    background: transparent;
+    border: none;
+    border-top: 1px solid rgba(19, 54, 75, 0.1);
+    border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+  }
 }
 
 .patentAbstractTitle {
@@ -246,10 +276,20 @@
 .partnerList {
   @include item-stack;
   margin-top: 8px;
+
+  @media (max-width: 767px) {
+    border: none;
+    background: transparent;
+  }
 }
 
 .partnerItem {
   @include stack-item;
+
+  @media (max-width: 767px) {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+  }
 }
 
 .partnerName {
@@ -279,10 +319,21 @@
 .featureGrid {
   @include item-stack;
   margin-bottom: 36px;
+
+  @media (max-width: 767px) {
+    border: none;
+    background: transparent;
+    margin-bottom: 28px;
+  }
 }
 
 .featureCard {
   @include stack-item;
+
+  @media (max-width: 767px) {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(19, 54, 75, 0.1);
+  }
 }
 
 .featureTitle {
@@ -301,12 +352,23 @@
   padding-top: 28px;
   border-top: 1px solid rgba(19, 54, 75, 0.1);
   max-width: 68ch;
+
+  @media (max-width: 767px) {
+    max-width: none;
+    padding-top: 24px;
+    margin-bottom: 28px;
+  }
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .primaryBtn,
@@ -318,6 +380,12 @@
   text-decoration: none;
   border-radius: 0;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   &:focus-visible {
     outline: 2px solid #007acc;

@@ -1821,6 +1821,12 @@
   padding: 36px 20px 56px;
 }
 
+@media (width <= 767px) {
+  .TuH1pq_content {
+    padding: 28px 16px 48px;
+  }
+}
+
 @media (width >= 768px) {
   .TuH1pq_content {
     padding: 48px 24px 64px;
@@ -2009,6 +2015,17 @@
   padding: clamp(1.5rem, 4vw, 2rem);
 }
 
+@media (width <= 767px) {
+  .VgIveW_gate {
+    background: none;
+    border: 1px solid #13364b1f;
+    border-left: none;
+    border-right: none;
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem 0;
+  }
+}
+
 .VgIveW_unlocked {
   margin: 2rem 0 0;
 }
@@ -2099,6 +2116,14 @@
   display: flex;
 }
 
+@media (width <= 767px) {
+  .VgIveW_notice {
+    background: none;
+    margin-bottom: 1.25rem;
+    padding: .75rem 0 .75rem .85rem;
+  }
+}
+
 .VgIveW_noticeText {
   color: #4a5568;
   margin: 0;
@@ -2134,6 +2159,15 @@
   display: flex;
 }
 
+@media (width <= 767px) {
+  .VgIveW_placeholder {
+    border-radius: 4px;
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+}
+
 .eyAqFG_project {
   background: #fff;
   border: 1px solid #13364b24;
@@ -2143,6 +2177,14 @@
 @media (width >= 768px) {
   .eyAqFG_project {
     padding: 48px 56px;
+  }
+}
+
+@media (width <= 767px) {
+  .eyAqFG_project {
+    background: none;
+    border: none;
+    padding: 1.25rem 0 2rem;
   }
 }
 
@@ -2201,6 +2243,13 @@
   color: #13364b;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_elevator {
+    margin-bottom: 1.5rem;
+    padding-left: 14px;
+  }
+}
+
 .eyAqFG_sectionLabel {
   color: #13364b;
   letter-spacing: -.02em;
@@ -2215,6 +2264,13 @@
   border-bottom: 1px solid #13364b1a;
   margin-bottom: 36px;
   padding-bottom: 36px;
+}
+
+@media (width <= 767px) {
+  .eyAqFG_section {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+  }
 }
 
 .eyAqFG_sectionPublic {
@@ -2310,6 +2366,13 @@
   font-style: normal;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_patentQuote {
+    margin: 16px 0 20px;
+    padding-left: 14px;
+  }
+}
+
 .eyAqFG_patentMeta {
   margin: 0 0 20px;
   padding: 0;
@@ -2356,6 +2419,17 @@
   border: 1px solid #13364b1a;
   margin: 20px 0 24px;
   padding: 20px 24px;
+}
+
+@media (width <= 767px) {
+  .eyAqFG_patentAbstract {
+    background: none;
+    border: 1px solid #13364b1a;
+    border-left: none;
+    border-right: none;
+    margin: 16px 0 20px;
+    padding: 1rem 0;
+  }
 }
 
 .eyAqFG_patentAbstractTitle {
@@ -2414,6 +2488,13 @@
   list-style: none;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_partnerList {
+    background: none;
+    border: none;
+  }
+}
+
 .eyAqFG_partnerItem {
   border-bottom: 1px solid #13364b1a;
   padding: 28px 32px;
@@ -2421,6 +2502,13 @@
 
 .eyAqFG_partnerItem:last-child {
   border-bottom: none;
+}
+
+@media (width <= 767px) {
+  .eyAqFG_partnerItem {
+    border-bottom: 1px solid #13364b1a;
+    padding: 1.25rem 0;
+  }
 }
 
 .eyAqFG_partnerName {
@@ -2459,6 +2547,14 @@
   list-style: none;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_featureGrid {
+    background: none;
+    border: none;
+    margin-bottom: 28px;
+  }
+}
+
 .eyAqFG_featureCard {
   border-bottom: 1px solid #13364b1a;
   padding: 28px 32px;
@@ -2466,6 +2562,13 @@
 
 .eyAqFG_featureCard:last-child {
   border-bottom: none;
+}
+
+@media (width <= 767px) {
+  .eyAqFG_featureCard {
+    border-bottom: 1px solid #13364b1a;
+    padding: 1.25rem 0;
+  }
 }
 
 .eyAqFG_featureTitle {
@@ -2495,13 +2598,29 @@
   line-height: 1.7;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_vision {
+    max-width: none;
+    margin-bottom: 28px;
+    padding-top: 24px;
+  }
+}
+
 .eyAqFG_actions {
   flex-wrap: wrap;
   gap: 12px;
   display: flex;
 }
 
+@media (width <= 767px) {
+  .eyAqFG_actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .eyAqFG_primaryBtn, .eyAqFG_secondaryBtn {
+  text-align: center;
   border-radius: 0;
   padding: 12px 28px;
   font-size: 1rem;
@@ -2509,6 +2628,13 @@
   text-decoration: none;
   transition: background-color .2s, color .2s, border-color .2s;
   display: inline-block;
+}
+
+@media (width <= 767px) {
+  .eyAqFG_primaryBtn, .eyAqFG_secondaryBtn {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 .eyAqFG_primaryBtn:focus-visible, .eyAqFG_secondaryBtn:focus-visible {
